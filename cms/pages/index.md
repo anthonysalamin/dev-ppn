@@ -6,16 +6,17 @@ slug: ''
 tags: pages
 seo:
   noindex: false
-  title: Private Pools Network | PPN
-  description: >-
-    A new ecosystem, purpose built to generate yield from Arbitrage opportunities.
-  og:title: Private Pools Network | PPN
+  title: home meta title test
+  description: home meta description test
+  og:title: home meta title test
   additional_tags: >-
-    <meta property="og:description" content="A new ecosystem, purpose built to
-    generate yield from Arbitrage opportunities.">
-    <meta property="og:type" content="website">
-    <meta property="twitter:description" content="A new ecosystem, purpose built to generate yield from Arbitrage opportunities.">
-    <meta property="twitter:image" content="https://uploads-ssl.webflow.com/66162235ccb46588aa690877/66175c42ebc0ce580e5b9283_opengraph.jpg">
-    <meta property="og:image" content="https://uploads-ssl.webflow.com/66162235ccb46588aa690877/66175c42ebc0ce580e5b9283_opengraph.jpg">
-    <meta property="twitter:title" content="Private Pools Network | PPN">
+    <meta content="home meta description test" property="og:description"><meta
+    content="home meta description test" property="twitter:description"><meta
+    content="https://uploads-ssl.webflow.com/66178017b36bebb5b653e04e/661780a12ecd499a5f1ba0a7_opengraph.jpg"
+    property="twitter:image"><meta property="og:type" content="website">
+  og:image: >-
+    https://uploads-ssl.webflow.com/66178017b36bebb5b653e04e/661780a12ecd499a5f1ba0a7_opengraph.jpg
+  twitter:title: home meta title test
 ---
+
+
