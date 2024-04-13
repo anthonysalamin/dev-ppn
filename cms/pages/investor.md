@@ -1,8 +1,8 @@
 ---
-title: Home
-permalink: index.html
-layout: index.html
-slug: ''
+title: Investor
+permalink: '{{ page.fileSlug }}/index.html'
+layout: investor.html
+slug: investor
 tags: pages
 seo:
   noindex: false
