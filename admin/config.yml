@@ -514,24 +514,24 @@ collections:
             label: Text
             name: 5cc7b199
             widget: string
-          - hint: 'Original text: What exactly is , key: 1a5407a6'
+          - hint: 'Original text: What is , key: 770730fa'
             label: Text
-            name: 1a5407a6
+            name: 770730fa
             widget: string
-          - hint: 'Original text: Private Pools Network, key: 66d9aaa8'
+          - hint: 'Original text: PPN Network, key: -277b69c4'
             label: Text
-            name: 66d9aaa8
+            name: '-277b69c4'
             widget: string
-          - hint: 'Original text:  and how does it work?, key: -f003419'
+          - hint: 'Original text:  ?, key: 41f'
             label: Text
-            name: '-f003419'
+            name: 41f
             widget: string
           - hint: >-
-              Original text: Private Pools Network is an autonomous index system
-              enhancing liquidity by capitalizing on volatility. A novel
-              ecosystem challenging the status quo., key: -3b0a74a0
+              Original text: Private Pools Network (PPN) is an autonomous index
+              system enhancing liquidity by capitalizing on volatility. A novel
+              ecosystem challenging the status quo., key: 4c26455d
             label: Text
-            name: '-3b0a74a0'
+            name: 4c26455d
             widget: text
           - hint: 'Original text: Simplicity, key: 21bcdc41'
             label: Text
