@@ -255,9 +255,14 @@ build 13.04.24
 }
 .separator {
   background-image: linear-gradient(90deg, transparent 50%, #dceef6 50%);
+  /* background-color: red; */
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   /* Adjust the width of dashes here */
   background-size: 20px 2px;
   animation: move 1s linear infinite;
+}
+.action__overlay {
+	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 1));
 }
 </style>
       </div>
@@ -369,7 +374,7 @@ build 13.04.24
         <div class="container">
           <div class="section__header">
             <div class="heading__wrap">
-              <div class="pill">{{ texts.f7b7e91 }}</div>
+              <p class="small mini-pill">{{ texts.f7b7e91 }}</p>
               <h1 data-id="reveal">{{ texts.40a8d8b5 }}</h1>
             </div>
             <a href="{{ links.-1610b1f6 }}" target="_blank" class="cta__wrap w-inline-block">
@@ -475,7 +480,7 @@ build 13.04.24
           <div class="container">
             <div class="section__header no-margin-bottom">
               <div class="heading__wrap">
-                <div class="pill">{{ texts.-5f2415c3 }}</div>
+                <p class="small mini-pill">{{ texts.-5f2415c3 }}</p>
                 <h1 data-id="reveal">{{ texts.4a649b7a }}</h1>
               </div>
               <a href="{{ links.68e15f9f }}" class="cta__wrap w-inline-block">
@@ -484,16 +489,10 @@ build 13.04.24
             </div>
           </div>
           <div class="action__scroll-wrapper">
-            <div class="overlay"></div>
+            <div class="action__overlay"></div>
             <div class="action__scroll-content">
               <div class="action__grid">
-                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce744-bc9ce743" class="action__grid-item">
-                  <p class="small mini-pill spacing"></p>
-                  <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce746-bc9ce743" class="separator"></div>
-                </div>
-                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce747-bc9ce743" class="action__grid-item">
-                  <div class="number">{{ texts.601 }}</div>
-                </div>
+                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce748-bc9ce743" class="number">{{ texts.601 }}</div>
                 <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce74a-bc9ce743" class="action__grid-item">
                   <p class="small mini-pill">{{ texts.-165db5e9 }}</p>
                   <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce74c-bc9ce743" class="separator"></div>
@@ -504,13 +503,7 @@ build 13.04.24
                 </div>
               </div>
               <div class="action__grid">
-                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce744-bc9ce743" class="action__grid-item">
-                  <p class="small mini-pill spacing"></p>
-                  <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce746-bc9ce743" class="separator"></div>
-                </div>
-                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce747-bc9ce743" class="action__grid-item">
-                  <div class="number">{{ texts.602 }}</div>
-                </div>
+                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce748-bc9ce743" class="number">{{ texts.602 }}</div>
                 <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce74a-bc9ce743" class="action__grid-item">
                   <p class="small mini-pill">{{ texts.-14a8dd4a }}</p>
                   <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce74c-bc9ce743" class="separator"></div>
@@ -521,13 +514,7 @@ build 13.04.24
                 </div>
               </div>
               <div class="action__grid">
-                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce744-bc9ce743" class="action__grid-item">
-                  <p class="small mini-pill spacing"></p>
-                  <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce746-bc9ce743" class="separator"></div>
-                </div>
-                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce747-bc9ce743" class="action__grid-item">
-                  <div class="number">{{ texts.603 }}</div>
-                </div>
+                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce748-bc9ce743" class="number">{{ texts.603 }}</div>
                 <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce74a-bc9ce743" class="action__grid-item">
                   <p class="small mini-pill">{{ texts.2991dbac }}</p>
                   <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce74c-bc9ce743" class="separator"></div>
@@ -538,13 +525,7 @@ build 13.04.24
                 </div>
               </div>
               <div class="action__grid">
-                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce744-bc9ce743" class="action__grid-item">
-                  <p class="small mini-pill spacing"></p>
-                  <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce746-bc9ce743" class="separator"></div>
-                </div>
-                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce747-bc9ce743" class="action__grid-item">
-                  <div class="number">{{ texts.604 }}</div>
-                </div>
+                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce748-bc9ce743" class="number">{{ texts.604 }}</div>
                 <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce74a-bc9ce743" class="action__grid-item">
                   <p class="small mini-pill">{{ texts.2b46b44b }}</p>
                   <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce74c-bc9ce743" class="separator"></div>
@@ -555,13 +536,7 @@ build 13.04.24
                 </div>
               </div>
               <div class="action__grid">
-                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce744-bc9ce743" class="action__grid-item">
-                  <p class="small mini-pill spacing"></p>
-                  <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce746-bc9ce743" class="separator"></div>
-                </div>
-                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce747-bc9ce743" class="action__grid-item">
-                  <div class="number">{{ texts.605 }}</div>
-                </div>
+                <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce748-bc9ce743" class="number">{{ texts.605 }}</div>
                 <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce74a-bc9ce743" class="action__grid-item">
                   <p class="small mini-pill">{{ texts.2cfb8cea }}</p>
                   <div id="w-node-_3c37e258-4132-dda5-e63e-8f3dbc9ce74c-bc9ce743" class="separator"></div>
@@ -580,7 +555,6 @@ build 13.04.24
           <div class="timeline__container">
             <div class="timeline__padding-vertical">
               <div data-w-id="580ed13e-af5d-d2a7-face-4094805e2404" class="timeline-main_heading-wrapper">
-                <div class="pill">{{ texts.5cc7b199 }}</div>
                 <h1 data-id="reveal">{{ texts.770730fa }}<span class="heading-bold">{{ texts.-277b69c4 }}</span>{{ texts.41f }}</h1>
                 <p class="subline">{{ texts.4c26455d }}</p>
               </div>
@@ -703,7 +677,7 @@ build 13.04.24
         <div class="team__container">
           <div class="section__header">
             <div class="heading__wrap">
-              <div class="pill">{{ texts.27b67d }}<br></div>
+              <p class="small mini-pill">{{ texts.27b67d }}</p>
               <h1 class="headline">{{ texts.-623430e0 }}</h1>
             </div>
           </div>

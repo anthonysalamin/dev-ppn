@@ -226,9 +226,14 @@ build 13.04.24
 }
 .separator {
   background-image: linear-gradient(90deg, transparent 50%, #dceef6 50%);
+  /* background-color: red; */
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   /* Adjust the width of dashes here */
   background-size: 20px 2px;
   animation: move 1s linear infinite;
+}
+.action__overlay {
+	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 1));
 }
 </style>
       </div>

@@ -242,9 +242,14 @@ build 13.04.24
 }
 .separator {
   background-image: linear-gradient(90deg, transparent 50%, #dceef6 50%);
+  /* background-color: red; */
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   /* Adjust the width of dashes here */
   background-size: 20px 2px;
   animation: move 1s linear infinite;
+}
+.action__overlay {
+	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 1));
 }
 </style>
       </div>
@@ -274,7 +279,7 @@ build 13.04.24
         <div class="team__container">
           <div class="section__header">
             <div class="heading__wrap">
-              <div class="pill">{{ texts.27b67d }}<br></div>
+              <p class="small mini-pill">{{ texts.27b67d }}</p>
               <h1 class="headline">{{ texts.-623430e0 }}</h1>
             </div>
           </div>

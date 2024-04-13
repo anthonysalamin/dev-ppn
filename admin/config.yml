@@ -510,10 +510,6 @@ collections:
             label: Text
             name: '-fc803f8'
             widget: text
-          - hint: 'Original text: Solution, key: 5cc7b199'
-            label: Text
-            name: 5cc7b199
-            widget: string
           - hint: 'Original text: What is , key: 770730fa'
             label: Text
             name: 770730fa
