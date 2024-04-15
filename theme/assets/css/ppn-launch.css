@@ -1,8 +1,8 @@
 :root {
   --dark: #02031c;
   --light: #dceef6;
-  --black: #000;
   --accent: #00e0ff;
+  --black: #000;
   --light-50-text: rgba(220, 238, 246, .5);
   --light-5: rgba(220, 238, 246, .05);
   --accent-20: rgba(0, 224, 255, .2);
@@ -172,6 +172,7 @@ blockquote {
 
 .section.is-team {
   z-index: 999;
+  background-image: linear-gradient(45deg, var(--dark), rgba(2, 3, 28, .35) 60%, var(--accent));
   overflow: hidden;
 }
 
@@ -1553,6 +1554,10 @@ blockquote {
   width: 40px;
   height: 40px;
   display: flex;
+}
+
+.heading {
+  position: relative;
 }
 
 @media screen and (max-width: 991px) {
