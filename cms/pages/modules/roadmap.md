@@ -1,14 +1,14 @@
 ---
-title: Actions sections
+title: Roadmap
 permalink: modules/{{ page.fileSlug }}/index.html
-layout: modules/actions-sections.html
-slug: actions-sections
+layout: modules/roadmap.html
+slug: roadmap
 tags: pages
 seo:
   noindex: false
-  title: Actions sections
+  title: Roadmap
   og:title: Private Pools Network | PPN
-  twitter:title: Actions sections
+  twitter:title: Roadmap
   additional_tags: >-
     <meta property="og:description" content="A new ecosystem, purpose built to
     generate yield from Arbitrage opportunities."><meta property="og:url"

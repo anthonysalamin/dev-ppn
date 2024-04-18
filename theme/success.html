@@ -22,16 +22,16 @@
   
   <meta name="twitter:title" content="Private Pools Network | PPN">
   <meta name="twitter:description" content="A new ecosystem, purpose built to generate yield from Arbitrage opportunities.">
-  <meta name="twitter:image" content="https://assets-global.website-files.com/660677db928561e6fc26023d/6613df3c53686dbf21ed7d3d_opengraph.jpg">
+  <meta name="twitter:image" content="https://uploads-ssl.webflow.com/66162235ccb46588aa690877/66175c42ebc0ce580e5b9283_opengraph.jpg">
   <meta name="twitter:url" content="https://privatepools.network/">
+  <!--  text highlighting  -->
   <style>
-  /* style the text highlighting */
   ::selection {
       background-color: var(--accent);
   }
 </style>
+  <!--  remove default focus + highlights  -->
   <style>
-  /* remove ugly focus + highlights */
   .svg-embed,
   a,
   a:focus,
@@ -48,8 +48,8 @@
     -ms-user-select: none !important;
   }
 </style>
+  <!--  improve font quality  -->
   <style>
-  /* Improve font quality */
   * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -58,21 +58,20 @@
     font-smooth: always; /* For Windows browsers */
   }
 </style>
+  <!--  clean WF labels  -->
   <style>
-  /* temporarily hide badge */
   .w-webflow-badge {
     display: none !important;
   }
-  /* temporarily whitelabel login */
   .w-reset.w-editor-bem-EditorLogo {
     display: none !important;
   }
 </style>
+  <!--  scroll bar  -->
   <style>
-  /* Scroll bar */
   /* WebKit Chrome */
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 4px;
     height: 8px;
   }
   ::-webkit-scrollbar-track {
@@ -402,7 +401,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 function initParticles() {
   const color = ["#02031c", "#00e0ff", "#02031c"];
-  const particlesAmount = 120;
+  const particlesAmount = 140;
   Particles.init({
     selector: ".background-particles",
     color: color,
@@ -413,7 +412,7 @@ function initParticles() {
         breakpoint: 768,
         options: {
           color: color,
-          maxParticles: particlesAmount / 2,
+          maxParticles: particlesAmount / 3.5,
           connectParticles: true
         }
       }
@@ -423,7 +422,7 @@ function initParticles() {
 </script>
   <script>
 /*
- * PPN | reveal on scroll
+ * PPN | word reveal on scroll
  * dependencies: gsap.js scrolltrigger.js split-type.js
  * build 10.04.24 @13:33
  */
@@ -470,69 +469,89 @@ function initRevealOnScroll(target, trigger) {
 </script>
   <script>
 /*
- * PPN | subline animation
- * dependency: none (redo with GSAP)
- * build 09.04.24 @14:37
+ * PPN | typed
+ * dependency: gsap.js
+ * build: 17.04.24 @16:52
  */
 document.addEventListener("DOMContentLoaded", () => {
-  const shouldBlink = true;
-  initTyping("[data-id='subline']", shouldBlink, [
-    "pioneers new means of value extraction",
-    "empowers access to automated arbitrage",
-    "offers a new DeFi ecosystem for users"
-  ]);
+  setState();
+  addBlink();
+  addBlinkingText();
+  animateTextSentences(sentences);
 });
-function addBlink(shouldBlink, selector) {
-  if (!shouldBlink) return;
+const sentences = [
+  "pioneers new means of value extraction",
+  "empowers access to automated arbitrage",
+  "offers a new DeFi ecosystem for users"
+];
+const typingSpeed = 0.025; // Speed of typing animation (in seconds)
+const eraseSpeed = 0.0035; // Speed of erasing animation (in seconds)
+const pauseBetweenSentences = 1; // Pause between each sentence (in seconds)
+function setState() {
+  const tobetyped = document.querySelector('[data-id="tobetyped"]')
+  tobetyped.textContent ="";
+}
+// Function to add blinking style
+const addBlink = () => {
+  const cssRules = `
+    @keyframes typingBlink {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+    #blinking-text::after {
+      content: "_";
+      animation: typingBlink linear 1s infinite;
+    }
+  `;
   const styleElement = document.createElement("style");
-  const cssRules = `${selector}::after { content:"_"; animation: typingBlink linear 1.15s infinite; } @keyframes typingBlink { 0%, 100% { opacity: 0; } 50% { opacity: 1; } }`;
   styleElement.textContent = cssRules;
   document.head.appendChild(styleElement);
-}
-function initTyping(selector, shouldBlink, words) {
-  const toBeTyped = document.querySelector(selector);
-  if (!toBeTyped) return;
-  addBlink(shouldBlink, selector);
-  const LETTER_TYPE_DELAY = 20;
-  const WORD_STAY_DELAY = 1500;
-  const DIRECTION_FORWARDS = 0;
-  const DIRECTION_BACKWARDS = 1;
-  let direction = DIRECTION_FORWARDS;
-  let wordIndex = 0;
-  let letterIndex = 0;
-  let wordTypeInterval;
-  function startTyping() {
-    wordTypeInterval = setInterval(typeLetter, LETTER_TYPE_DELAY);
+};
+// Function to add blinking text element
+const addBlinkingText = () => {
+  const typingTextElement = document.querySelector('[data-id="tobetyped"]');
+  if (!typingTextElement) {
+    console.error("Element with id 'typing-text' not found.");
+    return;
   }
-  function typeLetter() {
-    const word = words[wordIndex];
-    if (direction === DIRECTION_FORWARDS) {
-      letterIndex++;
-      if (letterIndex === word.length) {
-        direction = DIRECTION_BACKWARDS;
-        clearInterval(wordTypeInterval);
-        setTimeout(startTyping, WORD_STAY_DELAY);
-      }
-    } else if (direction === DIRECTION_BACKWARDS) {
-      letterIndex--;
-      if (letterIndex === 0) {
-        nextWord();
-      }
+  const blinkingTextElement = document.createElement("span");
+  blinkingTextElement.setAttribute("id", "blinking-text");
+  typingTextElement.insertAdjacentElement("afterend", blinkingTextElement);
+};
+// Function for typing animation
+const typeWriterAnimation = (element, text, onComplete) => {
+  let currentIndex = 0;
+  const typeNextCharacter = () => {
+    if (currentIndex < text.length) {
+      element.textContent += text[currentIndex++];
+      gsap.delayedCall(typingSpeed, typeNextCharacter);
+    } else {
+      gsap.delayedCall(pauseBetweenSentences, eraseText);
     }
-    const textToType = word.substring(0, letterIndex);
-    toBeTyped.textContent = textToType;
-  }
-  function nextWord() {
-    letterIndex = 0;
-    direction = DIRECTION_FORWARDS;
-    wordIndex++;
-    if (wordIndex === words.length) {
-      wordIndex = 0;
+  };
+  const eraseText = () => {
+    if (element.textContent.length > 0) {
+      element.textContent = element.textContent.slice(0, -1);
+      gsap.delayedCall(eraseSpeed, eraseText);
+    } else {
+      onComplete();
     }
-  }
-  // Initialize typer
-  startTyping();
-}
+  };
+  typeNextCharacter();
+};
+// Function for animating text sentences
+const animateTextSentences = (sentences) => {
+  let currentIndex = 0;
+  const animateNextSentence = () => {
+    const sentence = sentences[currentIndex];
+    const textElement = document.querySelector('[data-id="tobetyped"]');
+    typeWriterAnimation(textElement, sentence, () => {
+      currentIndex = (currentIndex + 1) % sentences.length;
+      animateNextSentence();
+    });
+  };
+  animateNextSentence();
+};
 </script>
   <script>
 /*
