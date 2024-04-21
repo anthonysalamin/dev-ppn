@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-wf-page="66162235ccb46588aa6908b8" data-wf-site="66162235ccb46588aa690877" lang="en"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">{%- seo seo -%}
+<html data-wf-page="662355f967c6eadb820b43ba" data-wf-site="66162235ccb46588aa690877" lang="en"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">{%- seo seo -%}
   <meta charset="utf-8">
   
   
@@ -93,21 +93,6 @@
   -ms-overflow-style: none;
   scrollbar-width: thin;
   scrollbar-color: var(--accent) var(--dark);
-</style><!--  swiper.css  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <style>
-	/* onload hide popups */
-  .popup_bg,
-  .popup_content,
-  .popup_close {
-    opacity: 0;
-  }
-  .popup_item {
-    display: none;
-  }
-  .popup_item.active {
-    display: block;
-  }
 </style>
 {{ settings.site.header_additional_content }}{%- include "partials/_site-css-variables" -%}<style>.w-video.w-embed {
             aspect-ratio: 16 / 9;
@@ -254,120 +239,68 @@ build 13.04.24
 </style>
       </div>
     </div>
-    <div class="cursor">
-      <div class="cursor_move">
-        <div class="cursor_dot">
-          <div class="cursor_dot-fill">
-            <div class="cursor_svg w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 16">
+    <nav data-id="target" class="nav">
+      <div class="container">
+        <div class="nav__container">
+          <a href="{{ links.2f }}" aria-label="logo" class="nav__logomark-link w-nav-brand">
+            <div class="embed__logo w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" heigh="100%" viewBox="0 0 982.76 131.43">
                 <defs>
-                  <style>.doubleArrows{stroke:#02031c;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none}</style>
+                  <linearGradient id="linear-gradient" x1="78.56" y1="84.24" x2="78.56" y2="0" gradientTransform="rotate(90 78.56 42.12)" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#02031c" stop-opacity="0"></stop>
+                    <stop offset="1" stop-color="#00e0ff"></stop>
+                  </linearGradient>
+                  <linearGradient id="linear-gradient-2" x1="-7888.8" y1="1346.24" x2="-7757.37" y2="1346.24" gradientTransform="translate(7849.27 -1280.52)" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#02031c" stop-opacity="0"></stop>
+                    <stop offset="1" stop-color="#00e0ff"></stop>
+                  </linearGradient>
+                  <style>.cls-2{fill:#dbedf5}</style>
                 </defs>
-                <g>
-                  <path class="doubleArrows" d="M42.81 8h16m0 0-6.86 6.5M58.81 8l-6.86-6.5M17.19 8h-16m0 0 6.86-6.5M1.19 8l6.86 6.5"></path>
-                  <path style="fill:none" d="M0 0h60v16H0z"></path>
+                <g id="guides">
+                  <path d="M36.44 15.93h84.24v1.24c0 28.22-22.91 51.13-51.13 51.13H36.44V15.93Z" transform="rotate(-90 78.56 42.12)" style="fill:url(#linear-gradient)"></path>
+                  <path d="M-39.53 39.53H91.9v1.24c0 28.22-22.91 51.13-51.13 51.13h-80.3V39.53Z" transform="rotate(90 26.185 65.715)" style="fill:url(#linear-gradient-2)"></path>
+                  <path class="cls-2" d="M180.34 14.95h45.38c18.32 0 30.34 10.74 30.34 29.2s-12.02 29.2-30.34 29.2h-35.64v43.8h-9.73V14.95Zm9.73 50.1h33.49c13.46 0 22.76-6.87 22.76-20.9s-9.3-20.9-22.76-20.9h-33.49v41.79ZM270.95 43.29h8.3v17.32h.29c4.58-11.88 14.6-18.89 27.91-18.32v9.02c-16.32-.86-27.48 11.16-27.48 26.48v39.36h-9.02V43.29ZM318.32 14.95h9.02v14.46h-9.02V14.95Zm0 28.34h9.02v73.86h-9.02V43.29ZM338.5 43.29h10.02l23.19 64.84h.29l22.9-64.84h9.3l-27.63 73.86h-9.59L338.5 43.29ZM414.37 65.91c.86-17.32 13.03-24.76 29.92-24.76 13.02 0 27.2 4.01 27.2 23.76v39.22c0 3.44 1.72 5.44 5.3 5.44 1 0 2.15-.29 2.86-.57v7.59c-2 .43-3.44.57-5.87.57-9.16 0-10.59-5.15-10.59-12.88h-.29c-6.3 9.59-12.74 15.03-26.91 15.03s-24.76-6.73-24.76-21.61c0-20.76 20.18-21.47 39.65-23.76 7.44-.86 11.59-1.86 11.59-10.02 0-12.17-8.73-15.17-19.32-15.17-11.16 0-19.47 5.15-19.75 17.18h-9.02Zm48.1 10.88h-.29c-1.15 2.15-5.15 2.86-7.59 3.29-15.31 2.72-34.35 2.57-34.35 17.03 0 9.02 8.02 14.6 16.46 14.6 13.74 0 25.91-8.73 25.76-23.19V76.78ZM505.97 43.29H521v7.59h-15.03v49.81c0 5.87.86 9.3 7.3 9.73 2.58 0 5.15-.15 7.73-.43v7.73c-2.72 0-5.29.29-8.01.29-12.02 0-16.18-4.01-16.03-16.6V50.88h-12.88v-7.59h12.88V21.1h9.02v22.19ZM541.47 82.65c.14 13.17 7.01 29.06 24.33 29.06 13.17 0 20.32-7.73 23.19-18.89h9.02c-3.86 16.75-13.6 26.48-32.21 26.48-23.48 0-33.35-18.03-33.35-39.07 0-19.47 9.88-39.08 33.35-39.08s33.21 20.76 32.49 41.51h-56.83Zm47.81-7.59c-.43-13.6-8.87-26.34-23.47-26.34s-22.9 12.88-24.33 26.34h47.81ZM614.9 14.95h45.09c29.2 0 34.78 18.89 34.78 31.63s-5.58 31.49-34.78 31.35h-27.2v39.22H614.9V14.95Zm17.89 48.38h26.19c8.02 0 17.89-4.01 17.89-16.89s-8.16-16.89-17.61-16.89h-26.48v33.78ZM706.79 80.08c0-22.62 13.6-38.93 37.36-38.93s37.36 16.32 37.36 38.93-13.6 39.07-37.36 39.07-37.36-16.32-37.36-39.07Zm58.4 0c0-12.74-6.44-26.05-21.04-26.05s-21.04 13.31-21.04 26.05 6.44 26.19 21.04 26.19 21.04-13.31 21.04-26.19ZM793.82 80.08c0-22.62 13.6-38.93 37.36-38.93s37.36 16.32 37.36 38.93-13.6 39.07-37.36 39.07-37.36-16.32-37.36-39.07Zm58.4 0c0-12.74-6.44-26.05-21.04-26.05s-21.04 13.31-21.04 26.05 6.44 26.19 21.04 26.19 21.04-13.31 21.04-26.19ZM884.71 14.95h16.32v102.2h-16.32V14.95ZM933.23 93.39c.86 9.45 8.02 12.88 16.75 12.88 6.16 0 16.89-1.29 16.46-9.73-.43-8.59-12.31-9.59-24.19-12.31-12.02-2.58-23.76-6.87-23.76-21.9 0-16.18 17.46-21.18 30.92-21.18 15.17 0 28.91 6.3 30.92 22.76H963.3c-1.43-7.73-7.87-9.88-15.03-9.88-4.72 0-13.45 1.14-13.45 7.59 0 8.02 12.02 9.16 24.05 11.88 11.88 2.72 23.9 7.01 23.9 21.61 0 17.61-17.75 24.05-33.06 24.05-18.61 0-32.49-8.3-32.78-25.76h16.32Z"></path>
                 </g>
               </svg></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <main class="main">
-      <section class="fake">
-        <div>{{ texts.-361a1933 }}</div>
-      </section>
-      <section class="section is-team">
-        <div class="team__container">
-          <div class="section__header">
-            <div class="heading__wrap">
-              <p class="small title">{{ texts.27b67d }}</p>
-              <h1 data-id="reveal" class="headline">{{ texts.-623430e0 }}</h1>
-            </div>
-          </div>
-          {%- assign collection = collections.team | sort: "f_sorting-order" -%}<div class="swiper is-team w-dyn-list">
-            {%- unless collection.length == 0 -%}<div role="list" class="swiper-wrapper is-team w-dyn-items">
-              {%- for item in collection -%}<div role="listitem" class="swiper-slide is-team w-dyn-item">
-                <div class="team_link">
-                  <div class="team_photo-height"><img height="1500" loading="lazy" width="1000" src="{{ item.data.f_photo.url }}" alt="{{ images.0.alt | escape }}" class="image">
-                    <div class="icon-plus team w-embed"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 12h12m-6-6v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg></div>
-                  </div>
-                  <div class="team_name-info">
-                    <div class="wrap-title">
-                      <div class="">{{ item.data.title }}</div>
-                      <div class="text-position">{{ item.data.f_title }}</div>
-                    </div>
-                  </div>
-                </div>
-              </div>{%- endfor -%}
-            </div>{%- endunless -%}
-            {%- if collection.length == 0 -%}<div class="w-dyn-empty">
-              <div>{{ texts.3d503d2b }}</div>
-            </div>{%- endif -%}
-          </div>
-          <div class="cta__dual-center">
-            <a href="{{ links.68e15f9f }}" class="cta__wrap w-inline-block">
-              <div class="pill cta">{{ texts.-5230a9d2 }}</div>
-              <div class="cta__circle">
-                <div class="lottie-arrow-right" data-w-id="e887ab22-4563-b879-de24-fe93823e21ed" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="popup">
-          <div class="popup_bg"></div>
-          {%- assign collection = collections.team | sort: "f_sorting-order" -%}<div class="popup_wrapper w-dyn-list">
-            {%- unless collection.length == 0 -%}<div role="list" class="popup_list w-dyn-items">
-              {%- for item in collection -%}<div role="listitem" class="popup_item w-dyn-item">
-                <div class="popup_flex">
-                  <div class="popup_visual">
-                    <div class="popup_img-height">
-                      <div class="popup_img"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_photo.url }}" class="image"></div>
-                    </div>
-                  </div>
-                  <div class="popup_content">
-                    <div class="popup_content-contain">
-                      <div class="popup_name-wrap">
-                        <p class="headline is-team-name">{{ item.data.title }}</p>
-                        <p class="text-position">{{ item.data.f_title }}</p>
-                        <div class="footer__icons-wrap">
-                          {%- if item.data.f_x-twitter -%}<a href="{{ item.data.f_x-twitter }}" class="footer__icon-link w-inline-block">
-                            <div class="embed__icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 28.79 26">
-                                <path d="M22.74 0h4.41l-9.69 11.03L28.78 26H19.9l-6.95-9.1L4.99 26H.58l10.26-11.8L0 0h9.1l6.28 8.31L22.74 0ZM21.2 23.41h2.45L7.82 2.49H5.19L21.2 23.41Z" style="fill:currentColor"></path>
-                              </svg></div>
-                          </a>{%- endif -%}
-                          {%- if item.data.f_linkedin -%}<a href="{{ item.data.f_linkedin }}" class="footer__icon-link w-inline-block">
-                            <div class="embed__icon w-embed"><svg title="linkedin" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 798.44 763.19">
-                                <g fill="currentColor">
-                                  <path d="M181.26 763.19V248.24H10.12v514.94h171.14ZM95.7 177.96c59.66 0 96.82-39.57 96.82-88.99C191.4 38.46 155.37 0 96.82 0 38.27 0 0 38.46 0 88.97s37.14 88.99 94.58 88.99h1.13Zm180.27 585.23s2.25-466.63 0-514.94h171.17v74.68H446c22.51-35.14 63.05-86.77 155.38-86.77 112.63 0 197.06 73.6 197.06 231.77V763.2H627.3V487.72c0-69.22-24.76-116.45-86.71-116.45-47.27 0-75.44 31.84-87.82 62.63-4.53 10.96-5.63 26.35-5.63 41.74v287.57H275.97Z" style="fill-rule:evenodd"></path>
-                                </g>
-                              </svg></div>
-                          </a>{%- endif -%}
-                        </div>
-                      </div>
-                      <div class="rich w-richtext">{{ item.templateContent | markdown }}</div>
-                    </div>
-                    <div class="popup_gradient"></div>
-                  </div>
-                </div>
-              </div>{%- endfor -%}
-            </div>{%- endunless -%}
-            {%- if collection.length == 0 -%}<div class="w-dyn-empty">
-              <div>{{ texts.3d503d2b }}</div>
-            </div>{%- endif -%}
-          </div>
-          <a aria-label="close" href="{{ links.23 }}" class="popup_close w-inline-block">
-            <div class="popup_close-x w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 94.149 94.15">
-                <path d="m1.06 1.06 92.03 92.03" fill="none" stroke="currentColor" stroke-width="8"></path>
-                <path d="M93.089 1.061 1.06 93.09" fill="none" stroke="currentColor" stroke-width="12"></path>
+            <p class="small mini-pil">{{ texts.36617d }}</p>
+          </a>
+          <a href="{{ links.-1610b1f6 }}" target="_blank" class="cta__wrap is-mobilehidden w-inline-block">
+            <div class="pill cta transparent">{{ texts.-78ddacdd }}<br></div>
+          </a>
+          <a href="{{ links.23 }}" class="cta__link soon w-inline-block">
+            <div class="embed__icon-circle w-embed"><svg title="locked" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 466.67 666.67">
+                <g fill="currentColor">
+                  <path d="M233.33 333.33c-36.76 0-66.67 29.91-66.67 66.67 0 24.63 13.42 46.18 33.33 57.72V500c0 18.41 14.92 33.33 33.33 33.33s33.33-14.92 33.33-33.33v-42.28c19.91-11.54 33.33-33.09 33.33-57.72 0-36.76-29.91-66.67-66.67-66.67Z"></path>
+                  <path d="M399.85 269.88c.1-1.06.15-2.13.15-3.21v-100C400 74.77 325.23 0 233.33 0S66.67 74.77 66.67 166.67v100c0 1.08.05 2.15.15 3.21C23.71 313.77 0 371.73 0 433.33s24.27 120.92 68.34 164.99c44.07 44.07 102.67 68.34 164.99 68.34s120.92-24.27 164.99-68.34c44.07-44.07 68.34-102.67 68.34-164.99s-23.71-119.56-66.82-163.46ZM133.34 166.67c0-55.14 44.86-100 100-100s100 44.86 100 100v55.71c-30.85-14.65-64.83-22.38-100-22.38s-69.15 7.73-100 22.38v-55.71Zm100 433.33c-91.9 0-166.67-74.77-166.67-166.67s74.77-166.67 166.67-166.67 166.67 74.77 166.67 166.67S325.24 600 233.34 600Z"></path>
+                </g>
               </svg></div>
+            <div>{{ texts.2e771d }}<br></div>
           </a>
         </div>
+      </div>
+    </nav>
+    <div class="main">
+      <section class="fake">
+        <div>{{ texts.-361a1933 }}</div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="sankey">
+            <div class="section__header">
+              <div class="heading__wrap">
+                <p class="small title">{{ texts.-546c5d5c }}</p>
+                <h1 data-id="reveal">{{ texts.-63e8093d }}<br>{{ texts.386b154a }}</h1>
+              </div>
+            </div>
+            <div id="sankey-parent" class="sankey-parent w-embed">
+              <div id="sankeyDiagram"></div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="fake">
         <div>{{ texts.-361a1933 }}</div>
       </section>
-    </main>
+    </div>
     <div class="background">
       <div class="particles w-embed"><canvas class="background-particles"></canvas></div>
     </div>
@@ -860,153 +793,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const copyrightYear = document.querySelector(`[data-date="year"]`);
   if (!copyrightYear) return;
   copyrightYear.textContent = new Date().getFullYear();
-});
-</script><!--  swiper.js  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-/*
- * PPN | team slider
- * dependencies: GSAP 3.12.5
- * build 04.04.2024
-*/
-const teamSwiper = new Swiper(".swiper.is-team", {
-  // Optional parameters
-  slidesPerView: "auto",
-  keyboard: true,
-  direction: "horizontal",
-  loop: false,
-  speed: 800,
-  mousewheel: {
-    forceToAxis: true
-  },
-  touchEventsTarget: "container",
-  freeMode: true
-});
-let myTimeout;
-teamSwiper.on("progress", function (e) {
-  clearTimeout(myTimeout);
-  $(".team_photo-height").addClass("scaled");
-  $(".cursor_dot").addClass("hide");
-  myTimeout = setTimeout(function () {
-    // $(".cursor_dot").removeClass("hide");
-    $(".team_photo-height").removeClass("scaled");
-  }, 100);
-});
-////////////////////////////////////////////////////////////
-// Cursor
-$(document).on("mousemove", function () {
-  $(".cursor_dot").removeClass("hide");
-});
-$(".swiper.is-team")
-  .on("mouseenter", function () {
-    $(".cursor_dot").addClass("show");
-  })
-  .on("mouseleave", function () {
-    $(".cursor_dot").removeClass("show");
-  });
-$(".team_link")
-  .on("mouseenter", function () {
-    $(".cursor_dot").addClass("small");
-  })
-  .on("mouseleave", function () {
-    $(".cursor_dot").removeClass("small");
-  });
-////////////////////////////////////////////////////////////
-// POPUP
-// get the relative size & position values to apply to an image
-function getDifference(cardImg, popupImg) {
-  let cardWidth = cardImg.innerWidth();
-  let cardHeight = cardImg.innerHeight();
-  let offsetLeft = cardImg.offset().left - popupImg.offset().left;
-  let offsetTop = cardImg.offset().top - popupImg.offset().top;
-  // return transformValue
-  return [offsetLeft, offsetTop, cardWidth, cardHeight];
-}
-// OPEN POPUP
-$(".team_link").on("click", function () {
-  $('html, body').css('overflow', 'hidden');
-  // get images to animate to & from
-  let myIndex = $(this).parent().index();
-  let cardImg = $(this).find(".image");
-  let popupImg = $(".popup_item").eq(myIndex).find(".image");
-  // set initial display states
-  $(".popup_item").removeClass("active");
-  $(".popup_item").eq(myIndex).addClass("active");
-  $(".popup").css("display", "block");
-  cardImg.css("opacity", "0");
-  $("body").addClass("no-scroll");
-  $("body").addClass("popup-open");
-  let transformValue = getDifference(cardImg, popupImg);
-  // animations
-  gsap.fromTo(
-    popupImg,
-    {
-      x: transformValue[0],
-      y: transformValue[1],
-      width: transformValue[2],
-      height: transformValue[3]
-    },
-    {
-      x: 0,
-      y: 0,
-      width: "100%",
-      height: "100%",
-      duration: 0.6,
-      ease: "power2.inOut"
-    }
-  );
-  gsap.to(".popup_bg, .popup_close", {
-    opacity: 1,
-    duration: 0.3,
-    delay: 0.3,
-    ease: "power2.inOut"
-  });
-  gsap.to(".popup_content", {
-    opacity: 1,
-    duration: 0.3,
-    delay: 0.3,
-    ease: "power2.inOut"
-  });
-});
-// CLOSE POPUP
-$(".popup_close").on("click", function () {
-  // get images to animate to & from
-  let myIndex = $(".popup_item.active").index();
-  let popupImg = $(".popup_item.active .image");
-  let cardImg = $(".team_link").eq(myIndex).find(".image");
-  let transformValue = getDifference(cardImg, popupImg);
-  $("body").removeClass("popup-open");
-  function closePopup() {
-    $('html, body').css('overflow', 'visible');
-    cardImg.css("opacity", "1");
-    $(".popup").css("display", "none");
-    popupImg.removeAttr("style");
-    $("body").removeClass("no-scroll");
-  }
-  // animations
-  gsap.fromTo(
-    popupImg,
-    {
-      x: 0,
-      y: 0,
-      width: "100%",
-      height: "100%"
-    },
-    {
-      x: transformValue[0],
-      y: transformValue[1],
-      width: transformValue[2],
-      height: transformValue[3],
-      onComplete: closePopup,
-      duration: 0.6,
-      ease: "power3.inOut"
-    }
-  );
-  gsap.to(".popup_bg, .popup_content, .popup_close", {
-    opacity: 0,
-    duration: 0.3,
-    ease: "power3.inOut"
-  });
 });
 </script>
 

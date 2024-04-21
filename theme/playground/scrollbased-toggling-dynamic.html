@@ -132,6 +132,125 @@
   <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
   <!--  particlesjs 2.2.3  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--  d3.js  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--  diagrsankey.js  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+/*
+ * PP | D3 v.5
+ * dependencies: d3.js & d3-sankey.js
+ * build: 21.04.24 @14:19
+ */
+document.addEventListener("DOMContentLoaded", () => {
+	if (!document.getElementById("sankey-parent")) return;
+  initSankeyDiagram();
+});
+let svg;
+function initSankeyDiagram() {
+  const extraFees = `#00a6be`;
+  const data = {
+    nodes: [
+      { name: "100% Profit from Arbitrage", color: "#00e0ff", textAnchor: "start" }, // 0
+      { name: "70% Index Pool Providers", color: "#00dc3e", textAnchor: "end" }, // 1 
+      { name: "30% fees", color: "#f3afee", textAnchor: "middle" }, // 2
+      { name: "10% Service Overhead", color: `${extraFees}`, textAnchor: "end" }, // 3
+      { name: "10% $PPN Stakers", color:`${extraFees}`, textAnchor: "end" }, // 4
+      { name: "10% POL", color: `${extraFees}`, textAnchor: "middle" }, // 5
+      { name: "5% PIL", color: `${extraFees}`, textAnchor: "end" }, // 6
+      { name: "5% Admin Wallet", color: `${extraFees}`, textAnchor: "end" } // 7
+    ],
+    links: [
+      { source: 0, target: 1, value: 70 },
+      { source: 0, target: 2, value: 30 },
+      { source: 2, target: 3, value: 10 },
+      { source: 2, target: 4, value: 10 },
+      { source: 2, target: 5, value: 10 },
+      { source: 5, target: 6, value: 5 },
+      { source: 5, target: 7, value: 5 }
+    ]
+  };
+  const parentWidth = document.getElementById("sankey-parent").offsetWidth;
+  svg = d3.select("#sankeyDiagram").append("svg").attr("height", 300);
+  drawSankeyDiagram(data, parentWidth);
+}
+function drawSankeyDiagram(data, parentWidth) {
+  const sankey = d3
+    .sankey()
+    .nodeWidth(20)
+    .nodePadding(35)
+    .extent([
+      [0, 0],
+      [parentWidth, 300]
+    ]);
+  const { nodes, links } = sankey(data);
+  svg.selectAll("*").remove();
+  svg.attr("width", parentWidth);
+  // Define the linear gradient for each link
+  const gradient = svg
+    .append("defs")
+    .selectAll("linearGradient")
+    .data(links)
+    .enter()
+    .append("linearGradient")
+    .attr("id", (d, i) => "gradient-" + i)
+    .attr("gradientUnits", "userSpaceOnUse")
+    .attr("x1", (d) => d.source.x1)
+    .attr("x2", (d) => d.target.x0)
+    .attr("y1", (d) => (d.source.y0 + d.source.y1) / 2)
+    .attr("y2", (d) => (d.target.y0 + d.target.y1) / 2);
+  gradient
+    .append("stop")
+    .attr("offset", "0%")
+    .attr("stop-color", (d) => nodes[d.source.index].color);
+  gradient
+    .append("stop")
+    .attr("offset", "100%")
+    .attr("stop-color", (d) => nodes[d.target.index].color);
+  svg
+    .append("g")
+    .selectAll("path")
+    .data(links)
+    .enter()
+    .append("path")
+    .attr("d", d3.sankeyLinkHorizontal())
+    .attr("stroke", (d, i) => "url(#gradient-" + i + ")")
+    .attr("stroke-width", (d) => Math.max(1, d.width))
+    .attr("fill", "none")
+    .style("opacity", 0.6) // Set opacity to 80%
+    .on("mouseover", function () {
+      d3.select(this).style("opacity", 1); // Change opacity to 100% on mouseover
+    })
+    .on("mouseout", function () {
+      d3.select(this).style("opacity", 0.6); // Change opacity back to 80% on mouseout
+    });
+  svg
+    .append("g")
+    .selectAll("rect")
+    .data(nodes)
+    .enter()
+    .append("rect")
+    .attr("x", (d) => d.x0)
+    .attr("y", (d) => d.y0)
+    .attr("height", (d) => d.y1 - d.y0)
+    .attr("width", (d) => d.x1 - d.x0)
+    .attr("fill", (d) => d.color)
+    .attr("stroke", "transparent");
+  svg
+    .append("g")
+    .selectAll("text")
+    .data(nodes)
+    .enter()
+    .append("text")
+    .attr("x", (d) => (d.x0 + d.x1) / 2)
+    .attr("y", (d) => (d.y0 + d.y1) / 2)
+    .attr("dy", "0.35em")
+    .attr("text-anchor", (d) => d.textAnchor) // Set text-anchor based on the data
+    .text((d) => d.name)
+    .attr("fill", "#dceef6")
+    .attr("font-size", "8px");
+}
+</script>
   <script>
 /*
  * PPN | particles
@@ -216,6 +335,7 @@ function initRevealOnScroll(target, trigger) {
  * build: 17.04.24 @16:52
  */
 document.addEventListener("DOMContentLoaded", () => {
+  if (!document.querySelector('[data-id="tobetyped"]')) return;
   setState();
   addBlink();
   addBlinkingText();

@@ -415,9 +415,9 @@ collections:
             label: Text
             name: 4a649b7a
             widget: string
-          - hint: 'Original text: Get in touch, key: -5230a9d2'
+          - hint: 'Original text: Get in Touch, key: -53f399f2'
             label: Text
-            name: '-5230a9d2'
+            name: '-53f399f2'
             widget: string
           - hint: 'Original text: 01, key: 601'
             label: Text
@@ -611,6 +611,18 @@ collections:
             label: Text
             name: '46278097'
             widget: string
+          - hint: 'Original text: Distribution, key: -546c5d5c'
+            label: Text
+            name: '-546c5d5c'
+            widget: string
+          - hint: 'Original text: Profit & Fees, key: -63e8093d'
+            label: Text
+            name: '-63e8093d'
+            widget: string
+          - hint: 'Original text: distribution flow, key: 386b154a'
+            label: Text
+            name: 386b154a
+            widget: string
           - hint: 'Original text: Roadmap, key: -4b5115e4'
             label: Text
             name: '-4b5115e4'
@@ -621,9 +633,9 @@ collections:
             label: Text
             name: 4cc87c48
             widget: string
-          - hint: 'Original text: 2024, key: 177500'
+          - hint: 'Original text: 2024 🎊, key: -562c0e12'
             label: Text
-            name: '177500'
+            name: '-562c0e12'
             widget: string
           - hint: 'Original text: 🛠️, key: 347b82c'
             label: Text
@@ -647,11 +659,19 @@ collections:
             label: Text
             name: 2e48637b
             widget: string
+          - hint: 'Original text: ⚙️, key: 5aa96'
+            label: Text
+            name: 5aa96
+            widget: string
           - hint: >-
               Original text: Begin Development of Concentrated Liquidity Private
               Pools, key: 3cb6d313
             label: Text
             name: 3cb6d313
+            widget: string
+          - hint: 'Original text: 🏗️, key: 347d254'
+            label: Text
+            name: 347d254
             widget: string
           - hint: >-
               Original text: Implementation of Trading Strategies for
@@ -662,10 +682,6 @@ collections:
           - hint: 'Original text: Q1, key: a00'
             label: Text
             name: a00
-            widget: string
-          - hint: 'Original text: ⚙️, key: 5aa96'
-            label: Text
-            name: 5aa96
             widget: string
           - hint: >-
               Original text: Finish CL Strategy Development and Testing, key:
@@ -713,6 +729,14 @@ collections:
             label: Text
             name: a02
             widget: string
+          - hint: 'Original text: 🚀, key: 1b0de3'
+            label: Text
+            name: 1b0de3
+            widget: string
+          - hint: 'Original text: Scheduled Launch, key: 11d14ec6'
+            label: Text
+            name: 11d14ec6
+            widget: string
           - hint: >-
               Original text: Implementation Of CEX Limit Order Strategies, key:
               384648ad
@@ -729,13 +753,9 @@ collections:
             label: Text
             name: a03
             widget: string
-          - hint: 'Original text: 2025, key: 177501'
+          - hint: 'Original text: 2025 🎊, key: -562b99b3'
             label: Text
-            name: '177501'
-            widget: string
-          - hint: 'Original text: 🏗️, key: 347d254'
-            label: Text
-            name: 347d254
+            name: '-562b99b3'
             widget: string
           - hint: >-
               Original text: Implementation Of OrderBook Management System, key:
@@ -761,14 +781,6 @@ collections:
             label: Text
             name: '-64a0fa4e'
             widget: string
-          - hint: 'Original text: 🚀, key: 1b0de3'
-            label: Text
-            name: 1b0de3
-            widget: string
-          - hint: 'Original text: Go Live, key: 6b2b7124'
-            label: Text
-            name: 6b2b7124
-            widget: string
           - hint: 'Original text: Team, key: 27b67d'
             label: Text
             name: 27b67d
@@ -782,6 +794,10 @@ collections:
           - hint: 'Original text: No items found., key: 3d503d2b'
             label: Text
             name: 3d503d2b
+            widget: string
+          - hint: 'Original text: Get in touch, key: -5230a9d2'
+            label: Text
+            name: '-5230a9d2'
             widget: string
           - hint: >-
               Original text: A new ecosystem, purpose built to generate yield
@@ -826,6 +842,10 @@ collections:
           - hint: 'Original text: Pill / mini, key: 866464f'
             label: Text
             name: 866464f
+            widget: string
+          - hint: 'Original text: CTA / magnet / solo / light, key: 4be8700a'
+            label: Text
+            name: 4be8700a
             widget: string
           - hint: 'Original text: CTA / solo / light, key: -be1bdb'
             label: Text
@@ -1050,6 +1070,86 @@ collections:
           - hint: 'Original text: Automated Process 3 — 3, key: -77e639e7'
             label: Text
             name: '-77e639e7'
+            widget: string
+          - hint: 'Original text: 70, key: 6d9'
+            label: Text
+            name: 6d9
+            widget: string
+          - hint: 'Original text: for Pool Providers, key: c75dd5'
+            label: Text
+            name: c75dd5
+            widget: string
+          - hint: >-
+              Original text: 70% of the arbitrage profit are distributed back to
+              Index Pool Providers., key: -7e887954
+            label: Text
+            name: '-7e887954'
+            widget: string
+          - hint: 'Original text: 5, key: 35'
+            label: Text
+            name: '35'
+            widget: string
+          - hint: 'Original text: for Admin Wallet , key: -4f04ffe1'
+            label: Text
+            name: '-4f04ffe1'
+            widget: string
+          - hint: >-
+              Original text: 5% of the overall profits are distributed back to
+              Admin Wallet., key: -61ed4b3d
+            label: Text
+            name: '-61ed4b3d'
+            widget: string
+          - hint: 'Original text: for PIL, key: -28843e64'
+            label: Text
+            name: '-28843e64'
+            widget: string
+          - hint: >-
+              Original text: 5% of the overall profits are distributed back to
+              PIL., key: 7e491cbc
+            label: Text
+            name: 7e491cbc
+            widget: string
+          - hint: 'Original text: 10, key: 61f'
+            label: Text
+            name: 61f
+            widget: string
+          - hint: 'Original text: $PPN Stakers, key: e8658a5'
+            label: Text
+            name: e8658a5
+            widget: string
+          - hint: >-
+              Original text: 10 % of the profit are distributed back to the $PPN
+              Stakers., key: -61a2203b
+            label: Text
+            name: '-61a2203b'
+            widget: string
+          - hint: 'Original text: Service Overheads, key: -5b673dac'
+            label: Text
+            name: '-5b673dac'
+            widget: string
+          - hint: >-
+              Original text: 10 % of the profit are distributed back to Service
+              Overheads., key: -7b8b9f51
+            label: Text
+            name: '-7b8b9f51'
+            widget: string
+          - hint: 'Original text: 24, key: 642'
+            label: Text
+            name: '642'
+            widget: string
+          - hint: 'Original text: /7, key: 5e8'
+            label: Text
+            name: '5e8'
+            widget: string
+          - hint: 'Original text: PPN runs every 0,5s, key: 57cb2dc5'
+            label: Text
+            name: 57cb2dc5
+            widget: string
+          - hint: >-
+              Original text: Pinging DEXs & CEXs to check for arbitrage
+              opportunities., key: 2c2213f3
+            label: Text
+            name: 2c2213f3
             widget: string
       - label: Links
         name: links
