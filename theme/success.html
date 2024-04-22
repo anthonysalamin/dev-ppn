@@ -390,124 +390,17 @@ build 13.04.24
   <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
   <!--  particlesjs 2.2.3  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!--  d3.js  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!--  diagrsankey.js  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--  d3.js 4.9.0  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.0/d3.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--  d3-sankey.js 0.4.2  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.4.2/d3-sankey.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
 /*
- * PP | D3 v.5
- * dependencies: d3.js & d3-sankey.js
- * build: 21.04.24 @14:19
+ * PP | particle sankey v.2.3
+ * dependency: d3.js & d3-sankey.js
+ * build 22.04.24 @15:30
  */
-document.addEventListener("DOMContentLoaded", () => {
-	if (!document.getElementById("sankey-parent")) return;
-  initSankeyDiagram();
-});
-let svg;
-function initSankeyDiagram() {
-  const extraFees = `#00a6be`;
-  const data = {
-    nodes: [
-      { name: "100% Profit from Arbitrage", color: "#00e0ff", textAnchor: "start" }, // 0
-      { name: "70% Index Pool Providers", color: "#00dc3e", textAnchor: "end" }, // 1 
-      { name: "30% fees", color: "#f3afee", textAnchor: "middle" }, // 2
-      { name: "10% Service Overhead", color: `${extraFees}`, textAnchor: "end" }, // 3
-      { name: "10% $PPN Stakers", color:`${extraFees}`, textAnchor: "end" }, // 4
-      { name: "10% POL", color: `${extraFees}`, textAnchor: "middle" }, // 5
-      { name: "5% PIL", color: `${extraFees}`, textAnchor: "end" }, // 6
-      { name: "5% Admin Wallet", color: `${extraFees}`, textAnchor: "end" } // 7
-    ],
-    links: [
-      { source: 0, target: 1, value: 70 },
-      { source: 0, target: 2, value: 30 },
-      { source: 2, target: 3, value: 10 },
-      { source: 2, target: 4, value: 10 },
-      { source: 2, target: 5, value: 10 },
-      { source: 5, target: 6, value: 5 },
-      { source: 5, target: 7, value: 5 }
-    ]
-  };
-  const parentWidth = document.getElementById("sankey-parent").offsetWidth;
-  svg = d3.select("#sankeyDiagram").append("svg").attr("height", 300);
-  drawSankeyDiagram(data, parentWidth);
-}
-function drawSankeyDiagram(data, parentWidth) {
-  const sankey = d3
-    .sankey()
-    .nodeWidth(20)
-    .nodePadding(35)
-    .extent([
-      [0, 0],
-      [parentWidth, 300]
-    ]);
-  const { nodes, links } = sankey(data);
-  svg.selectAll("*").remove();
-  svg.attr("width", parentWidth);
-  // Define the linear gradient for each link
-  const gradient = svg
-    .append("defs")
-    .selectAll("linearGradient")
-    .data(links)
-    .enter()
-    .append("linearGradient")
-    .attr("id", (d, i) => "gradient-" + i)
-    .attr("gradientUnits", "userSpaceOnUse")
-    .attr("x1", (d) => d.source.x1)
-    .attr("x2", (d) => d.target.x0)
-    .attr("y1", (d) => (d.source.y0 + d.source.y1) / 2)
-    .attr("y2", (d) => (d.target.y0 + d.target.y1) / 2);
-  gradient
-    .append("stop")
-    .attr("offset", "0%")
-    .attr("stop-color", (d) => nodes[d.source.index].color);
-  gradient
-    .append("stop")
-    .attr("offset", "100%")
-    .attr("stop-color", (d) => nodes[d.target.index].color);
-  svg
-    .append("g")
-    .selectAll("path")
-    .data(links)
-    .enter()
-    .append("path")
-    .attr("d", d3.sankeyLinkHorizontal())
-    .attr("stroke", (d, i) => "url(#gradient-" + i + ")")
-    .attr("stroke-width", (d) => Math.max(1, d.width))
-    .attr("fill", "none")
-    .style("opacity", 0.6) // Set opacity to 80%
-    .on("mouseover", function () {
-      d3.select(this).style("opacity", 1); // Change opacity to 100% on mouseover
-    })
-    .on("mouseout", function () {
-      d3.select(this).style("opacity", 0.6); // Change opacity back to 80% on mouseout
-    });
-  svg
-    .append("g")
-    .selectAll("rect")
-    .data(nodes)
-    .enter()
-    .append("rect")
-    .attr("x", (d) => d.x0)
-    .attr("y", (d) => d.y0)
-    .attr("height", (d) => d.y1 - d.y0)
-    .attr("width", (d) => d.x1 - d.x0)
-    .attr("fill", (d) => d.color)
-    .attr("stroke", "transparent");
-  svg
-    .append("g")
-    .selectAll("text")
-    .data(nodes)
-    .enter()
-    .append("text")
-    .attr("x", (d) => (d.x0 + d.x1) / 2)
-    .attr("y", (d) => (d.y0 + d.y1) / 2)
-    .attr("dy", "0.35em")
-    .attr("text-anchor", (d) => d.textAnchor) // Set text-anchor based on the data
-    .text((d) => d.name)
-    .attr("fill", "#dceef6")
-    .attr("font-size", "8px");
-}
+document.addEventListener("DOMContentLoaded",()=>{const options={height:500,nodeWidth:2,nodePadding:15,initialOpacity:0,particleDimension:3,speed:0.75};const color={light:"#dceef6",accent:`#00e0ff`,green:`#00dc3e`};initSankeyDiagram(color,options);window.addEventListener("resize",()=>{d3.select("svg").remove();d3.select("canvas").remove();initSankeyDiagram(color,options)})});function initSankeyDiagram(color,options){const parentDiv=d3.select("#parent");const parentWidth=parentDiv.node().getBoundingClientRect().width;const width=parentWidth;const sankey=d3.sankey().nodeWidth(options.nodeWidth).nodePadding(options.nodePadding).size([width,options.height]);const path=sankey.link();const initialOpacity=0.03;const data={nodes:[{name:"100% Profit from Arbitrage",color:`${color.accent }`},{name:"70% Index Pool Providers",color:`${color.accent }`},{name:"30% Fees",color:`${color.green }`},{name:"10% Service Overhead",color:`${color.green }`},{name:"10% $PPN Stakers",color:`${color.green }`},{name:"5% PIL",color:`${color.green }`},{name:"5% Admin Wallet",color:`${color.green }`}],links:[{source:0,target:1,value:70,opacity:0},{source:0,target:2,value:30,opacity:options.initialOpacity},{source:2,target:3,value:10,opacity:options.initialOpacity},{source:2,target:4,value:10,opacity:options.initialOpacity},{source:2,target:5,value:5,opacity:options.initialOpacity},{source:2,target:6,value:5,opacity:options.initialOpacity}]};sankey.nodes(data.nodes).links(data.links).layout(32);const svg=d3.select("#parent").append("svg").attr("width",width).attr("height",options.height).append("g");const canvas=d3.select("#parent").append("canvas").attr("width",width).attr("height",options.height).style("position","absolute").style("left","0").style("top","0").style("z-index","-1");const link=svg.append("g").selectAll(".link").data(data.links).enter().append("path").attr("class","link").attr("d",path).style("stroke-width",(d)=>Math.max(1,d.dy)).style("fill","none").style("stroke","white").style("cursor","pointer").style("stroke-opacity",(d)=>d.opacity);link.on("mouseover",(d,i,nodes)=>{if(i!==0){d3.select(nodes[i]).style("stroke-opacity",0.06)}}).on("mouseout",(d,i,nodes)=>{d3.select(nodes[i]).style("stroke-opacity",d.opacity)});const node=svg.append("g").selectAll(".node").data(data.nodes).enter().append("g").attr("class","node").attr("transform",(d)=>`translate(${d.x },${d.y })`).call(d3.drag().subject((d)=>d).on("start",function(){this.parentNode.appendChild(this)}).on("drag",dragmove));node.append("rect").attr("height",(d)=>d.dy).attr("width",sankey.nodeWidth()).style("fill",(d)=>d.color).style("stroke","none").style("cursor","move").append("title");node.append("text").attr("x",-6).attr("y",(d)=>d.dy/2).attr("dy",".35em").attr("text-anchor","end").attr("transform",null).style("fill",color.light).attr("font-size","12px").text((d)=>d.name).filter((d)=>d.x<width/2).attr("x",6+sankey.nodeWidth()).attr("text-anchor","start");function dragmove(d){d3.select(this).attr("transform",`translate(${d.x },${(d.y=Math.max(0,Math.min(options.height-d.dy,d3.event.y)))})`);sankey.relayout();link.attr("d",path)}const linkExtent=d3.extent(data.links,(d)=>d.value);const frequencyScale=d3.scaleLinear().domain(linkExtent).range([0.05,1]);const particleSize=d3.scaleLinear().domain(linkExtent).range([1,5]);data.links.forEach((link)=>{link.freq=frequencyScale(link.value);link.particleSize=1;link.particleColor=d3.scaleLinear().domain([0,1]).range([link.source.color,link.target.color])});const t=d3.timer(tick,50);let particles=[];function tick(elapsed,time){particles=particles.filter((d)=>d.current<d.path.getTotalLength());d3.selectAll("path.link").each(function(d){for(let x=0;x<10;x+=1){const offset=(Math.random()-0.5)*(d.dy-4);if(Math.random()<d.freq){const length=this.getTotalLength();particles.push({link:d,time:elapsed,offset,path:this,length,animateTime:length,speed:options.speed+Math.random()})}}});particleEdgeCanvasPath(elapsed)}function particleEdgeCanvasPath(elapsed){const context=canvas.node().getContext("2d");context.clearRect(0,0,width,options.height);for(const x in particles){if({}.hasOwnProperty.call(particles,x)){const currentTime=elapsed-particles[x].time;particles[x].current=currentTime*0.15*particles[x].speed;const currentPos=particles[x].path.getPointAtLength(particles[x].current);context.beginPath();context.fillStyle=particles[x].link.particleColor(0);context.fillRect(currentPos.x-particles[x].link.particleSize/2,currentPos.y+particles[x].offset-particles[x].link.particleSize/2,options.particleDimension,options.particleDimension );context.fill()}}}}
 </script>
   <script>
 /*
@@ -515,29 +408,7 @@ function drawSankeyDiagram(data, parentWidth) {
  * dependency: particlesjs.js
  * build 15.04.24
  */
-document.addEventListener("DOMContentLoaded", () => {
-  initParticles();
-});
-function initParticles() {
-  const color = ["#02031c", "#00e0ff", "#02031c"];
-  const particlesAmount = 140;
-  Particles.init({
-    selector: ".background-particles",
-    color: color,
-    connectParticles: true,
-    maxParticles: particlesAmount,
-    responsive: [
-      {
-        breakpoint: 768,
-        options: {
-          color: color,
-          maxParticles: particlesAmount / 3.5,
-          connectParticles: true
-        }
-      }
-    ]
-  });
-} // end initParticles
+document.addEventListener("DOMContentLoaded",()=>{initParticles()});function initParticles(){const color=["#02031c","#00e0ff","#02031c"];const particlesAmount=140;Particles.init({selector:".background-particles",color:color,connectParticles:true,maxParticles:particlesAmount,responsive:[{breakpoint:768,options:{color:color,maxParticles:particlesAmount/3.5,connectParticles:true}}]})}
 </script>
   <script>
 /*
@@ -545,46 +416,7 @@ function initParticles() {
  * dependencies: gsap.js scrolltrigger.js split-type.js
  * build 10.04.24 @13:33
  */
-document.addEventListener("DOMContentLoaded", () => {
-  const target = `[data-id="reveal"]`;
-  const trigger = `section`;
-  initRevealOnScroll(target, trigger);
-});
-function initRevealOnScroll(target, trigger) {
-  gsap.registerPlugin(ScrollTrigger);
-  let revealAnimations = [];
-  // Scroll
-  const lenis = new Lenis({
-    lerp: 0.07
-  });
-  lenis.on("scroll", ScrollTrigger.update);
-  gsap.ticker.add((time) => {
-    lenis.raf(time * 1000);
-  });
-  // Reveal
-  document.querySelectorAll(target).forEach((text) => {
-    // Split text
-    let splitText = new SplitType(text, {
-      type: "words"
-    });
-    // Animation
-    const section = text.closest(trigger);
-    gsap.from(splitText.words, {
-      opacity: 0,
-      ease: "none",
-      stagger: 1,
-      duration: 1,
-      scrollTrigger: {
-        trigger: section,
-        start: "top bottom-=25%",
-        end: () => `+=${window.innerHeight / 2}px`,
-        scrub: true,
-        // markers: true,
-        // pin: true
-      }
-    });
-  });
-} // end initRevealOnScroll()
+document.addEventListener("DOMContentLoaded",()=>{const target=`[data-id="reveal"]`;const trigger=`section`;initRevealOnScroll(target,trigger)});function initRevealOnScroll(target,trigger){gsap.registerPlugin(ScrollTrigger);let revealAnimations=[];const lenis=new Lenis({lerp:0.07});lenis.on("scroll",ScrollTrigger.update);gsap.ticker.add((time)=>{lenis.raf(time*1000)});document.querySelectorAll(target).forEach((text)=>{let splitText=new SplitType(text,{type:"words"});const section=text.closest(trigger);gsap.from(splitText.words,{opacity:0,ease:"none",stagger:1,duration:1,scrollTrigger:{trigger:section,start:"top bottom-=25%",end:()=>`+=${window.innerHeight/2}px`,scrub:true,}})})}
 </script>
   <script>
 /*
@@ -592,86 +424,7 @@ function initRevealOnScroll(target, trigger) {
  * dependency: gsap.js
  * build: 17.04.24 @16:52
  */
-document.addEventListener("DOMContentLoaded", () => {
-  if (!document.querySelector('[data-id="tobetyped"]')) return;
-  setState();
-  addBlink();
-  addBlinkingText();
-  animateTextSentences(sentences);
-});
-const sentences = [
-  "pioneers new means of value extraction",
-  "empowers access to automated arbitrage",
-  "offers a new DeFi ecosystem for users"
-];
-const typingSpeed = 0.025; // Speed of typing animation (in seconds)
-const eraseSpeed = 0.0035; // Speed of erasing animation (in seconds)
-const pauseBetweenSentences = 1; // Pause between each sentence (in seconds)
-function setState() {
-  const tobetyped = document.querySelector('[data-id="tobetyped"]')
-  tobetyped.textContent ="";
-}
-// Function to add blinking style
-const addBlink = () => {
-  const cssRules = `
-    @keyframes typingBlink {
-      0%, 100% { opacity: 0; }
-      50% { opacity: 1; }
-    }
-    #blinking-text::after {
-      content: "_";
-      animation: typingBlink linear 1s infinite;
-    }
-  `;
-  const styleElement = document.createElement("style");
-  styleElement.textContent = cssRules;
-  document.head.appendChild(styleElement);
-};
-// Function to add blinking text element
-const addBlinkingText = () => {
-  const typingTextElement = document.querySelector('[data-id="tobetyped"]');
-  if (!typingTextElement) {
-    console.error("Element with id 'typing-text' not found.");
-    return;
-  }
-  const blinkingTextElement = document.createElement("span");
-  blinkingTextElement.setAttribute("id", "blinking-text");
-  typingTextElement.insertAdjacentElement("afterend", blinkingTextElement);
-};
-// Function for typing animation
-const typeWriterAnimation = (element, text, onComplete) => {
-  let currentIndex = 0;
-  const typeNextCharacter = () => {
-    if (currentIndex < text.length) {
-      element.textContent += text[currentIndex++];
-      gsap.delayedCall(typingSpeed, typeNextCharacter);
-    } else {
-      gsap.delayedCall(pauseBetweenSentences, eraseText);
-    }
-  };
-  const eraseText = () => {
-    if (element.textContent.length > 0) {
-      element.textContent = element.textContent.slice(0, -1);
-      gsap.delayedCall(eraseSpeed, eraseText);
-    } else {
-      onComplete();
-    }
-  };
-  typeNextCharacter();
-};
-// Function for animating text sentences
-const animateTextSentences = (sentences) => {
-  let currentIndex = 0;
-  const animateNextSentence = () => {
-    const sentence = sentences[currentIndex];
-    const textElement = document.querySelector('[data-id="tobetyped"]');
-    typeWriterAnimation(textElement, sentence, () => {
-      currentIndex = (currentIndex + 1) % sentences.length;
-      animateNextSentence();
-    });
-  };
-  animateNextSentence();
-};
+document.addEventListener("DOMContentLoaded",()=>{if(!document.querySelector('[data-id="tobetyped"]')){return}setState();addBlink();addBlinkingText();animateTextSentences(sentences)});const sentences=["pioneers new means of value extraction","empowers access to automated arbitrage","offers a new DeFi ecosystem for users"];const typingSpeed=0.025;const eraseSpeed=0.0035;const pauseBetweenSentences=1;function setState(){const tobetyped=document.querySelector('[data-id="tobetyped"]');tobetyped.textContent=""}const addBlink=()=>{const cssRules=`@keyframes typingBlink{0%,100%{opacity:0}50%{opacity:1}}#blinking-text::after{content:"_";animation:typingBlink linear 1s infinite}`;const styleElement=document.createElement("style");styleElement.textContent=cssRules;document.head.appendChild(styleElement)};const addBlinkingText=()=>{const typingTextElement=document.querySelector('[data-id="tobetyped"]');if(!typingTextElement){console.error("Element with id 'typing-text' not found.");return}const blinkingTextElement=document.createElement("span");blinkingTextElement.setAttribute("id","blinking-text");typingTextElement.insertAdjacentElement("afterend",blinkingTextElement)};const typeWriterAnimation=(element,text,onComplete)=>{let currentIndex=0;const typeNextCharacter=()=>{if(currentIndex<text.length){element.textContent+=text[currentIndex++];gsap.delayedCall(typingSpeed,typeNextCharacter)}else{gsap.delayedCall(pauseBetweenSentences,eraseText)}};const eraseText=()=>{if(element.textContent.length>0){element.textContent=element.textContent.slice(0,-1);gsap.delayedCall(eraseSpeed,eraseText)}else{onComplete()}};typeNextCharacter()};const animateTextSentences=(sentences)=>{let currentIndex=0;const animateNextSentence=()=>{const sentence=sentences[currentIndex];const textElement=document.querySelector('[data-id="tobetyped"]');typeWriterAnimation(textElement,sentence,()=>{currentIndex=(currentIndex+1)%sentences.length;animateNextSentence()})};animateNextSentence()};
 </script>
   <script>
 /*
@@ -679,35 +432,7 @@ const animateTextSentences = (sentences) => {
  * dependencies: gsap.js scrolltrigger.js
  * build: 09.04.24 @12:25
 */
-gsap.registerPlugin(ScrollTrigger);
-function setupNavAnimation() {
-  const nav = document.querySelector('.nav');
-  gsap.to(nav, {
-    y: "-100%",
-    duration: 0.5,
-    scrollTrigger: {
-      trigger: nav,
-      start: "top top",
-      end: "bottom top",
-      scrub: false,
-      onUpdate: (self) => {
-        // Check the scroll direction
-        const scrollDirection = self.direction;
-        // Get the scroll position
-        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-        // Move the nav up when scrolling down and back down when scrolling up after scrolling X px
-        if (scrollDirection === 1 && scrollPosition > 60) {
-          // Scroll down and after scrolling X px
-          gsap.to(nav, { y: "-100%", duration: 0.5 });
-        } else if (scrollDirection === -1) {
-          // Scroll up
-          gsap.to(nav, { y: "0%", duration: 0.5 });
-        }
-      }
-    }
-  });
-}
-setupNavAnimation();
+gsap.registerPlugin(ScrollTrigger);function setupNavAnimation(){const nav=document.querySelector('.nav');gsap.to(nav,{y:"-100%",duration:0.5,scrollTrigger:{trigger:nav,start:"top top",end:"bottom top",scrub:false,onUpdate:(self)=>{const scrollDirection=self.direction;const scrollPosition=window.pageYOffset||document.documentElement.scrollTop;if(scrollDirection===1&&scrollPosition>60){gsap.to(nav,{y:"-100%",duration:0.5})}else if(scrollDirection===-1){gsap.to(nav,{y:"0%",duration:0.5})}}}})}setupNavAnimation();
 </script>
   <script>
 /*
@@ -715,138 +440,14 @@ setupNavAnimation();
  * dependency: gsap.js scrolltrigger.js
  * build 05.04.2024 @17:32
 */
-function shrinkElementOnScroll() {
-  const elementsFixed = document.querySelectorAll('[data-cta="fixed"]');
-  if (!elementsFixed) return;
-  const elementText = document.querySelector('[data-cta="text"]');
-  const elementBlinky = document.querySelector('[data-cta="blinky"]');
-  const duration = 2;
-  const ease = 'power2.out';
-  elementsFixed.forEach(element => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: element,
-        start: 'top center',
-        end: 'bottom center+=30vh',
-        scrub: true,
-        markers: false // debug
-      }
-    });
-    // Add animation to shrink the element's width
-    tl.to(element, {
-      width: 44,
-      duration: duration,
-      ease: ease
-    });
-    // Add animation to reduce the left padding of element to 7px
-    tl.to(element, {
-      paddingLeft: 15,
-      duration: duration,
-      ease: ease
-    }, 0);
-    // Add animation to set opacity of elementText to 0
-    tl.to(elementText, {
-      opacity: 0,
-      duration: duration,
-      ease: ease
-    }, 0);
-    // Add animation to reduce the right margin of elementBlinky to 0px
-    tl.to(elementBlinky, {
-      marginRight: 0,
-      duration: 2,
-      ease: ease
-    }, 0);
-  });
-}
-shrinkElementOnScroll();
+function shrinkElementOnScroll(){const elementsFixed=document.querySelectorAll('[data-cta="fixed"]');if(!elementsFixed){return}const elementText=document.querySelector('[data-cta="text"]');const elementBlinky=document.querySelector('[data-cta="blinky"]');const duration=2;const ease='power2.out';elementsFixed.forEach(element=>{const tl=gsap.timeline({scrollTrigger:{trigger:element,start:'top center',end:'bottom center+=30vh',scrub:true,markers:false }});tl.to(element,{width:44,duration:duration,ease:ease});tl.to(element,{paddingLeft:15,duration:duration,ease:ease},0);tl.to(elementText,{opacity:0,duration:duration,ease:ease},0);tl.to(elementBlinky,{marginRight:0,duration:2,ease:ease},0)})}shrinkElementOnScroll();
 </script>
   <script>
 /*
  * PPN | scroll progress
  * build 04.04.24 @11:21
 */ 
-document.addEventListener("DOMContentLoaded", () => {
-  const position = "left";
-  const distance = "1.5rem";
-  const rgb = "220, 236, 248";
-  progressInjectCSS(position, distance, rgb);
-  progressInjectHTML();
-  showScrollProgress();
-});
-// helper | inject wrapper emoji css
-function progressInjectCSS(position, distance, rgb) {
-  const css = `.progress-wrap{--indicator-progress-color:rgba(${rgb},1);--indicator-slide-color:rgba(${rgb},0.1);--indicator-font:"Unicons";--indicator-content:"\\e84b";--indicator-hover:white --indicator-position:1.25rem}@font-face{font-family:"Unicons";src:url("https://assets-global.website-files.com/61a0f086f2b1f289503a4957/6329d8e0a1790e3283ae2504_unicons.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}.progress-wrap{position:fixed;mix-blend-mode:difference;${position}:${distance};bottom:${distance};height:46px;width:46px;cursor:pointer;display:none;border-radius:50px;box-shadow:inset 0 0 0 2px var(--indicator-slide-color);z-index:10000;opacity:0;visibility:hidden;transform:translateY(15px);transition:all 200ms linear}.progress-wrap.active-progress{display:block;opacity:1;visibility:visible;transform:translateY(0)}.progress-wrap::after,.progress-wrap::before{position:absolute;font-family:var(--indicator-font);content:var(--indicator-content);text-align:center;line-height:46px;font-size:24px;left:0;top:0;height:46px;width:46px;cursor:pointer;display:block;transition:all 200ms linear}.progress-wrap::after{color:var(--indicator-progress-color);z-index:1}.progress-wrap:hover::before{color:var(--indicator-hover);transform:scale(1.0);transform-origin:center}.progress-wrap:hover::after{transform:scale(1.15);transform-origin:center}.progress-wrap svg path{fill:none}.progress-wrap svg.progress-circle path{stroke:var(--indicator-progress-color);stroke-width:4;box-sizing:border-box;transition:all 200ms linear}`;
-  const style = document.createElement("style");
-  style.innerHTML = css;
-  document.head.appendChild(style);
-}
-// helper | create and inject emoji
-function progressInjectHTML() {
-  const scrollProgressHTML = `<div class="progress-wrap"><svg class="progress-circle svg-content"height="100%"viewBox="-1 -1 102 102"width="100%"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/></svg></div>`;
-  const div = document.createElement("div");
-  div.innerHTML = scrollProgressHTML;
-  document.body.prepend(div);
-}
-// animate scroll progress element
-function showScrollProgress() {
-  // Clause guard
-  if (!document.querySelector(".progress-wrap")) return;
-  const progressPath = document.querySelector(".progress-wrap path");
-  const pathLength = progressPath.getTotalLength();
-  progressPath.style.transition = "none";
-  progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
-  progressPath.style.strokeDashoffset = pathLength;
-  progressPath.getBoundingClientRect();
-  progressPath.style.transition = "stroke-dashoffset 10ms linear";
-  const updateProgress = () => {
-    const scroll = window.pageYOffset || document.documentElement.scrollTop;
-    const height =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    const progress = pathLength - (scroll * pathLength) / height;
-    progressPath.style.strokeDashoffset = progress;
-  };
-  updateProgress();
-  window.addEventListener("scroll", updateProgress, { passive: true });
-  const offset = 50;
-  const duration = 550;
-  window.addEventListener(
-    "scroll",
-    () => {
-      if (window.pageYOffset > offset) {
-        document
-          .querySelector(".progress-wrap")
-          .classList.add("active-progress");
-      } else {
-        document
-          .querySelector(".progress-wrap")
-          .classList.remove("active-progress");
-      }
-    },
-    { passive: true }
-  );
-  document
-    .querySelector(".progress-wrap")
-    .addEventListener("click", (event) => {
-      event.preventDefault();
-      scrollToTop(duration);
-      return false;
-    });
-  function scrollToTop(duration) {
-    const start = window.pageYOffset || document.documentElement.scrollTop;
-    const startTime = performance.now();
-    function scrollStep(timestamp) {
-      const currentTime = timestamp || performance.now();
-      const elapsedTime = currentTime - startTime;
-      const scrollTo = Math.max(start - (start * elapsedTime) / duration, 0);
-      window.scrollTo(0, scrollTo);
-      if (elapsedTime < duration) {
-        window.requestAnimationFrame(scrollStep);
-      }
-    }
-    window.requestAnimationFrame(scrollStep);
-  }
-}
+document.addEventListener("DOMContentLoaded",()=>{const position="left";const distance="1.5rem";const rgb="220, 236, 248";progressInjectCSS(position,distance,rgb);progressInjectHTML();showScrollProgress()});function progressInjectCSS(position,distance,rgb){const css=`.progress-wrap{--indicator-progress-color:rgba(${ rgb },1);--indicator-slide-color:rgba(${ rgb },0.1);--indicator-font:"Unicons";--indicator-content:"\\e84b";--indicator-hover:white --indicator-position:1.25rem}@font-face{font-family:"Unicons";src:url("https://assets-global.website-files.com/61a0f086f2b1f289503a4957/6329d8e0a1790e3283ae2504_unicons.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}.progress-wrap{position:fixed;mix-blend-mode:difference;${ position }:${ distance };bottom:${ distance };height:46px;width:46px;cursor:pointer;display:none;border-radius:50px;box-shadow:inset 0 0 0 2px var(--indicator-slide-color);z-index:10000;opacity:0;visibility:hidden;transform:translateY(15px);transition:all 200ms linear}.progress-wrap.active-progress{display:block;opacity:1;visibility:visible;transform:translateY(0)}.progress-wrap::after,.progress-wrap::before{position:absolute;font-family:var(--indicator-font);content:var(--indicator-content);text-align:center;line-height:46px;font-size:24px;left:0;top:0;height:46px;width:46px;cursor:pointer;display:block;transition:all 200ms linear}.progress-wrap::after{color:var(--indicator-progress-color);z-index:1}.progress-wrap:hover::before{color:var(--indicator-hover);transform:scale(1.0);transform-origin:center}.progress-wrap:hover::after{transform:scale(1.15);transform-origin:center}.progress-wrap svg path{fill:none}.progress-wrap svg.progress-circle path{stroke:var(--indicator-progress-color);stroke-width:4;box-sizing:border-box;transition:all 200ms linear}`;const style=document.createElement("style");style.innerHTML=css;document.head.appendChild(style)}function progressInjectHTML(){const scrollProgressHTML=`<div class="progress-wrap"><svg class="progress-circle svg-content"height="100%"viewBox="-1 -1 102 102"width="100%"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/></svg></div>`;const div=document.createElement("div");div.innerHTML=scrollProgressHTML;document.body.prepend(div)}function showScrollProgress(){if(!document.querySelector(".progress-wrap")){return}const progressPath=document.querySelector(".progress-wrap path");const pathLength=progressPath.getTotalLength();progressPath.style.transition="none";progressPath.style.strokeDasharray=`${ pathLength } ${ pathLength }`;progressPath.style.strokeDashoffset=pathLength;progressPath.getBoundingClientRect();progressPath.style.transition="stroke-dashoffset 10ms linear";const updateProgress=()=>{const scroll=window.pageYOffset||document.documentElement.scrollTop;const height=document.documentElement.scrollHeight-document.documentElement.clientHeight;const progress=pathLength-(scroll*pathLength)/height;progressPath.style.strokeDashoffset=progress};updateProgress();window.addEventListener("scroll",updateProgress,{passive:true});const offset=50;const duration=550;window.addEventListener("scroll",()=>{if(window.pageYOffset>offset){document.querySelector(".progress-wrap").classList.add("active-progress")}else{document.querySelector(".progress-wrap").classList.remove("active-progress")}},{passive:true});document.querySelector(".progress-wrap").addEventListener("click",(event)=>{event.preventDefault();scrollToTop(duration);return false});function scrollToTop(duration){const start=window.pageYOffset||document.documentElement.scrollTop;const startTime=performance.now();function scrollStep(timestamp){const currentTime=timestamp||performance.now();const elapsedTime=currentTime-startTime;const scrollTo=Math.max(start-(start*elapsedTime)/duration,0);window.scrollTo(0,scrollTo);if(elapsedTime<duration){window.requestAnimationFrame(scrollStep)}}window.requestAnimationFrame(scrollStep)}}
 </script>
   <script>
 /*
@@ -861,11 +462,7 @@ document.addEventListener("DOMContentLoaded",()=>{handleMileStoneOpacity()});fun
  * PPN | inject current year
  * build 25.04.24 @15:17
  */
-document.addEventListener("DOMContentLoaded", () => {
-  const copyrightYear = document.querySelector(`[data-date="year"]`);
-  if (!copyrightYear) return;
-  copyrightYear.textContent = new Date().getFullYear();
-});
+document.addEventListener("DOMContentLoaded",()=>{const copyrightYear=document.querySelector(`[data-date="year"]`);if(!copyrightYear){return}copyrightYear.textContent=new Date().getFullYear()});
 </script>
 
 <script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}</body></html>

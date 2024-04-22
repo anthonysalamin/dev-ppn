@@ -1,14 +1,14 @@
 ---
-title: Statistics
+title: Statistics v3
 permalink: modules/{{ page.fileSlug }}/index.html
-layout: modules/statistics.html
-slug: statistics
+layout: modules/statistics-v3.html
+slug: statistics-v3
 tags: pages
 seo:
   noindex: false
-  title: Statistics
+  title: Statistics v3
   og:title: Private Pools Network | PPN
-  twitter:title: Statistics
+  twitter:title: Statistics v3
   additional_tags: >-
     <meta property="og:description" content="A new ecosystem, purpose built to
     generate yield from Arbitrage opportunities."><meta property="og:url"
