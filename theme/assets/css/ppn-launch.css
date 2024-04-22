@@ -950,6 +950,10 @@ blockquote {
   margin-bottom: 24px;
 }
 
+.subline.light.centered {
+  text-align: center;
+}
+
 .timeline_step-sticky {
   max-width: 380px;
   position: -webkit-sticky;

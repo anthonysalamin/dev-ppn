@@ -332,9 +332,9 @@ collections:
             label: Text
             name: f7b7e91
             widget: string
-          - hint: 'Original text: Unseized yield opportunities., key: 40a8d8b5'
+          - hint: 'Original text: Unseized yield opportunities, key: 44267a99'
             label: Text
-            name: 40a8d8b5
+            name: 44267a99
             widget: string
           - hint: 'Original text: $1.0, key: 111b0f'
             label: Text
@@ -411,9 +411,9 @@ collections:
             label: Text
             name: '-5f2415c3'
             widget: string
-          - hint: 'Original text: Simplified user flow explanation., key: 4a649b7a'
+          - hint: 'Original text: Simplified user flow explanation, key: 3c34cb34'
             label: Text
-            name: 4a649b7a
+            name: 3c34cb34
             widget: string
           - hint: 'Original text: Get in Touch, key: -53f399f2'
             label: Text
@@ -628,10 +628,10 @@ collections:
             name: '-4b5115e4'
             widget: string
           - hint: >-
-              Original text: Our roadmap to offer real yield for all., key:
-              4cc87c48
+              Original text: Our roadmap to offer real yield for all, key:
+              448a98a6
             label: Text
-            name: 4cc87c48
+            name: 448a98a6
             widget: string
           - hint: 'Original text: 2024 🎊, key: -562c0e12'
             label: Text
@@ -786,10 +786,10 @@ collections:
             name: 27b67d
             widget: string
           - hint: >-
-              Original text: Our mission is to pioneer the Defi industry., key:
-              -623430e0
+              Original text: Our mission is to pioneer the Defi industry, key:
+              3ee58ace
             label: Text
-            name: '-623430e0'
+            name: 3ee58ace
             widget: string
           - hint: 'Original text: No items found., key: 3d503d2b'
             label: Text
