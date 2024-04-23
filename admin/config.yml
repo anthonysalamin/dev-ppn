@@ -407,48 +407,37 @@ collections:
             label: Text
             name: 21366d82
             widget: string
-          - hint: 'Original text: How it works, key: -5f2415c3'
+          - hint: 'Original text: Step 1, key: -6bcb8c03'
             label: Text
-            name: '-5f2415c3'
+            name: '-6bcb8c03'
             widget: string
-          - hint: 'Original text: Simplified user flow explanation, key: 3c34cb34'
+          - hint: 'Original text: Select, key: -6c9bdee4'
             label: Text
-            name: 3c34cb34
+            name: '-6c9bdee4'
             widget: string
-          - hint: 'Original text: Get in Touch, key: -53f399f2'
+          - hint: 'Original text: Index Strategy, key: 1d8f5741'
             label: Text
-            name: '-53f399f2'
-            widget: string
-          - hint: 'Original text: 01, key: 601'
-            label: Text
-            name: '601'
-            widget: string
-          - hint: 'Original text: User Action step 1 of 2, key: -165db5e9'
-            label: Text
-            name: '-165db5e9'
-            widget: string
-          - hint: 'Original text: Select Index Strategy, key: -75595d3b'
-            label: Text
-            name: '-75595d3b'
+            name: 1d8f5741
             widget: string
           - hint: >-
-              Original text: User chooses which index they want to participate
-              in based off the asset exposure and performance they are seeking.,
-              key: 3b272189
+              Original text: Select an Index Pool of your choice, proceed to
+              deposit your assets into the index of your choosing and relax
+              while our automated arbitrage engine goes to work for you., key:
+              17b85af
             label: Text
-            name: 3b272189
+            name: 17b85af
             widget: text
-          - hint: 'Original text: 02, key: 602'
+          - hint: 'Original text: Step 2, key: -6bcb8c02'
             label: Text
-            name: '602'
+            name: '-6bcb8c02'
             widget: string
-          - hint: 'Original text: User Action step 2 of 2, key: -14a8dd4a'
+          - hint: 'Original text: Deposit, key: -40205182'
             label: Text
-            name: '-14a8dd4a'
+            name: '-40205182'
             widget: string
-          - hint: 'Original text: Deposit Liquidity, key: -40b97d50'
+          - hint: 'Original text: Liquidity Deposit , key: -425bc810'
             label: Text
-            name: '-40b97d50'
+            name: '-425bc810'
             widget: string
           - hint: >-
               Original text: Our matching engine calculates the weight of the
@@ -457,13 +446,17 @@ collections:
             label: Text
             name: 6f2b1ac
             widget: text
-          - hint: 'Original text: 03, key: 603'
+          - hint: 'Original text: get in touch, key: -5bfbfdf2'
             label: Text
-            name: '603'
+            name: '-5bfbfdf2'
             widget: string
-          - hint: 'Original text: Automated Process step 1 of 3, key: 2991dbac'
+          - hint: 'Original text: Step 3, key: -6bcb8c01'
             label: Text
-            name: 2991dbac
+            name: '-6bcb8c01'
+            widget: string
+          - hint: 'Original text: Deploy, key: 79cd5d07'
+            label: Text
+            name: 79cd5d07
             widget: string
           - hint: 'Original text: Find Opportunity, key: -320a5914'
             label: Text
@@ -476,13 +469,13 @@ collections:
             label: Text
             name: 7b5afab6
             widget: text
-          - hint: 'Original text: 04, key: 604'
+          - hint: 'Original text: Step 4, key: -6bcb8c00'
             label: Text
-            name: '604'
+            name: '-6bcb8c00'
             widget: string
-          - hint: 'Original text: Automated Process step 2 of 3, key: 2b46b44b'
+          - hint: 'Original text: Profit, key: -7101d59c'
             label: Text
-            name: 2b46b44b
+            name: '-7101d59c'
             widget: string
           - hint: 'Original text: Check Profitability, key: -342baf2'
             label: Text
@@ -495,13 +488,13 @@ collections:
             label: Text
             name: '-5eae6de9'
             widget: text
-          - hint: 'Original text: 05, key: 605'
+          - hint: 'Original text: Step 5, key: -6bcb8bff'
             label: Text
-            name: '605'
+            name: '-6bcb8bff'
             widget: string
-          - hint: 'Original text: Automated Process step 3 of 3, key: 2cfb8cea'
+          - hint: 'Original text: Real Yield, key: -58547575'
             label: Text
-            name: 2cfb8cea
+            name: '-58547575'
             widget: string
           - hint: 'Original text: Distributed Yield, key: -442f6c70'
             label: Text
@@ -513,91 +506,6 @@ collections:
               our yield distribution model., key: -fc803f8
             label: Text
             name: '-fc803f8'
-            widget: text
-          - hint: 'Original text: What is , key: 770730fa'
-            label: Text
-            name: 770730fa
-            widget: string
-          - hint: 'Original text: PPN Network, key: -277b69c4'
-            label: Text
-            name: '-277b69c4'
-            widget: string
-          - hint: 'Original text:  ?, key: 41f'
-            label: Text
-            name: 41f
-            widget: string
-          - hint: >-
-              Original text: Private Pools Network (PPN) is an autonomous index
-              system enhancing liquidity by capitalizing on volatility. A novel
-              ecosystem challenging the status quo., key: 4c26455d
-            label: Text
-            name: 4c26455d
-            widget: text
-          - hint: 'Original text: Simplicity, key: 21bcdc41'
-            label: Text
-            name: 21bcdc41
-            widget: string
-          - hint: 'Original text: Automated, key: -24cbae70'
-            label: Text
-            name: '-24cbae70'
-            widget: string
-          - hint: >-
-              Original text: Select an Index Pool of your choice, proceed to
-              deposit your assets into the index of your choosing and relax
-              while our automated arbitrage engine goes to work for you., key:
-              17b85af
-            label: Text
-            name: 17b85af
-            widget: text
-          - hint: 'Original text: get in touch, key: -5bfbfdf2'
-            label: Text
-            name: '-5bfbfdf2'
-            widget: string
-          - hint: 'Original text: Proprietary Strategy Logic, key: 70298012'
-            label: Text
-            name: '70298012'
-            widget: string
-          - hint: 'Original text: battle tested, key: 5294cd19'
-            label: Text
-            name: 5294cd19
-            widget: string
-          - hint: >-
-              Original text: After a year of development, extensive simulations,
-              and six months of production testing, we have refined our premium
-              arbitrage strategy through numerous iterations., key: -efbfa12
-            label: Text
-            name: '-efbfa12'
-            widget: text
-          - hint: 'Original text: Private Index Pools, key: -53df9874'
-            label: Text
-            name: '-53df9874'
-            widget: string
-          - hint: 'Original text: optimized, key: 6de10927'
-            label: Text
-            name: 6de10927
-            widget: string
-          - hint: >-
-              Original text: Our private Index pools are designed to optimize
-              the arbitrage process, eliminating competition. Unlike others, we
-              avoid high validator fees, maximizing returns for our users., key:
-              10698d6e
-            label: Text
-            name: 10698d6e
-            widget: text
-          - hint: 'Original text: Indexes, key: -28f31f20'
-            label: Text
-            name: '-28f31f20'
-            widget: string
-          - hint: 'Original text: maximized, key: 2bf7718'
-            label: Text
-            name: 2bf7718
-            widget: string
-          - hint: >-
-              Original text: Index pools are the hub of our ecosystem. Their
-              sole purpose is to act as counter liquidity for arbitrage trading
-              to extract value from volatility, key: 749803e3
-            label: Text
-            name: '749803e3'
             widget: text
           - hint: 'Original text: a new ecosystem is born, key: f2d860'
             label: Text
@@ -632,6 +540,10 @@ collections:
               448a98a6
             label: Text
             name: 448a98a6
+            widget: string
+          - hint: 'Original text: Get in Touch, key: -53f399f2'
+            label: Text
+            name: '-53f399f2'
             widget: string
           - hint: 'Original text: 2024 🎊, key: -562c0e12'
             label: Text
@@ -950,6 +862,10 @@ collections:
             label: Text
             name: '-5bfd74be'
             widget: string
+          - hint: 'Original text: Automated, key: -24cbae70'
+            label: Text
+            name: '-24cbae70'
+            widget: string
           - hint: 'Original text: Legend, key: -78900fd3'
             label: Text
             name: '-78900fd3'
@@ -1046,6 +962,69 @@ collections:
           - hint: 'Original text: Powered by D3, key: 5eb851fc'
             label: Text
             name: 5eb851fc
+            widget: string
+          - hint: 'Original text: How it works, key: -5f2415c3'
+            label: Text
+            name: '-5f2415c3'
+            widget: string
+          - hint: 'Original text: Simplified user flow explanation, key: 3c34cb34'
+            label: Text
+            name: 3c34cb34
+            widget: string
+          - hint: 'Original text: 01, key: 601'
+            label: Text
+            name: '601'
+            widget: string
+          - hint: 'Original text: User Action step 1 of 2, key: -165db5e9'
+            label: Text
+            name: '-165db5e9'
+            widget: string
+          - hint: 'Original text: Select Index Strategy, key: -75595d3b'
+            label: Text
+            name: '-75595d3b'
+            widget: string
+          - hint: >-
+              Original text: User chooses which index they want to participate
+              in based off the asset exposure and performance they are seeking.,
+              key: 3b272189
+            label: Text
+            name: 3b272189
+            widget: text
+          - hint: 'Original text: 02, key: 602'
+            label: Text
+            name: '602'
+            widget: string
+          - hint: 'Original text: User Action step 2 of 2, key: -14a8dd4a'
+            label: Text
+            name: '-14a8dd4a'
+            widget: string
+          - hint: 'Original text: Deposit Liquidity, key: -40b97d50'
+            label: Text
+            name: '-40b97d50'
+            widget: string
+          - hint: 'Original text: 03, key: 603'
+            label: Text
+            name: '603'
+            widget: string
+          - hint: 'Original text: Automated Process step 1 of 3, key: 2991dbac'
+            label: Text
+            name: 2991dbac
+            widget: string
+          - hint: 'Original text: 04, key: 604'
+            label: Text
+            name: '604'
+            widget: string
+          - hint: 'Original text: Automated Process step 2 of 3, key: 2b46b44b'
+            label: Text
+            name: 2b46b44b
+            widget: string
+          - hint: 'Original text: 05, key: 605'
+            label: Text
+            name: '605'
+            widget: string
+          - hint: 'Original text: Automated Process step 3 of 3, key: 2cfb8cea'
+            label: Text
+            name: 2cfb8cea
             widget: string
           - hint: 'Original text: User Action 1 — 2, key: -113b97e'
             label: Text
@@ -1147,6 +1126,68 @@ collections:
             label: Text
             name: 2c2213f3
             widget: string
+          - hint: 'Original text: extracting yield, key: -2acf4192'
+            label: Text
+            name: '-2acf4192'
+            widget: string
+          - hint: >-
+              Original text: How does Private Pools Network work?, key:
+              -68b00b61
+            label: Text
+            name: '-68b00b61'
+            widget: string
+          - hint: >-
+              Original text: PPN generates revenue by extracting yield from
+              crypto asset volatility via arbitrage., key: -2367a748
+            label: Text
+            name: '-2367a748'
+            widget: string
+          - hint: 'Original text: step 1, key: -35307823'
+            label: Text
+            name: '-35307823'
+            widget: string
+          - hint: 'Original text: step 2, key: -35307822'
+            label: Text
+            name: '-35307822'
+            widget: string
+          - hint: 'Original text: step 3, key: -35307821'
+            label: Text
+            name: '-35307821'
+            widget: string
+          - hint: >-
+              Original text: After a year of development, extensive simulations,
+              and six months of production testing, we have refined our premium
+              arbitrage strategy through numerous iterations., key: -efbfa12
+            label: Text
+            name: '-efbfa12'
+            widget: text
+          - hint: 'Original text: D3 team, key: 6628176e'
+            label: Text
+            name: 6628176e
+            widget: string
+          - hint: 'Original text: optimized, key: 6de10927'
+            label: Text
+            name: 6de10927
+            widget: string
+          - hint: >-
+              Original text: Our private Index pools are designed to optimize
+              the arbitrage process, eliminating competition. Unlike others, we
+              avoid high validator fees, maximizing returns for our users., key:
+              10698d6e
+            label: Text
+            name: 10698d6e
+            widget: text
+          - hint: 'Original text: maximized, key: 2bf7718'
+            label: Text
+            name: 2bf7718
+            widget: string
+          - hint: >-
+              Original text: Index pools are the hub of our ecosystem. Their
+              sole purpose is to act as counter liquidity for arbitrage trading
+              to extract value from volatility, key: 749803e3
+            label: Text
+            name: '749803e3'
+            widget: text
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -1201,6 +1242,18 @@ collections:
           - hint: 'Original link: https://d3.dev/, key: -2b511cb6'
             label: Link
             name: '-2b511cb6'
+            widget: string
+          - hint: 'Original link: #Content-Block-1, key: -3359f126'
+            label: Link
+            name: '-3359f126'
+            widget: string
+          - hint: 'Original link: #Content-Block-2, key: -3359f125'
+            label: Link
+            name: '-3359f125'
+            widget: string
+          - hint: 'Original link: #Content-Block-3, key: -3359f124'
+            label: Link
+            name: '-3359f124'
             widget: string
       - label: Images
         name: images
@@ -1264,6 +1317,45 @@ collections:
                 required: false
           - label: Image
             name: '-1fe8882e'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 5ff97d1a
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 6007949b
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 5ec37804
             widget: object
             fields:
               - name: url

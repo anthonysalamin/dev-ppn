@@ -1,17 +1,14 @@
 ---
-title: Investor
-permalink: '{{ page.fileSlug }}/index.html'
-layout: investor.html
-slug: investor
+title: Timeline OLD
+permalink: playground/{{ page.fileSlug }}/index.html
+layout: playground/timeline-old.html
+slug: timeline-old
 tags: pages
 seo:
   noindex: false
-  title: PPN | Strategic investment round
-  description: >-
-    A new ecosystem, purpose built to generate yield from Arbitrage
-    opportunities. Private Pools Network (PPN) is an autonomous index system
-    enhancing liquidity by capitalizing on volatility.
+  title: Timeline OLD
   og:title: Private Pools Network | PPN
+  twitter:title: Timeline OLD
   additional_tags: >-
     <meta property="og:description" content="A new ecosystem, purpose built to
     generate yield from Arbitrage opportunities."><meta property="og:url"
