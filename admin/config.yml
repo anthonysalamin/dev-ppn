@@ -637,9 +637,9 @@ collections:
             label: Text
             name: '-562c0e12'
             widget: string
-          - hint: 'Original text: 🛠️, key: 347b82c'
+          - hint: 'Original text: ⚙️, key: 5aa96'
             label: Text
-            name: 347b82c
+            name: 5aa96
             widget: string
           - hint: >-
               Original text: MEV Protection Implementation for On-Chain Trading
@@ -659,19 +659,11 @@ collections:
             label: Text
             name: 2e48637b
             widget: string
-          - hint: 'Original text: ⚙️, key: 5aa96'
-            label: Text
-            name: 5aa96
-            widget: string
           - hint: >-
               Original text: Begin Development of Concentrated Liquidity Private
               Pools, key: 3cb6d313
             label: Text
             name: 3cb6d313
-            widget: string
-          - hint: 'Original text: 🏗️, key: 347d254'
-            label: Text
-            name: 347d254
             widget: string
           - hint: >-
               Original text: Implementation of Trading Strategies for
@@ -710,6 +702,10 @@ collections:
           - hint: 'Original text: Q2, key: a01'
             label: Text
             name: a01
+            widget: string
+          - hint: 'Original text: 🔥, key: 1b0c88'
+            label: Text
+            name: 1b0c88
             widget: string
           - hint: 'Original text: Token Staking Implementation, key: -29bfa85e'
             label: Text
