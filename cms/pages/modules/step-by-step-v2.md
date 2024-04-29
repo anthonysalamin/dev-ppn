@@ -1,14 +1,14 @@
 ---
-title: Step by step
+title: Step by step v2
 permalink: modules/{{ page.fileSlug }}/index.html
-layout: modules/step-by-step.html
-slug: step-by-step
+layout: modules/step-by-step-v2.html
+slug: step-by-step-v2
 tags: pages
 seo:
   noindex: false
-  title: Step by step
+  title: Step by step v2
   og:title: Private Pools Network | PPN
-  twitter:title: Step by step
+  twitter:title: Step by step v2
   additional_tags: >-
     <meta property="og:description" content="A new ecosystem, purpose built to
     generate yield from Arbitrage opportunities."><meta property="og:url"

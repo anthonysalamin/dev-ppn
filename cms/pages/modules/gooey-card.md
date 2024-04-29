@@ -1,14 +1,14 @@
 ---
-title: Statistics v3
+title: Gooey card
 permalink: modules/{{ page.fileSlug }}/index.html
-layout: modules/statistics-v3.html
-slug: statistics-v3
+layout: modules/gooey-card.html
+slug: gooey-card
 tags: pages
 seo:
   noindex: false
-  title: Statistics v3
+  title: Gooey card
   og:title: Private Pools Network | PPN
-  twitter:title: Statistics v3
+  twitter:title: Gooey card
   additional_tags: >-
     <meta property="og:description" content="A new ecosystem, purpose built to
     generate yield from Arbitrage opportunities."><meta property="og:url"

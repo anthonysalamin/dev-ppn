@@ -1,14 +1,14 @@
 ---
-title: Statistics v1
-permalink: modules/{{ page.fileSlug }}/index.html
-layout: modules/statistics-v1.html
-slug: statistics-v1
+title: Particles background
+permalink: playground/{{ page.fileSlug }}/index.html
+layout: playground/particles-background.html
+slug: particles-background
 tags: pages
 seo:
   noindex: false
-  title: Statistics
+  title: Particles background
   og:title: Private Pools Network | PPN
-  twitter:title: Statistics
+  twitter:title: Particles background
   additional_tags: >-
     <meta property="og:description" content="A new ecosystem, purpose built to
     generate yield from Arbitrage opportunities."><meta property="og:url"

@@ -1,14 +1,14 @@
 ---
-title: Statistics v2
+title: CTA big
 permalink: modules/{{ page.fileSlug }}/index.html
-layout: modules/statistics-v2.html
-slug: statistics-v2
+layout: modules/cta-big.html
+slug: cta-big
 tags: pages
 seo:
   noindex: false
-  title: Statistics v2 (Sankey Diagram)
+  title: CTA big
   og:title: Private Pools Network | PPN
-  twitter:title: Statistics v2 (Sankey Diagram)
+  twitter:title: CTA big
   additional_tags: >-
     <meta property="og:description" content="A new ecosystem, purpose built to
     generate yield from Arbitrage opportunities."><meta property="og:url"
