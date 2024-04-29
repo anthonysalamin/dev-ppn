@@ -431,10 +431,17 @@ collections:
             label: Text
             name: '-5f872b28'
             widget: string
-          - hint: 'Original text: Become a liquidity provider, key: 748b3b17'
+          - hint: 'Original text: Become liquidity provider, key: -2b8fe4c8'
             label: Text
-            name: 748b3b17
+            name: '-2b8fe4c8'
             widget: string
+          - hint: >-
+              Original text: Before making any investment decisions, it is
+              essential to carefully evaluate your own risk tolerance, financial
+              situation, and investment objectives., key: 1656a2a8
+            label: Text
+            name: 1656a2a8
+            widget: text
           - hint: 'Original text: PrivatePools Network , key: 456063e'
             label: Text
             name: 456063e
@@ -447,17 +454,9 @@ collections:
             widget: string
           - hint: >-
               Original text: , ensuring consistent yields for liquidity
-              providers — in , key: -1b06f8b1
+              providers — in any market condition., key: -676a384c
             label: Text
-            name: '-1b06f8b1'
-            widget: string
-          - hint: 'Original text: any, key: 179ec'
-            label: Text
-            name: 179ec
-            widget: string
-          - hint: 'Original text:  market condition., key: -36777f49'
-            label: Text
-            name: '-36777f49'
+            name: '-676a384c'
             widget: string
           - hint: 'Original text: Arbitrage or be arbitraged, key: -3127cbae'
             label: Text
@@ -569,11 +568,10 @@ collections:
             name: 3c34cb34
             widget: string
           - hint: >-
-              Original text: Private Pools offers a privatised liquidity
-              environment via blockchain index funds, protecting liquidity
-              providers from open market arbitrage., key: -58b04148
+              Original text: PPN shields liquidity providers from open market
+              arbitrage by privatising its liquidity pools. , key: -4bd62ae9
             label: Text
-            name: '-58b04148'
+            name: '-4bd62ae9'
             widget: text
           - hint: 'Original text: No items found., key: 3d503d2b'
             label: Text
@@ -611,13 +609,6 @@ collections:
             label: Text
             name: 5357fe14
             widget: string
-          - hint: >-
-              Original text: Before making any investment decisions, it is
-              essential to carefully evaluate your own risk tolerance, financial
-              situation, and investment objectives., key: 1656a2a8
-            label: Text
-            name: 1656a2a8
-            widget: text
           - hint: 'Original text: Buy $PPN token, key: -1f61003'
             label: Text
             name: '-1f61003'
