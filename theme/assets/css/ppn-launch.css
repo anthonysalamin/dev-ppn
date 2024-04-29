@@ -1381,7 +1381,7 @@ blockquote {
 }
 
 .paralax {
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -2513,6 +2513,7 @@ blockquote {
 }
 
 .magnetico__parent.dark {
+  color: var(--light);
   background-color: rgba(2, 3, 28, .92);
 }
 
