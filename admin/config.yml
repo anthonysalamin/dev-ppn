@@ -389,6 +389,10 @@ collections:
             label: Text
             name: 2054d57d
             widget: string
+          - hint: 'Original text: Get started, key: 667a5d97'
+            label: Text
+            name: 667a5d97
+            widget: string
           - hint: 'Original text: Investor Collateral, key: 7cccd2bf'
             label: Text
             name: 7cccd2bf
@@ -584,10 +588,6 @@ collections:
           - hint: 'Original text: a new way to maximize yield, key: 20f3b50e'
             label: Text
             name: 20f3b50e
-            widget: string
-          - hint: 'Original text: Get started, key: 667a5d97'
-            label: Text
-            name: 667a5d97
             widget: string
           - hint: 'Original text: Distribution, key: -546c5d5c'
             label: Text
@@ -877,6 +877,10 @@ collections:
           - hint: 'Original text: CTA / solo / light, key: -be1bdb'
             label: Text
             name: '-be1bdb'
+            widget: string
+          - hint: 'Original text: CTA / solo / light / outline, key: 5236e316'
+            label: Text
+            name: '5236e316'
             widget: string
           - hint: 'Original text: CTA / solo / transparent, key: 3fb94521'
             label: Text
@@ -1406,6 +1410,10 @@ collections:
           - hint: 'Original link: #, key: 23'
             label: Link
             name: '23'
+            widget: string
+          - hint: 'Original link: #value-proposition, key: -7fa1c549'
+            label: Link
+            name: '-7fa1c549'
             widget: string
           - hint: >-
               Original link: https://linktr.ee/privatepoolsnetwork, key:

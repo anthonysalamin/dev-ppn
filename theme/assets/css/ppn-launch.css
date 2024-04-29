@@ -1236,12 +1236,15 @@ blockquote {
 }
 
 .nav__container {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
   border-radius: 28px;
   grid-template-rows: auto;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   justify-content: space-between;
   align-items: center;
+  justify-items: center;
   width: 100%;
   height: 100%;
   margin-top: 16px;
@@ -1249,7 +1252,7 @@ blockquote {
   margin-right: auto;
   padding-top: 9px;
   padding-bottom: 9px;
-  display: flex;
+  display: grid;
   position: relative;
 }
 
@@ -2396,14 +2399,6 @@ blockquote {
   font-size: 2.5rem;
 }
 
-.grid {
-  grid-column-gap: 56px;
-  grid-row-gap: 56px;
-  grid-template-rows: auto;
-  justify-content: space-between;
-  width: 100%;
-}
-
 .img-cover {
   background-image: linear-gradient(90deg, var(--accent), var(--dark));
   object-fit: cover;
@@ -3074,6 +3069,14 @@ blockquote {
   text-decoration: underline;
 }
 
+.cta__wrap-dual {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
 @media screen and (max-width: 991px) {
   body {
     font-size: 16px;
@@ -3619,11 +3622,6 @@ blockquote {
     font-size: 1.2rem;
   }
 
-  .grid {
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr;
-  }
-
   .home-about-content {
     width: 100%;
     min-height: 20rem;
@@ -3788,7 +3786,7 @@ blockquote {
     font-size: 2.4rem;
   }
 
-  .cta__wrap.is-mobilehidden {
+  .cta__wrap.is-mobilehidden, .cta__wrap.hideonmobile {
     display: none;
   }
 
@@ -3935,6 +3933,10 @@ blockquote {
   .marquee_item {
     font-size: 2.5vw;
   }
+
+  .cta__wrap-dual {
+    flex-flow: row;
+  }
 }
 
 #w-node-d927503e-1734-fd0f-4a2a-e60b692231c3-692231b1 {
@@ -3942,6 +3944,14 @@ blockquote {
 }
 
 #w-node-_5c2edcc6-9bd4-a302-c583-f055c2aa0e35-304eb7b4, #w-node-d0dd940a-47ac-1dfb-ba70-1223f73a576b-304eb7b4 {
+  justify-self: end;
+}
+
+#w-node-_900eb9db-ba0f-eae4-5095-b6245742d209-5742d206 {
+  justify-self: start;
+}
+
+#w-node-ab15006a-c22a-dc95-7695-1ccbc0fb0ccb-5742d206 {
   justify-self: end;
 }
 
