@@ -363,6 +363,18 @@ collections:
             label: Text
             name: '-78ddacdd'
             widget: string
+          - hint: 'Original text: TVL $, key: 4c7ef8e'
+            label: Text
+            name: 4c7ef8e
+            widget: string
+          - hint: 'Original text: 000,000.00, key: -7ef7d686'
+            label: Text
+            name: '-7ef7d686'
+            widget: string
+          - hint: 'Original text: 392K, key: 180b3f'
+            label: Text
+            name: 180b3f
+            widget: string
           - hint: 'Original text: dApp, key: 2e771d'
             label: Text
             name: 2e771d
@@ -397,74 +409,21 @@ collections:
             label: Text
             name: 7cccd2bf
             widget: string
-          - hint: 'Original text: ETH USDT, key: -27fbb60b'
+          - hint: 'Original text: Scroll down, key: -24f8f20b'
             label: Text
-            name: '-27fbb60b'
+            name: '-24f8f20b'
             widget: string
-          - hint: 'Original text: APR 28%, key: -4746cfe'
+          - hint: 'Original text: It is , key: -7cfb701f'
             label: Text
-            name: '-4746cfe'
+            name: '-7cfb701f'
             widget: string
-          - hint: 'Original text: AVAX, key: 1ed72c'
+          - hint: 'Original text: arbitrage, key: 6a1b8489'
             label: Text
-            name: 1ed72c
+            name: 6a1b8489
             widget: string
-          - hint: 'Original text: APR 16%, key: -47470fd'
+          - hint: 'Original text:  or be arbitraged, key: -fec6665'
             label: Text
-            name: '-47470fd'
-            widget: string
-          - hint: 'Original text: DAI DOGE, key: -7b463923'
-            label: Text
-            name: '-7b463923'
-            widget: string
-          - hint: 'Original text: APR 37%, key: -474695c'
-            label: Text
-            name: '-474695c'
-            widget: string
-          - hint: 'Original text: USDT VLX, key: 1d2234f0'
-            label: Text
-            name: 1d2234f0
-            widget: string
-          - hint: 'Original text: APR 6%, key: 73781dec'
-            label: Text
-            name: 73781dec
-            widget: string
-          - hint: >-
-              Original text: Extract value in any market condition, key:
-              -5f872b28
-            label: Text
-            name: '-5f872b28'
-            widget: string
-          - hint: 'Original text: Become liquidity provider, key: -2b8fe4c8'
-            label: Text
-            name: '-2b8fe4c8'
-            widget: string
-          - hint: >-
-              Original text: Before making any investment decisions, it is
-              essential to carefully evaluate your own risk tolerance, financial
-              situation, and investment objectives., key: 1656a2a8
-            label: Text
-            name: 1656a2a8
-            widget: text
-          - hint: 'Original text: PrivatePools Network , key: 456063e'
-            label: Text
-            name: 456063e
-            widget: string
-          - hint: >-
-              Original text: profit from crypto market volatility, key:
-              -23e0f03c
-            label: Text
-            name: '-23e0f03c'
-            widget: string
-          - hint: >-
-              Original text: , ensuring consistent yields for liquidity
-              providers — in any market condition., key: -676a384c
-            label: Text
-            name: '-676a384c'
-            widget: string
-          - hint: 'Original text: Arbitrage or be arbitraged, key: -3127cbae'
-            label: Text
-            name: '-3127cbae'
+            name: '-fec6665'
             widget: string
           - hint: 'Original text: Opportunities, key: f7b7e91'
             label: Text
@@ -473,20 +432,6 @@ collections:
           - hint: 'Original text: Unseized yield opportunities, key: 44267a99'
             label: Text
             name: 44267a99
-            widget: string
-          - hint: >-
-              Original text: Generating value and passing it back to , key:
-              -7e9b01d4
-            label: Text
-            name: '-7e9b01d4'
-            widget: string
-          - hint: 'Original text: liquidity providers, key: 44ddabf4'
-            label: Text
-            name: 44ddabf4
-            widget: string
-          - hint: 'Original text:  rather than validators., key: -7d47b9e2'
-            label: Text
-            name: '-7d47b9e2'
             widget: string
           - hint: 'Original text: $1.0, key: 111b0f'
             label: Text
@@ -559,9 +504,13 @@ collections:
             label: Text
             name: '-687da9da'
             widget: text
-          - hint: "Original text: Select, deposit, manage &\_profit, key: -3089cee9"
+          - hint: 'Original text: Select, deposit,, key: 27db7cde'
             label: Text
-            name: '-3089cee9'
+            name: 27db7cde
+            widget: string
+          - hint: 'Original text: & profit, key: -3232b082'
+            label: Text
+            name: '-3232b082'
             widget: string
           - hint: 'Original text: How it works, key: -5f2415c3'
             label: Text
@@ -571,12 +520,6 @@ collections:
             label: Text
             name: 3c34cb34
             widget: string
-          - hint: >-
-              Original text: PPN shields liquidity providers from open market
-              arbitrage by privatising its liquidity pools. , key: -4bd62ae9
-            label: Text
-            name: '-4bd62ae9'
-            widget: text
           - hint: 'Original text: No items found., key: 3d503d2b'
             label: Text
             name: 3d503d2b
@@ -609,6 +552,13 @@ collections:
             label: Text
             name: 5357fe14
             widget: string
+          - hint: >-
+              Original text: Before making any investment decisions, it is
+              essential to carefully evaluate your own risk tolerance, financial
+              situation, and investment objectives., key: 1656a2a8
+            label: Text
+            name: 1656a2a8
+            widget: text
           - hint: 'Original text: Buy $PPN token, key: -1f61003'
             label: Text
             name: '-1f61003'
@@ -638,10 +588,6 @@ collections:
             label: Text
             name: '177500'
             widget: string
-          - hint: 'Original text: 🌱, key: 1b0e75'
-            label: Text
-            name: 1b0e75
-            widget: string
           - hint: 'Original text: Seed Round, key: -6c17d8e1'
             label: Text
             name: '-6c17d8e1'
@@ -651,10 +597,6 @@ collections:
               Funds, key: 2a53a1b7
             label: Text
             name: 2a53a1b7
-            widget: string
-          - hint: 'Original text: ⚙️, key: 5aa96'
-            label: Text
-            name: 5aa96
             widget: string
           - hint: >-
               Original text: MEV Protection Implementation for On-Chain Trading
@@ -717,10 +659,6 @@ collections:
           - hint: 'Original text: Q2, key: a01'
             label: Text
             name: a01
-            widget: string
-          - hint: 'Original text: 🔥, key: 1b0c88'
-            label: Text
-            name: 1b0c88
             widget: string
           - hint: 'Original text: Token Staking Implementation, key: -29bfa85e'
             label: Text
@@ -1127,13 +1065,13 @@ collections:
             label: Text
             name: '-991bb23'
             widget: string
+          - hint: 'Original text: Arbitrage or be arbitraged, key: -3127cbae'
+            label: Text
+            name: '-3127cbae'
+            widget: string
           - hint: "Original text: Select, deposit, deploy &\_profit, key: 1cc12fd5"
             label: Text
             name: 1cc12fd5
-            widget: string
-          - hint: 'Original text: Scroll down, key: -24f8f20b'
-            label: Text
-            name: '-24f8f20b'
             widget: string
           - hint: >-
               Original text: — Participate in the initial stage of our , key:
@@ -1346,10 +1284,6 @@ collections:
             label: Text
             name: '-1e725b97'
             widget: string
-          - hint: 'Original text:  or be arbitraged, key: -fec6665'
-            label: Text
-            name: '-fec6665'
-            widget: string
           - hint: 'Original text: Select , deposit, deploy & , key: 3241cf39'
             label: Text
             name: 3241cf39
@@ -1373,6 +1307,64 @@ collections:
           - hint: 'Original text: Invest, key: -7d28f3eb'
             label: Text
             name: '-7d28f3eb'
+            widget: string
+          - hint: 'Original text: ETH USDT, key: -27fbb60b'
+            label: Text
+            name: '-27fbb60b'
+            widget: string
+          - hint: 'Original text: APR 28%, key: -4746cfe'
+            label: Text
+            name: '-4746cfe'
+            widget: string
+          - hint: 'Original text: AVAX, key: 1ed72c'
+            label: Text
+            name: 1ed72c
+            widget: string
+          - hint: 'Original text: APR 16%, key: -47470fd'
+            label: Text
+            name: '-47470fd'
+            widget: string
+          - hint: 'Original text: DAI DOGE, key: -7b463923'
+            label: Text
+            name: '-7b463923'
+            widget: string
+          - hint: 'Original text: APR 37%, key: -474695c'
+            label: Text
+            name: '-474695c'
+            widget: string
+          - hint: 'Original text: USDT VLX, key: 1d2234f0'
+            label: Text
+            name: 1d2234f0
+            widget: string
+          - hint: 'Original text: APR 6%, key: 73781dec'
+            label: Text
+            name: 73781dec
+            widget: string
+          - hint: >-
+              Original text: Extract value in any market condition, key:
+              -5f872b28
+            label: Text
+            name: '-5f872b28'
+            widget: string
+          - hint: 'Original text: Become liquidity provider, key: -2b8fe4c8'
+            label: Text
+            name: '-2b8fe4c8'
+            widget: string
+          - hint: 'Original text: PrivatePools Network , key: 456063e'
+            label: Text
+            name: 456063e
+            widget: string
+          - hint: >-
+              Original text: profit from crypto market volatility, key:
+              -23e0f03c
+            label: Text
+            name: '-23e0f03c'
+            widget: string
+          - hint: >-
+              Original text: , ensuring consistent yields for liquidity
+              providers — in any market condition., key: -676a384c
+            label: Text
+            name: '-676a384c'
             widget: string
       - label: Links
         name: links
@@ -1411,15 +1403,19 @@ collections:
             label: Link
             name: '23'
             widget: string
-          - hint: 'Original link: #value-proposition, key: -7fa1c549'
+          - hint: 'Original link: #get-started, key: 56c99907'
             label: Link
-            name: '-7fa1c549'
+            name: 56c99907
             widget: string
           - hint: >-
               Original link: https://linktr.ee/privatepoolsnetwork, key:
               -77fd2a2e
             label: Link
             name: '-77fd2a2e'
+            widget: string
+          - hint: 'Original link: #oppourtunities, key: 2b5d3bff'
+            label: Link
+            name: 2b5d3bff
             widget: string
           - hint: 'Original link: #call-to-action, key: 330caffc'
             label: Link
@@ -1449,10 +1445,6 @@ collections:
             label: Link
             name: '61525348'
             widget: string
-          - hint: 'Original link: #oppourtunities, key: 2b5d3bff'
-            label: Link
-            name: 2b5d3bff
-            widget: string
           - hint: 'Original link: #formular, key: 61a608ef'
             label: Link
             name: 61a608ef
@@ -1473,6 +1465,10 @@ collections:
             label: Link
             name: '-3359f124'
             widget: string
+          - hint: 'Original link: #value-proposition, key: -7fa1c549'
+            label: Link
+            name: '-7fa1c549'
+            widget: string
       - label: Images
         name: images
         file: cms/_data/images.json
@@ -1483,19 +1479,6 @@ collections:
             default: Images
           - label: Image
             name: i2e58c7bd
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: i562beb33
             widget: object
             fields:
               - name: url
@@ -1521,46 +1504,33 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-69deac82'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-54252cbc'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: caf4923
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: '0'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-36cdac99'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-562beb33'
             widget: object
             fields:
               - name: url
@@ -1639,6 +1609,45 @@ collections:
                 required: false
           - label: Image
             name: 3bb2025
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-69deac82'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-54252cbc'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: caf4923
             widget: object
             fields:
               - name: url

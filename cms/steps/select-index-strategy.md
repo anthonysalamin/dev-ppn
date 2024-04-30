@@ -10,9 +10,9 @@ f_step-image:
     https://uploads-ssl.webflow.com/66162235ccb46588aa690894/662dfca315b645c24d337bfb_thumb-select-v3.svg
   alt: null
 slug: select-index-strategy
-updated-on: '2024-04-28T07:37:11.697Z'
+updated-on: '2024-04-30T08:09:25.943Z'
 created-on: '2024-04-24T06:22:30.564Z'
-published-on: '2024-04-28T07:38:27.284Z'
+published-on: '2024-04-30T08:10:24.616Z'
 f_to-display: true
 layout: '[steps].html'
 tags: steps

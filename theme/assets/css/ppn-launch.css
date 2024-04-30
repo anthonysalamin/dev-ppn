@@ -169,7 +169,7 @@ blockquote {
 }
 
 .section {
-  z-index: 2;
+  z-index: auto;
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
@@ -1394,7 +1394,7 @@ blockquote {
 }
 
 .background {
-  z-index: -1;
+  z-index: -2;
   pointer-events: none;
   position: fixed;
   top: 0%;
@@ -1405,6 +1405,11 @@ blockquote {
 
 .background.gradient {
   background-image: linear-gradient(50deg, var(--dark), #02031c 40%, var(--accent));
+}
+
+.background.gradient.interactive {
+  z-index: -1;
+  pointer-events: auto;
 }
 
 .embed__icon-circle {
@@ -1612,6 +1617,11 @@ blockquote {
   right: 0%;
 }
 
+.particles.interactive {
+  opacity: .2;
+  pointer-events: auto;
+}
+
 .progress-bar {
   background-image: linear-gradient(90deg, var(--dark), var(--accent));
   width: 100%;
@@ -1714,10 +1724,6 @@ blockquote {
 
 .rm-item {
   background-color: var(--dark);
-  background-image: var(--image-i562beb33);
-  background-position: 5px;
-  background-repeat: no-repeat;
-  background-size: 16px;
   border: 1px solid rgba(220, 238, 246, .1);
   border-radius: 12px;
   align-items: center;
@@ -2308,6 +2314,10 @@ blockquote {
   bottom: -65%;
   left: auto;
   right: 35%;
+}
+
+.service-list-img-parent.clientaskedtohide {
+  display: none;
 }
 
 .spacer-20 {
@@ -3081,6 +3091,32 @@ blockquote {
   display: flex;
 }
 
+.rm__icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.div-block-4 {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.tvl__number {
+  font-weight: 400;
+}
+
+.tvl__number.mobile {
+  display: none;
+}
+
+.tvl {
+  font-family: Robotomono, sans-serif;
+}
+
 @media screen and (max-width: 991px) {
   body {
     font-size: 16px;
@@ -3365,6 +3401,10 @@ blockquote {
 
   .xl-scroll__title {
     font-size: 3.6rem;
+  }
+
+  .cta__wrap.is-mobilehidden {
+    display: none;
   }
 
   .timeline__padding-vertical {
@@ -3727,6 +3767,14 @@ blockquote {
     grid-column-gap: 100px;
     grid-row-gap: 100px;
   }
+
+  .tvl__number {
+    display: none;
+  }
+
+  .tvl__number.mobile {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -3792,7 +3840,7 @@ blockquote {
     font-size: 2.4rem;
   }
 
-  .cta__wrap.is-mobilehidden, .cta__wrap.hideonmobile {
+  .cta__wrap.hideonmobile {
     display: none;
   }
 
@@ -3957,7 +4005,7 @@ blockquote {
   justify-self: start;
 }
 
-#w-node-ab15006a-c22a-dc95-7695-1ccbc0fb0ccb-5742d206 {
+#w-node-_9737fa93-79cb-1dfc-8e4d-205430651875-5742d206, #w-node-ab15006a-c22a-dc95-7695-1ccbc0fb0ccb-5742d206 {
   justify-self: end;
 }
 
