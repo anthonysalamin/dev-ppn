@@ -413,6 +413,37 @@ collections:
             label: Text
             name: '-24f8f20b'
             widget: string
+          - hint: 'Original text: Become a Market Maker of Arbitrage, key: -2e2cff98'
+            label: Text
+            name: '-2e2cff98'
+            widget: string
+          - hint: 'Original text: Deposit liquidity, key: 47d462d0'
+            label: Text
+            name: 47d462d0
+            widget: string
+          - hint: >-
+              Original text: Before making any investment decisions, it is
+              essential to carefully evaluate your own risk tolerance, financial
+              situation, and investment objectives., key: 1656a2a8
+            label: Text
+            name: 1656a2a8
+            widget: text
+          - hint: 'Original text: PrivatePools Network , key: 456063e'
+            label: Text
+            name: 456063e
+            widget: string
+          - hint: >-
+              Original text: profit from crypto market volatility, key:
+              -23e0f03c
+            label: Text
+            name: '-23e0f03c'
+            widget: string
+          - hint: >-
+              Original text: , ensuring consistent yields for liquidity
+              providers — in any market condition., key: -676a384c
+            label: Text
+            name: '-676a384c'
+            widget: string
           - hint: 'Original text: It is , key: -7cfb701f'
             label: Text
             name: '-7cfb701f'
@@ -544,6 +575,40 @@ collections:
             label: Text
             name: 386b154a
             widget: string
+          - hint: 'Original text: Analytics, key: 1288bb66'
+            label: Text
+            name: 1288bb66
+            widget: string
+          - hint: >-
+              Original text: Holistic Protocol Performance Analysis, key:
+              -202c7ccd
+            label: Text
+            name: '-202c7ccd'
+            widget: string
+          - hint: 'Original text: 01, key: 601'
+            label: Text
+            name: '601'
+            widget: string
+          - hint: 'Original text: Performance Overview, key: -7fc57457'
+            label: Text
+            name: '-7fc57457'
+            widget: string
+          - hint: 'Original text: 02, key: 602'
+            label: Text
+            name: '602'
+            widget: string
+          - hint: 'Original text: Individual Pools Analytics, key: -45bef52a'
+            label: Text
+            name: '-45bef52a'
+            widget: string
+          - hint: 'Original text: 03, key: 603'
+            label: Text
+            name: '603'
+            widget: string
+          - hint: 'Original text: Portfolio Tracking, key: f868acf'
+            label: Text
+            name: f868acf
+            widget: string
           - hint: 'Original text: A new paradigm of DeFi innovation, key: 95aa54e'
             label: Text
             name: 95aa54e
@@ -552,13 +617,6 @@ collections:
             label: Text
             name: 5357fe14
             widget: string
-          - hint: >-
-              Original text: Before making any investment decisions, it is
-              essential to carefully evaluate your own risk tolerance, financial
-              situation, and investment objectives., key: 1656a2a8
-            label: Text
-            name: 1656a2a8
-            widget: text
           - hint: 'Original text: Buy $PPN token, key: -1f61003'
             label: Text
             name: '-1f61003'
@@ -1124,10 +1182,6 @@ collections:
             label: Text
             name: 5eb851fc
             widget: string
-          - hint: 'Original text: 01, key: 601'
-            label: Text
-            name: '601'
-            widget: string
           - hint: 'Original text: User Action step 1 of 2, key: -165db5e9'
             label: Text
             name: '-165db5e9'
@@ -1143,10 +1197,6 @@ collections:
             label: Text
             name: 3b272189
             widget: text
-          - hint: 'Original text: 02, key: 602'
-            label: Text
-            name: '602'
-            widget: string
           - hint: 'Original text: User Action step 2 of 2, key: -14a8dd4a'
             label: Text
             name: '-14a8dd4a'
@@ -1154,10 +1204,6 @@ collections:
           - hint: 'Original text: Deposit Liquidity, key: -40b97d50'
             label: Text
             name: '-40b97d50'
-            widget: string
-          - hint: 'Original text: 03, key: 603'
-            label: Text
-            name: '603'
             widget: string
           - hint: 'Original text: Automated Process step 1 of 3, key: 2991dbac'
             label: Text
@@ -1340,32 +1386,6 @@ collections:
             label: Text
             name: 73781dec
             widget: string
-          - hint: >-
-              Original text: Extract value in any market condition, key:
-              -5f872b28
-            label: Text
-            name: '-5f872b28'
-            widget: string
-          - hint: 'Original text: Become liquidity provider, key: -2b8fe4c8'
-            label: Text
-            name: '-2b8fe4c8'
-            widget: string
-          - hint: 'Original text: PrivatePools Network , key: 456063e'
-            label: Text
-            name: 456063e
-            widget: string
-          - hint: >-
-              Original text: profit from crypto market volatility, key:
-              -23e0f03c
-            label: Text
-            name: '-23e0f03c'
-            widget: string
-          - hint: >-
-              Original text: , ensuring consistent yields for liquidity
-              providers — in any market condition., key: -676a384c
-            label: Text
-            name: '-676a384c'
-            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -1416,10 +1436,6 @@ collections:
           - hint: 'Original link: #oppourtunities, key: 2b5d3bff'
             label: Link
             name: 2b5d3bff
-            widget: string
-          - hint: 'Original link: #call-to-action, key: 330caffc'
-            label: Link
-            name: 330caffc
             widget: string
           - hint: >-
               Original link: mailto:team@privatepools.network?subject=Contact,
@@ -1504,7 +1520,72 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: '-54252cbc'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: caf4923
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: '0'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-596d8cf2'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-595f7571'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-59515df0'
             widget: object
             fields:
               - name: url
@@ -1622,32 +1703,6 @@ collections:
                 required: false
           - label: Image
             name: '-69deac82'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-54252cbc'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: caf4923
             widget: object
             fields:
               - name: url
