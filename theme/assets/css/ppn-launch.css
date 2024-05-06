@@ -1437,7 +1437,6 @@ blockquote {
   grid-row-gap: 6px;
   background-color: var(--light);
   color: var(--dark);
-  cursor: progress;
   border-radius: 100px;
   justify-content: flex-start;
   align-items: center;
@@ -1447,10 +1446,6 @@ blockquote {
   padding-right: 20px;
   font-weight: 500;
   display: flex;
-}
-
-.cta__link.soon {
-  color: #02031c;
 }
 
 .bold {
