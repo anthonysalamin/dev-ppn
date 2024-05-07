@@ -409,9 +409,21 @@ collections:
             label: Text
             name: 7cccd2bf
             widget: string
-          - hint: 'Original text: Scroll down, key: -24f8f20b'
+          - hint: 'Original text: Opportunities, key: f7b7e91'
             label: Text
-            name: '-24f8f20b'
+            name: f7b7e91
+            widget: string
+          - hint: 'Original text: 28,071% APR, key: 2de44764'
+            label: Text
+            name: 2de44764
+            widget: string
+          - hint: 'Original text: 28,127% APR, key: -687ca048'
+            label: Text
+            name: '-687ca048'
+            widget: string
+          - hint: 'Original text: 8,071% APR, key: 19395db2'
+            label: Text
+            name: 19395db2
             widget: string
           - hint: 'Original text: Become a Market Maker of Arbitrage, key: -2e2cff98'
             label: Text
@@ -455,10 +467,6 @@ collections:
           - hint: 'Original text:  or be arbitraged, key: -fec6665'
             label: Text
             name: '-fec6665'
-            widget: string
-          - hint: 'Original text: Opportunities, key: f7b7e91'
-            label: Text
-            name: f7b7e91
             widget: string
           - hint: 'Original text: Unseized yield opportunities, key: 44267a99'
             label: Text
@@ -645,6 +653,10 @@ collections:
           - hint: 'Original text: 2024, key: 177500'
             label: Text
             name: '177500'
+            widget: string
+          - hint: 'Original text: 🌱, key: 1b0e75'
+            label: Text
+            name: 1b0e75
             widget: string
           - hint: 'Original text: Seed Round, key: -6c17d8e1'
             label: Text
@@ -850,6 +862,10 @@ collections:
             label: Text
             name: '-343815ef'
             widget: string
+          - hint: 'Original text: blinky / light, key: 56831562'
+            label: Text
+            name: '56831562'
+            widget: string
           - hint: 'Original text: blinky / accent, key: 66c3ddfe'
             label: Text
             name: 66c3ddfe
@@ -1007,9 +1023,9 @@ collections:
             label: Text
             name: '-62c03091'
             widget: string
-          - hint: 'Original text: scroll, key: -361a1933'
+          - hint: 'Original text: Placeholder, key: -78edd2ad'
             label: Text
-            name: '-361a1933'
+            name: '-78edd2ad'
             widget: string
           - hint: 'Original text: Step 1, key: -6bcb8c03'
             label: Text
@@ -1131,6 +1147,10 @@ collections:
             label: Text
             name: 1cc12fd5
             widget: string
+          - hint: 'Original text: Scroll down, key: -24f8f20b'
+            label: Text
+            name: '-24f8f20b'
+            widget: string
           - hint: >-
               Original text: — Participate in the initial stage of our , key:
               -394159fd
@@ -1245,6 +1265,10 @@ collections:
             label: Text
             name: '-77e639e7'
             widget: string
+          - hint: 'Original text: scroll, key: -361a1933'
+            label: Text
+            name: '-361a1933'
+            widget: string
           - hint: 'Original text: Select , deposit, deploy and profit., key: 21366d82'
             label: Text
             name: 21366d82
@@ -1358,33 +1382,33 @@ collections:
             label: Text
             name: '-27fbb60b'
             widget: string
-          - hint: 'Original text: APR 28%, key: -4746cfe'
+          - hint: 'Original text: 28,102% APR, key: 252eae1b'
             label: Text
-            name: '-4746cfe'
+            name: 252eae1b
             widget: string
           - hint: 'Original text: AVAX, key: 1ed72c'
             label: Text
             name: 1ed72c
             widget: string
-          - hint: 'Original text: APR 16%, key: -47470fd'
+          - hint: 'Original text: 16,008% APR, key: 4a12fff7'
             label: Text
-            name: '-47470fd'
+            name: 4a12fff7
             widget: string
           - hint: 'Original text: DAI DOGE, key: -7b463923'
             label: Text
             name: '-7b463923'
             widget: string
-          - hint: 'Original text: APR 37%, key: -474695c'
+          - hint: 'Original text: 37,003% APR, key: 5f9d9b7d'
             label: Text
-            name: '-474695c'
+            name: 5f9d9b7d
             widget: string
           - hint: 'Original text: USDT VLX, key: 1d2234f0'
             label: Text
             name: 1d2234f0
             widget: string
-          - hint: 'Original text: APR 6%, key: 73781dec'
+          - hint: 'Original text: 8,005% APR, key: -523ede99'
             label: Text
-            name: 73781dec
+            name: '-523ede99'
             widget: string
       - label: Links
         name: links
@@ -1586,19 +1610,6 @@ collections:
                 required: false
           - label: Image
             name: '-59515df0'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-36cdac99'
             widget: object
             fields:
               - name: url
