@@ -401,9 +401,9 @@ collections:
             label: Text
             name: 2054d57d
             widget: string
-          - hint: 'Original text: Get started, key: 667a5d97'
+          - hint: 'Original text: Real Yield, key: -58547575'
             label: Text
-            name: 667a5d97
+            name: '-58547575'
             widget: string
           - hint: 'Original text: Investor Collateral, key: 7cccd2bf'
             label: Text
@@ -541,6 +541,10 @@ collections:
           - hint: 'Original text: a new way to maximize yield, key: 20f3b50e'
             label: Text
             name: 20f3b50e
+            widget: string
+          - hint: 'Original text: Get started, key: 667a5d97'
+            label: Text
+            name: 667a5d97
             widget: string
           - hint: 'Original text: Distribution, key: -546c5d5c'
             label: Text
@@ -1117,10 +1121,6 @@ collections:
             label: Text
             name: '-6bcb8bff'
             widget: string
-          - hint: 'Original text: Real Yield, key: -58547575'
-            label: Text
-            name: '-58547575'
-            widget: string
           - hint: 'Original text: Distributed Yield, key: -442f6c70'
             label: Text
             name: '-442f6c70'
@@ -1436,9 +1436,9 @@ collections:
             label: Link
             name: '23'
             widget: string
-          - hint: 'Original link: #get-started, key: 56c99907'
+          - hint: 'Original link: #becomemarketmaker, key: 172a5f9e'
             label: Link
-            name: 56c99907
+            name: 172a5f9e
             widget: string
           - hint: >-
               Original link: https://linktr.ee/privatepoolsnetwork, key:
@@ -1449,6 +1449,10 @@ collections:
           - hint: 'Original link: #oppourtunities, key: 2b5d3bff'
             label: Link
             name: 2b5d3bff
+            widget: string
+          - hint: 'Original link: #get-started, key: 56c99907'
+            label: Link
+            name: 56c99907
             widget: string
           - hint: >-
               Original link: mailto:team@privatepools.network?subject=Contact,
