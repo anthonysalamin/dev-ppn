@@ -383,9 +383,9 @@ collections:
             label: Text
             name: '-126dcc29'
             widget: string
-          - hint: 'Original text: Yield, key: 5176f6d'
+          - hint: 'Original text: Yield , key: -622981ad'
             label: Text
-            name: 5176f6d
+            name: '-622981ad'
             widget: string
           - hint: 'Original text: from Market Volatility, key: 2665cb93'
             label: Text
@@ -434,39 +434,17 @@ collections:
             name: 47d462d0
             widget: string
           - hint: >-
-              Original text: Before making any investment decisions, it is
-              essential to carefully evaluate your own risk tolerance, financial
-              situation, and investment objectives., key: 1656a2a8
+              Original text: PrivatePools Network profit from crypto market
+              volatility, ensuring consistent yields for liquidity providers —
+              in any market condition., key: -16029b8e
             label: Text
-            name: 1656a2a8
+            name: '-16029b8e'
             widget: text
-          - hint: 'Original text: PrivatePools Network , key: 456063e'
-            label: Text
-            name: 456063e
-            widget: string
           - hint: >-
-              Original text: profit from crypto market volatility, key:
-              -23e0f03c
+              Original text: Arbitrage with us or be arbitraged by us, key:
+              451ad3a1
             label: Text
-            name: '-23e0f03c'
-            widget: string
-          - hint: >-
-              Original text: , ensuring consistent yields for liquidity
-              providers — in any market condition., key: -676a384c
-            label: Text
-            name: '-676a384c'
-            widget: string
-          - hint: 'Original text: It is , key: -7cfb701f'
-            label: Text
-            name: '-7cfb701f'
-            widget: string
-          - hint: 'Original text: arbitrage, key: 6a1b8489'
-            label: Text
-            name: 6a1b8489
-            widget: string
-          - hint: 'Original text:  or be arbitraged, key: -fec6665'
-            label: Text
-            name: '-fec6665'
+            name: 451ad3a1
             widget: string
           - hint: 'Original text: Unseized yield opportunities, key: 44267a99'
             label: Text
@@ -625,6 +603,13 @@ collections:
             label: Text
             name: 5357fe14
             widget: string
+          - hint: >-
+              Original text: Before making any investment decisions, it is
+              essential to carefully evaluate your own risk tolerance, financial
+              situation, and investment objectives., key: 1656a2a8
+            label: Text
+            name: 1656a2a8
+            widget: text
           - hint: 'Original text: Buy $PPN token, key: -1f61003'
             label: Text
             name: '-1f61003'
@@ -930,6 +915,10 @@ collections:
             label: Text
             name: '-67b9e2b2'
             widget: string
+          - hint: 'Original text: Yield, key: 5176f6d'
+            label: Text
+            name: 5176f6d
+            widget: string
           - hint: 'Original text: From Market Volatility, key: 55ae77b3'
             label: Text
             name: 55ae77b3
@@ -1194,14 +1183,6 @@ collections:
             label: Text
             name: 1f7907
             widget: string
-          - hint: 'Original text: © 2024 PrivatePools Network, key: 7f428c8b'
-            label: Text
-            name: 7f428c8b
-            widget: string
-          - hint: 'Original text: Powered by D3, key: 5eb851fc'
-            label: Text
-            name: 5eb851fc
-            widget: string
           - hint: 'Original text: User Action step 1 of 2, key: -165db5e9'
             label: Text
             name: '-165db5e9'
@@ -1354,6 +1335,10 @@ collections:
             label: Text
             name: '-1e725b97'
             widget: string
+          - hint: 'Original text:  or be arbitraged, key: -fec6665'
+            label: Text
+            name: '-fec6665'
+            widget: string
           - hint: 'Original text: Select , deposit, deploy & , key: 3241cf39'
             label: Text
             name: 3241cf39
@@ -1489,10 +1474,6 @@ collections:
             label: Link
             name: 61a608ef
             widget: string
-          - hint: 'Original link: https://d3.dev/, key: -2b511cb6'
-            label: Link
-            name: '-2b511cb6'
-            widget: string
           - hint: 'Original link: #Content-Block-1, key: -3359f126'
             label: Link
             name: '-3359f126'
@@ -1517,6 +1498,19 @@ collections:
             name: title
             widget: hidden
             default: Images
+          - label: Image
+            name: 5ee45f26
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
           - label: Image
             name: i2e58c7bd
             widget: object

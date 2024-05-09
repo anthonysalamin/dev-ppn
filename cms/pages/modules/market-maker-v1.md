@@ -1,14 +1,14 @@
 ---
-title: Footer Paper v1
+title: Market maker v1
 permalink: modules/{{ page.fileSlug }}/index.html
-layout: modules/footer-paper-v1.html
-slug: footer-paper-v1
+layout: modules/market-maker-v1.html
+slug: market-maker-v1
 tags: pages
 seo:
   noindex: false
-  title: Footer Paper v1
+  title: Market maker v1
   og:title: Private Pools Network | PPN
-  twitter:title: Footer Paper v1
+  twitter:title: Market maker v1
   additional_tags: >-
     <meta property="og:description" content="A new ecosystem, purpose built to
     generate yield from Arbitrage opportunities."><meta property="og:url"

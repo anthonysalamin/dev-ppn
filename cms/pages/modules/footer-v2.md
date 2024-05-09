@@ -1,14 +1,14 @@
 ---
-title: Footer
+title: Footer v2
 permalink: modules/{{ page.fileSlug }}/index.html
-layout: modules/footer.html
-slug: footer
+layout: modules/footer-v2.html
+slug: footer-v2
 tags: pages
 seo:
   noindex: false
-  title: Footer
+  title: Footer Paper v1
   og:title: Private Pools Network | PPN
-  twitter:title: Footer
+  twitter:title: Footer Paper v1
   additional_tags: >-
     <meta property="og:description" content="A new ecosystem, purpose built to
     generate yield from Arbitrage opportunities."><meta property="og:url"
