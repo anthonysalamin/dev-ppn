@@ -413,9 +413,9 @@ collections:
             label: Text
             name: f7b7e91
             widget: string
-          - hint: 'Original text: Become a Market Maker of Arbitrage, key: -2e2cff98'
+          - hint: 'Original text: Become a Market Maker, key: 9b9ec18'
             label: Text
-            name: '-2e2cff98'
+            name: 9b9ec18
             widget: string
           - hint: >-
               Original text: Arbitrage with us or be Arbitraged by us, key:
@@ -560,10 +560,6 @@ collections:
             label: Text
             name: '177500'
             widget: string
-          - hint: 'Original text: 🌱, key: 1b0e75'
-            label: Text
-            name: 1b0e75
-            widget: string
           - hint: 'Original text: Seed Round, key: -6c17d8e1'
             label: Text
             name: '-6c17d8e1'
@@ -654,10 +650,6 @@ collections:
             label: Text
             name: a02
             widget: string
-          - hint: 'Original text: 🚀, key: 1b0de3'
-            label: Text
-            name: 1b0de3
-            widget: string
           - hint: 'Original text: Scheduled Launch, key: 11d14ec6'
             label: Text
             name: 11d14ec6
@@ -716,29 +708,6 @@ collections:
             label: Text
             name: 3ee58ace
             widget: string
-          - hint: 'Original text: Bear Market, key: 59dcaa28'
-            label: Text
-            name: 59dcaa28
-            widget: string
-          - hint: 'Original text: agnostic, key: 66fb2422'
-            label: Text
-            name: 66fb2422
-            widget: string
-          - hint: 'Original text: Bull Market, key: -71e28c17'
-            label: Text
-            name: '-71e28c17'
-            widget: string
-          - hint: 'Original text: Deposit liquidity, key: 47d462d0'
-            label: Text
-            name: 47d462d0
-            widget: string
-          - hint: >-
-              Original text: PrivatePools Network profit from crypto market
-              volatility, ensuring consistent yields for liquidity providers —
-              in any market condition., key: -16029b8e
-            label: Text
-            name: '-16029b8e'
-            widget: text
           - hint: >-
               Original text: A new ecosystem, purpose built to generate yield
               from arbitrage opportunities., key: -59d6ee48
@@ -1385,6 +1354,33 @@ collections:
             label: Text
             name: '-523ede99'
             widget: string
+          - hint: 'Original text: Become a Market Maker of Arbitrage, key: -2e2cff98'
+            label: Text
+            name: '-2e2cff98'
+            widget: string
+          - hint: 'Original text: Bear Market, key: 59dcaa28'
+            label: Text
+            name: 59dcaa28
+            widget: string
+          - hint: 'Original text: agnostic, key: 66fb2422'
+            label: Text
+            name: 66fb2422
+            widget: string
+          - hint: 'Original text: Bull Market, key: -71e28c17'
+            label: Text
+            name: '-71e28c17'
+            widget: string
+          - hint: 'Original text: Deposit liquidity, key: 47d462d0'
+            label: Text
+            name: 47d462d0
+            widget: string
+          - hint: >-
+              Original text: PrivatePools Network profit from crypto market
+              volatility, ensuring consistent yields for liquidity providers —
+              in any market condition., key: -16029b8e
+            label: Text
+            name: '-16029b8e'
+            widget: text
           - hint: 'Original text: Analytics, key: 1288bb66'
             label: Text
             name: 1288bb66
@@ -1563,6 +1559,19 @@ collections:
                 required: false
           - label: Image
             name: '0'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-36cdac99'
             widget: object
             fields:
               - name: url
