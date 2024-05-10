@@ -351,13 +351,13 @@ collections:
             name: title
             widget: hidden
             default: Texts
-          - hint: 'Original text: Click & Drag, key: -58cf193a'
+          - hint: 'Original text: Drag, key: 20a154'
             label: Text
-            name: '-58cf193a'
+            name: 20a154
             widget: string
-          - hint: 'Original text: v.1.2, key: 6947c3d'
+          - hint: 'Original text: v.2, key: 1c0ba'
             label: Text
-            name: 6947c3d
+            name: 1c0ba
             widget: string
           - hint: 'Original text: Whitepaper, key: -78ddacdd'
             label: Text
@@ -367,13 +367,9 @@ collections:
             label: Text
             name: 4c7ef8e
             widget: string
-          - hint: 'Original text: 000,000.00, key: -7ef7d686'
+          - hint: 'Original text: TBA, key: 14393'
             label: Text
-            name: '-7ef7d686'
-            widget: string
-          - hint: 'Original text: 392K, key: 180b3f'
-            label: Text
-            name: 180b3f
+            name: '14393'
             widget: string
           - hint: 'Original text: dApp, key: 2e771d'
             label: Text
@@ -383,9 +379,13 @@ collections:
             label: Text
             name: '-126dcc29'
             widget: string
-          - hint: 'Original text: Yield , key: -622981ad'
+          - hint: 'Original text: Yield, key: 5176f6d'
             label: Text
-            name: '-622981ad'
+            name: 5176f6d
+            widget: string
+          - hint: 'Original text: ‍, key: 200d'
+            label: Text
+            name: 200d
             widget: string
           - hint: 'Original text: from Market Volatility, key: 2665cb93'
             label: Text
@@ -401,9 +401,9 @@ collections:
             label: Text
             name: 2054d57d
             widget: string
-          - hint: 'Original text: Real Yield, key: -58547575'
+          - hint: 'Original text: Investor Waitlist, key: 90caa1b'
             label: Text
-            name: '-58547575'
+            name: 90caa1b
             widget: string
           - hint: 'Original text: Investor Collateral, key: 7cccd2bf'
             label: Text
@@ -413,25 +413,9 @@ collections:
             label: Text
             name: f7b7e91
             widget: string
-          - hint: 'Original text: 28,071% APR, key: 2de44764'
+          - hint: 'Original text: Become a Market Maker of Arbitrage, key: -2e2cff98'
             label: Text
-            name: 2de44764
-            widget: string
-          - hint: 'Original text: 28,127% APR, key: -687ca048'
-            label: Text
-            name: '-687ca048'
-            widget: string
-          - hint: 'Original text: 8,071% APR, key: 19395db2'
-            label: Text
-            name: 19395db2
-            widget: string
-          - hint: 'Original text: Become a Market Maker of , key: -7bb9a6df'
-            label: Text
-            name: '-7bb9a6df'
-            widget: string
-          - hint: 'Original text: Arbitrage, key: -1e725b97'
-            label: Text
-            name: '-1e725b97'
+            name: '-2e2cff98'
             widget: string
           - hint: >-
               Original text: Arbitrage with us or be Arbitraged by us, key:
@@ -518,9 +502,9 @@ collections:
             label: Text
             name: 27db7cde
             widget: string
-          - hint: 'Original text: & profit, key: -3232b082'
+          - hint: 'Original text: and profit, key: 3b91bcad'
             label: Text
-            name: '-3232b082'
+            name: 3b91bcad
             widget: string
           - hint: 'Original text: How it works, key: -5f2415c3'
             label: Text
@@ -542,9 +526,9 @@ collections:
             label: Text
             name: 20f3b50e
             widget: string
-          - hint: 'Original text: Get started, key: 667a5d97'
+          - hint: 'Original text: Get in touch, key: -5230a9d2'
             label: Text
-            name: 667a5d97
+            name: '-5230a9d2'
             widget: string
           - hint: 'Original text: Distribution, key: -546c5d5c'
             label: Text
@@ -558,66 +542,6 @@ collections:
             label: Text
             name: 386b154a
             widget: string
-          - hint: 'Original text: Analytics, key: 1288bb66'
-            label: Text
-            name: 1288bb66
-            widget: string
-          - hint: >-
-              Original text: Holistic Protocol Performance Analysis, key:
-              -202c7ccd
-            label: Text
-            name: '-202c7ccd'
-            widget: string
-          - hint: 'Original text: 01, key: 601'
-            label: Text
-            name: '601'
-            widget: string
-          - hint: 'Original text: Performance Overview, key: -7fc57457'
-            label: Text
-            name: '-7fc57457'
-            widget: string
-          - hint: 'Original text: 02, key: 602'
-            label: Text
-            name: '602'
-            widget: string
-          - hint: 'Original text: Individual Pools Analytics, key: -45bef52a'
-            label: Text
-            name: '-45bef52a'
-            widget: string
-          - hint: 'Original text: 03, key: 603'
-            label: Text
-            name: '603'
-            widget: string
-          - hint: 'Original text: Portfolio Tracking, key: f868acf'
-            label: Text
-            name: f868acf
-            widget: string
-          - hint: 'Original text: A new paradigm of DeFi innovation, key: 95aa54e'
-            label: Text
-            name: 95aa54e
-            widget: string
-          - hint: 'Original text: Deposit Now, key: 5357fe14'
-            label: Text
-            name: 5357fe14
-            widget: string
-          - hint: >-
-              Original text: Before making any investment decisions, it is
-              essential to carefully evaluate your own risk tolerance, financial
-              situation, and investment objectives., key: 1656a2a8
-            label: Text
-            name: 1656a2a8
-            widget: text
-          - hint: 'Original text: Buy $PPN token, key: -1f61003'
-            label: Text
-            name: '-1f61003'
-            widget: string
-          - hint: >-
-              Original text: Investing in cryptocurrencies, including $PPN,
-              carries inherent risks, including the risk of loss of capital.
-              Read or Risk Disclosure Statement for more info., key: 10b7a1df
-            label: Text
-            name: 10b7a1df
-            widget: text
           - hint: 'Original text: Roadmap, key: -4b5115e4'
             label: Text
             name: '-4b5115e4'
@@ -792,14 +716,6 @@ collections:
             label: Text
             name: 3ee58ace
             widget: string
-          - hint: 'Original text: Get in touch, key: -5230a9d2'
-            label: Text
-            name: '-5230a9d2'
-            widget: string
-          - hint: 'Original text: Become a Market Maker of Arbitrage, key: -2e2cff98'
-            label: Text
-            name: '-2e2cff98'
-            widget: string
           - hint: 'Original text: Deposit liquidity, key: 47d462d0'
             label: Text
             name: 47d462d0
@@ -811,18 +727,6 @@ collections:
             label: Text
             name: '-16029b8e'
             widget: text
-          - hint: 'Original text: Social, key: -6c12fc73'
-            label: Text
-            name: '-6c12fc73'
-            widget: string
-          - hint: 'Original text: We are on X, key: 1c692195'
-            label: Text
-            name: 1c692195
-            widget: string
-          - hint: 'Original text: Follow us, key: -5ae7feb3'
-            label: Text
-            name: '-5ae7feb3'
-            widget: string
           - hint: >-
               Original text: A new ecosystem, purpose built to generate yield
               from arbitrage opportunities., key: -59d6ee48
@@ -891,13 +795,13 @@ collections:
             label: Text
             name: '5236e316'
             widget: string
+          - hint: 'Original text: Get started, key: 667a5d97'
+            label: Text
+            name: 667a5d97
+            widget: string
           - hint: 'Original text: CTA / solo / transparent, key: 3fb94521'
             label: Text
             name: 3fb94521
-            widget: string
-          - hint: 'Original text: Investor Waitlist, key: 90caa1b'
-            label: Text
-            name: 90caa1b
             widget: string
           - hint: 'Original text: CTA dual light, key: ae370a2'
             label: Text
@@ -926,10 +830,6 @@ collections:
           - hint: 'Original text: Generating , key: -67b9e2b2'
             label: Text
             name: '-67b9e2b2'
-            widget: string
-          - hint: 'Original text: Yield, key: 5176f6d'
-            label: Text
-            name: 5176f6d
             widget: string
           - hint: 'Original text: From Market Volatility, key: 55ae77b3'
             label: Text
@@ -1121,6 +1021,10 @@ collections:
             label: Text
             name: '-6bcb8bff'
             widget: string
+          - hint: 'Original text: Real Yield, key: -58547575'
+            label: Text
+            name: '-58547575'
+            widget: string
           - hint: 'Original text: Distributed Yield, key: -442f6c70'
             label: Text
             name: '-442f6c70'
@@ -1154,9 +1058,9 @@ collections:
             label: Text
             name: '-394159fd'
             widget: string
-          - hint: 'Original text:  strategic investment round., key: 82ad36d'
+          - hint: 'Original text:  strategic investment round, key: 6b9e48e1'
             label: Text
-            name: 82ad36d
+            name: 6b9e48e1
             widget: string
           - hint: 'Original text: Fill in the form, key: 37b460b1'
             label: Text
@@ -1181,6 +1085,18 @@ collections:
             label: Text
             name: '-6bd48d63'
             widget: string
+          - hint: 'Original text: v.1.2, key: 6947c3d'
+            label: Text
+            name: 6947c3d
+            widget: string
+          - hint: 'Original text: 000,000.00, key: -7ef7d686'
+            label: Text
+            name: '-7ef7d686'
+            widget: string
+          - hint: 'Original text: 392K, key: 180b3f'
+            label: Text
+            name: 180b3f
+            widget: string
           - hint: >-
               Original text: — Thank you for your message, we will respond
               promptly., key: -3d533432
@@ -1190,6 +1106,10 @@ collections:
           - hint: 'Original text: Back, key: 1f7907'
             label: Text
             name: 1f7907
+            widget: string
+          - hint: 'Original text: 01, key: 601'
+            label: Text
+            name: '601'
             widget: string
           - hint: 'Original text: User Action step 1 of 2, key: -165db5e9'
             label: Text
@@ -1206,6 +1126,10 @@ collections:
             label: Text
             name: 3b272189
             widget: text
+          - hint: 'Original text: 02, key: 602'
+            label: Text
+            name: '602'
+            widget: string
           - hint: 'Original text: User Action step 2 of 2, key: -14a8dd4a'
             label: Text
             name: '-14a8dd4a'
@@ -1213,6 +1137,10 @@ collections:
           - hint: 'Original text: Deposit Liquidity, key: -40b97d50'
             label: Text
             name: '-40b97d50'
+            widget: string
+          - hint: 'Original text: 03, key: 603'
+            label: Text
+            name: '603'
             widget: string
           - hint: 'Original text: Automated Process step 1 of 3, key: 2991dbac'
             label: Text
@@ -1324,6 +1252,18 @@ collections:
             label: Text
             name: '749803e3'
             widget: text
+          - hint: 'Original text: Social, key: -6c12fc73'
+            label: Text
+            name: '-6c12fc73'
+            widget: string
+          - hint: 'Original text: We are on X, key: 1c692195'
+            label: Text
+            name: 1c692195
+            widget: string
+          - hint: 'Original text: Follow us, key: -5ae7feb3'
+            label: Text
+            name: '-5ae7feb3'
+            widget: string
           - hint: >-
               Original text: With over a decade of experience, we have a proven
               track record of creating innovative and sustainable spaces that
@@ -1339,6 +1279,10 @@ collections:
             label: Text
             name: 4c26455d
             widget: text
+          - hint: 'Original text: Arbitrage, key: -1e725b97'
+            label: Text
+            name: '-1e725b97'
+            widget: string
           - hint: 'Original text:  or be arbitraged, key: -fec6665'
             label: Text
             name: '-fec6665'
@@ -1351,6 +1295,32 @@ collections:
             label: Text
             name: '-3a66c1bc'
             widget: string
+          - hint: 'Original text: A new paradigm of DeFi innovation, key: 95aa54e'
+            label: Text
+            name: 95aa54e
+            widget: string
+          - hint: 'Original text: Deposit Now, key: 5357fe14'
+            label: Text
+            name: 5357fe14
+            widget: string
+          - hint: >-
+              Original text: Before making any investment decisions, it is
+              essential to carefully evaluate your own risk tolerance, financial
+              situation, and investment objectives., key: 1656a2a8
+            label: Text
+            name: 1656a2a8
+            widget: text
+          - hint: 'Original text: Buy $PPN token, key: -1f61003'
+            label: Text
+            name: '-1f61003'
+            widget: string
+          - hint: >-
+              Original text: Investing in cryptocurrencies, including $PPN,
+              carries inherent risks, including the risk of loss of capital.
+              Read or Risk Disclosure Statement for more info., key: 10b7a1df
+            label: Text
+            name: 10b7a1df
+            widget: text
           - hint: 'Original text: Contact us, key: 7f274abe'
             label: Text
             name: 7f274abe
@@ -1399,6 +1369,44 @@ collections:
             label: Text
             name: '-523ede99'
             widget: string
+          - hint: 'Original text: Analytics, key: 1288bb66'
+            label: Text
+            name: 1288bb66
+            widget: string
+          - hint: >-
+              Original text: Holistic Protocol Performance Analysis, key:
+              -202c7ccd
+            label: Text
+            name: '-202c7ccd'
+            widget: string
+          - hint: 'Original text: Performance Overview, key: -7fc57457'
+            label: Text
+            name: '-7fc57457'
+            widget: string
+          - hint: 'Original text: Individual Pools Analytics, key: -45bef52a'
+            label: Text
+            name: '-45bef52a'
+            widget: string
+          - hint: 'Original text: Portfolio Tracking, key: f868acf'
+            label: Text
+            name: f868acf
+            widget: string
+          - hint: 'Original text: 17,071% APR, key: -5b49dc7c'
+            label: Text
+            name: '-5b49dc7c'
+            widget: string
+          - hint: 'Original text: 28,127% APR, key: -687ca048'
+            label: Text
+            name: '-687ca048'
+            widget: string
+          - hint: 'Original text: 8,071% APR, key: 19395db2'
+            label: Text
+            name: 19395db2
+            widget: string
+          - hint: 'Original text: & profit, key: -3232b082'
+            label: Text
+            name: '-3232b082'
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -1436,9 +1444,9 @@ collections:
             label: Link
             name: '23'
             widget: string
-          - hint: 'Original link: #becomemarketmaker, key: 172a5f9e'
+          - hint: 'Original link: /investor/, key: 61525348'
             label: Link
-            name: 172a5f9e
+            name: '61525348'
             widget: string
           - hint: >-
               Original link: https://linktr.ee/privatepoolsnetwork, key:
@@ -1446,13 +1454,9 @@ collections:
             label: Link
             name: '-77fd2a2e'
             widget: string
-          - hint: 'Original link: #oppourtunities, key: 2b5d3bff'
+          - hint: 'Original link: #opportunities, key: -3ed12092'
             label: Link
-            name: 2b5d3bff
-            widget: string
-          - hint: 'Original link: #get-started, key: 56c99907'
-            label: Link
-            name: 56c99907
+            name: '-3ed12092'
             widget: string
           - hint: >-
               Original link: mailto:team@privatepools.network?subject=Contact,
@@ -1473,10 +1477,6 @@ collections:
           - hint: 'Original link: https://typescale.com/, key: 68f0803b'
             label: Link
             name: 68f0803b
-            widget: string
-          - hint: 'Original link: /investor/, key: 61525348'
-            label: Link
-            name: '61525348'
             widget: string
           - hint: 'Original link: #formular, key: 61a608ef'
             label: Link
@@ -1547,45 +1547,6 @@ collections:
                 required: false
           - label: Image
             name: '0'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-596d8cf2'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-595f7571'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-59515df0'
             widget: object
             fields:
               - name: url
@@ -1716,6 +1677,45 @@ collections:
                 required: false
           - label: Image
             name: '-69deac82'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-596d8cf2'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-595f7571'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-59515df0'
             widget: object
             fields:
               - name: url
