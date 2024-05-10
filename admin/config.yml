@@ -1053,10 +1053,14 @@ collections:
             name: '-24f8f20b'
             widget: string
           - hint: >-
-              Original text: — Participate in the initial stage of our , key:
-              -394159fd
+              Original text: Participate in the initial stage of our , key:
+              -7d2c089
             label: Text
-            name: '-394159fd'
+            name: '-7d2c089'
+            widget: string
+          - hint: 'Original text: PrivatePools, key: 449fa434'
+            label: Text
+            name: 449fa434
             widget: string
           - hint: 'Original text:  strategic investment round, key: 6b9e48e1'
             label: Text
@@ -1098,10 +1102,10 @@ collections:
             name: 180b3f
             widget: string
           - hint: >-
-              Original text: — Thank you for your message, we will respond
-              promptly., key: -3d533432
+              Original text: Thank you — our team will respond promptly, key:
+              681be07e
             label: Text
-            name: '-3d533432'
+            name: 681be07e
             widget: string
           - hint: 'Original text: Back, key: 1f7907'
             label: Text
