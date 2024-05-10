@@ -1552,10 +1552,6 @@ blockquote {
   line-height: 1.2;
 }
 
-.claim.short {
-  max-width: 800px;
-}
-
 .action__scroll-wrapper {
   flex-direction: row;
   width: 100%;
