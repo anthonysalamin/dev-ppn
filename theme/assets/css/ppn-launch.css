@@ -2966,6 +2966,7 @@ blockquote {
 }
 
 .txt-xxl {
+  max-width: 800px;
   margin-top: 0;
   font-size: 72px;
   font-weight: 900;
@@ -2979,20 +2980,18 @@ blockquote {
 
 .arrow-svg {
   z-index: 1;
-  width: 42px;
+  width: 32px;
+  margin-bottom: 16px;
   position: relative;
-  left: -7px;
-  overflow: hidden;
 }
 
 .arrow-svg.right {
-  height: 34px;
-  left: auto;
-  right: -52px;
+  margin-left: 32px;
 }
 
 .arrow-svg.left {
   transform-style: preserve-3d;
+  margin-right: 32px;
 }
 
 .txt-m {
@@ -3354,6 +3353,10 @@ blockquote {
   display: flex;
 }
 
+.text-block-2 {
+  font-weight: 500;
+}
+
 @media screen and (max-width: 991px) {
   body {
     font-size: 16px;
@@ -3590,6 +3593,10 @@ blockquote {
     display: grid;
   }
 
+  .txt-xxl {
+    font-size: 60px;
+  }
+
   .txt-xxl.mb-60 {
     max-width: none;
   }
@@ -3769,9 +3776,23 @@ blockquote {
     grid-template-rows: auto auto auto;
   }
 
+  .footer__grid.v1 {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .footer__grid-item {
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 400px;
+  }
+
   .footer__grid-item.links {
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .paralax {
@@ -4028,18 +4049,15 @@ blockquote {
   }
 
   .legend__bull {
+    display: none;
     bottom: -60px;
     left: 24px;
   }
 
   .legend__bear {
+    display: none;
     top: -52px;
     right: 24px;
-  }
-
-  .deposit {
-    grid-column-gap: 100px;
-    grid-row-gap: 100px;
   }
 
   .tvl__number {

@@ -716,6 +716,18 @@ collections:
             label: Text
             name: 3ee58ace
             widget: string
+          - hint: 'Original text: Bear Market, key: 59dcaa28'
+            label: Text
+            name: 59dcaa28
+            widget: string
+          - hint: 'Original text: agnostic, key: 66fb2422'
+            label: Text
+            name: 66fb2422
+            widget: string
+          - hint: 'Original text: Bull Market, key: -71e28c17'
+            label: Text
+            name: '-71e28c17'
+            widget: string
           - hint: 'Original text: Deposit liquidity, key: 47d462d0'
             label: Text
             name: 47d462d0
@@ -1564,32 +1576,6 @@ collections:
                 required: false
           - label: Image
             name: '-562beb33'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-54252cbc'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: caf4923
             widget: object
             fields:
               - name: url
