@@ -363,14 +363,6 @@ collections:
             label: Text
             name: '-78ddacdd'
             widget: string
-          - hint: 'Original text: TVL $, key: 4c7ef8e'
-            label: Text
-            name: 4c7ef8e
-            widget: string
-          - hint: 'Original text: TBA, key: 14393'
-            label: Text
-            name: '14393'
-            widget: string
           - hint: 'Original text: dApp, key: 2e771d'
             label: Text
             name: 2e771d
@@ -1073,6 +1065,10 @@ collections:
           - hint: 'Original text: v.1.2, key: 6947c3d'
             label: Text
             name: 6947c3d
+            widget: string
+          - hint: 'Original text: TVL $, key: 4c7ef8e'
+            label: Text
+            name: 4c7ef8e
             widget: string
           - hint: 'Original text: 000,000.00, key: -7ef7d686'
             label: Text

@@ -4064,10 +4064,6 @@ blockquote {
     display: none;
   }
 
-  .tvl__number.mobile {
-    display: block;
-  }
-
   .cta_link-text-small {
     margin-right: 1.5rem;
     font-size: 1.25rem;
