@@ -399,15 +399,29 @@ collections:
             label: Text
             name: f7b7e91
             widget: string
-          - hint: 'Original text: Become a Market Maker, key: 9b9ec18'
+          - hint: 'Original text: Become a , key: 6e1c98b8'
             label: Text
-            name: 9b9ec18
+            name: 6e1c98b8
             widget: string
-          - hint: >-
-              Original text: Arbitrage with us or be Arbitraged by us, key:
-              12df17c1
+          - hint: 'Original text: Market Maker, key: -546b58a0'
             label: Text
-            name: 12df17c1
+            name: '-546b58a0'
+            widget: string
+          - hint: 'Original text: Arbitrage, key: -1e725b97'
+            label: Text
+            name: '-1e725b97'
+            widget: string
+          - hint: 'Original text:  with us or be , key: 5dcf1588'
+            label: Text
+            name: 5dcf1588
+            widget: string
+          - hint: 'Original text: Arbitraged, key: 5026e91b'
+            label: Text
+            name: 5026e91b
+            widget: string
+          - hint: 'Original text:  by us, key: 3c379ae7'
+            label: Text
+            name: 3c379ae7
             widget: string
           - hint: 'Original text: Unseized yield opportunities, key: 44267a99'
             label: Text
@@ -1260,10 +1274,6 @@ collections:
             label: Text
             name: 4c26455d
             widget: text
-          - hint: 'Original text: Arbitrage, key: -1e725b97'
-            label: Text
-            name: '-1e725b97'
-            widget: string
           - hint: 'Original text:  or be arbitraged, key: -fec6665'
             label: Text
             name: '-fec6665'
@@ -1411,9 +1421,43 @@ collections:
             label: Text
             name: 19395db2
             widget: string
+          - hint: >-
+              Original text: Arbitrage with us or be Arbitraged by us, key:
+              12df17c1
+            label: Text
+            name: 12df17c1
+            widget: string
           - hint: 'Original text: & profit, key: -3232b082'
             label: Text
             name: '-3232b082'
+            widget: string
+          - hint: 'Original text: Waitlist, key: 1284e3b3'
+            label: Text
+            name: 1284e3b3
+            widget: string
+          - hint: >-
+              Original text: Price deviation detection & profitability checks,
+              key: 4fb29630
+            label: Text
+            name: 4fb29630
+            widget: string
+          - hint: >-
+              Original text: Private order flow optimized, competition
+              circumvented, key: -3e8cc9a4
+            label: Text
+            name: '-3e8cc9a4'
+            widget: string
+          - hint: >-
+              Original text: Rebalancing between PPN trading engine & external
+              liquidity venue, key: -5e8595df
+            label: Text
+            name: '-5e8595df'
+            widget: string
+          - hint: >-
+              Original text: Rebalancing with index pool completed, residual
+              yield compounded back into index, key: 5fb92b3a
+            label: Text
+            name: 5fb92b3a
             widget: string
       - label: Links
         name: links

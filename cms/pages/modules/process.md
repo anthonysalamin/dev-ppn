@@ -1,17 +1,14 @@
 ---
-title: Home
-permalink: index.html
-layout: index.html
-slug: ''
+title: Process
+permalink: modules/{{ page.fileSlug }}/index.html
+layout: modules/process.html
+slug: process
 tags: pages
 seo:
   noindex: false
-  title: Private Pools Network | PPN
-  description: >-
-    A new ecosystem, purpose built to generate yield from Arbitrage
-    opportunities. Private Pools Network (PPN) is an autonomous index system
-    enhancing liquidity by capitalizing on volatility.
+  title: Process
   og:title: Private Pools Network | PPN
+  twitter:title: Process
   additional_tags: >-
     <meta property="og:description" content="A new ecosystem, purpose built to
     generate yield from Arbitrage opportunities."><meta property="og:url"
