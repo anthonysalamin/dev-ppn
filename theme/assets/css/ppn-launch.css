@@ -3384,7 +3384,7 @@ blockquote {
 }
 
 .process {
-  grid-column-gap: 16px;
+  grid-column-gap: 48px;
   grid-row-gap: 80px;
   flex-flow: column;
   grid-template-rows: auto auto auto auto;

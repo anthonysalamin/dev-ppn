@@ -359,9 +359,9 @@ collections:
             label: Text
             name: 1c0ba
             widget: string
-          - hint: 'Original text: Whitepaper, key: -78ddacdd'
+          - hint: 'Original text: Litepaper, key: 4ab0bd7e'
             label: Text
-            name: '-78ddacdd'
+            name: 4ab0bd7e
             widget: string
           - hint: 'Original text: dApp, key: 2e771d'
             label: Text
@@ -767,6 +767,10 @@ collections:
           - hint: 'Original text: CTA / magnet / solo / light, key: 4be8700a'
             label: Text
             name: 4be8700a
+            widget: string
+          - hint: 'Original text: Whitepaper, key: -78ddacdd'
+            label: Text
+            name: '-78ddacdd'
             widget: string
           - hint: 'Original text: CTA / solo / light, key: -be1bdb'
             label: Text
@@ -1434,6 +1438,52 @@ collections:
           - hint: 'Original text: Waitlist, key: 1284e3b3'
             label: Text
             name: 1284e3b3
+            widget: string
+          - hint: 'Original text: Abitrage checks, key: 6484bbf2'
+            label: Text
+            name: 6484bbf2
+            widget: string
+          - hint: "Original text: Our PPN\_trading engine runs price deviation detection & profitability checks every .5 seconds on DEXs & CEXs , key: -7802f55e"
+            label: Text
+            name: '-7802f55e'
+            widget: text
+          - hint: >-
+              Original text: Our engine leverage arbitrage opportunities in any
+              market conditions — bull or bear , key: 64a2ce84
+            label: Text
+            name: 64a2ce84
+            widget: string
+          - hint: 'Original text: Abitrage , key: -17980f39'
+            label: Text
+            name: '-17980f39'
+            widget: string
+          - hint: >-
+              Original text: Deviation detected, Private order flow optimized &
+              initiated, competition circumvented, key: 394bddc2
+            label: Text
+            name: 394bddc2
+            widget: string
+          - hint: >-
+              Original text: Arbitrage opportunity executed, value extracted and
+              sent back to Index Pool, key: -2eb4fae1
+            label: Text
+            name: '-2eb4fae1'
+            widget: string
+          - hint: 'Original text: Rebalancing, key: 2da327a6'
+            label: Text
+            name: 2da327a6
+            widget: string
+          - hint: >-
+              Original text: Rebalancing within PPN Index Pool completed,
+              residual yield compounded back into the Index, key: 157175be
+            label: Text
+            name: 157175be
+            widget: string
+          - hint: >-
+              Original text: 70% excess profit are redistributed back to
+              Liquidity Providers according to our model, key: -33b7fc59
+            label: Text
+            name: '-33b7fc59'
             widget: string
           - hint: >-
               Original text: Price deviation detection & profitability checks,
