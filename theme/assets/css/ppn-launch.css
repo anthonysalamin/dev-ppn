@@ -52,6 +52,7 @@ body {
 }
 
 h1 {
+  white-space: break-spaces;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 3.28rem;
@@ -60,6 +61,7 @@ h1 {
 }
 
 h2 {
+  white-space: break-spaces;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 2.5rem;
@@ -68,6 +70,7 @@ h2 {
 }
 
 h3 {
+  white-space: break-spaces;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 2.19rem;
@@ -76,6 +79,7 @@ h3 {
 }
 
 h4 {
+  white-space: break-spaces;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1.88rem;
@@ -84,6 +88,7 @@ h4 {
 }
 
 h5 {
+  white-space: break-spaces;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1.67rem;
@@ -92,6 +97,7 @@ h5 {
 }
 
 h6 {
+  white-space: break-spaces;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1.46rem;
@@ -1343,6 +1349,7 @@ blockquote {
   justify-content: center;
   align-items: center;
   width: 185px;
+  padding-left: 0;
   display: flex;
   position: relative;
 }
@@ -1487,7 +1494,6 @@ blockquote {
 
 .embed__icon-circle {
   background-color: var(--accent-20);
-  color: #00a6be;
   border-radius: 100px;
   justify-content: center;
   align-items: center;
@@ -3396,6 +3402,10 @@ blockquote {
   position: relative;
 }
 
+.process__item {
+  position: relative;
+}
+
 .process__sticky {
   padding-top: 56px;
   position: -webkit-sticky;
@@ -3426,6 +3436,23 @@ blockquote {
   position: fixed;
   top: auto;
   bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.puchnline-desktoop {
+  max-width: 38vw;
+  font-size: 4vw;
+}
+
+.step1_title {
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  position: absolute;
+  top: 13%;
+  bottom: auto;
   left: 0%;
   right: 0%;
 }
@@ -3732,6 +3759,11 @@ blockquote {
     height: 40px;
     margin-left: -6px;
     padding: 4px;
+  }
+
+  .puchnline-desktoop {
+    max-width: none;
+    font-size: 6vw;
   }
 }
 
@@ -4188,16 +4220,19 @@ blockquote {
   .scrolldown__container {
     display: none;
   }
+
+  .puchnline-desktoop {
+    font-size: 9vw;
+  }
+
+  .step1_title {
+    top: 0%;
+  }
 }
 
 @media screen and (max-width: 479px) {
   h1 {
     font-size: 2.44em;
-  }
-
-  .section.quote {
-    padding-left: 24px;
-    padding-right: 24px;
   }
 
   .swiper-slide.is-team {
@@ -4245,8 +4280,8 @@ blockquote {
   }
 
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .xl-scroll__title {
@@ -4302,7 +4337,8 @@ blockquote {
   }
 
   .claim {
-    font-size: 3.4rem;
+    text-align: left;
+    font-size: 13.5vw;
   }
 
   .action__scroll-content {
@@ -4415,7 +4451,16 @@ blockquote {
   }
 
   .process__embed.step-1 {
-    margin-top: -140px;
+    margin-top: -100px;
+  }
+
+  .puchnline-desktoop {
+    font-size: 9vw;
+    line-height: 1.2;
+  }
+
+  .step1_title {
+    top: -5%;
   }
 }
 

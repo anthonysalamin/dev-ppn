@@ -1435,6 +1435,14 @@ collections:
             label: Text
             name: '-3232b082'
             widget: string
+          - hint: 'Original text:  from Market, key: -43b2968e'
+            label: Text
+            name: '-43b2968e'
+            widget: string
+          - hint: 'Original text: Volatility, key: 4800045'
+            label: Text
+            name: '4800045'
+            widget: string
           - hint: 'Original text: Waitlist, key: 1284e3b3'
             label: Text
             name: 1284e3b3
@@ -1443,9 +1451,9 @@ collections:
             label: Text
             name: 6484bbf2
             widget: string
-          - hint: "Original text: Our PPN\_trading engine runs price deviation detection & profitability checks every .5 seconds on DEXs & CEXs , key: -7802f55e"
+          - hint: "Original text: Our PPN\_trading engine runs price deviation detection & profitability checks every .5s on DEXs & CEXs , key: 197badc"
             label: Text
-            name: '-7802f55e'
+            name: 197badc
             widget: text
           - hint: >-
               Original text: Our engine leverage arbitrage opportunities in any
