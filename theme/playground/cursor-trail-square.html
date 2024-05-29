@@ -84,6 +84,13 @@ a,a:focus,button:focus,input:focus,textarea:focus{outline:0 !important;outline-s
   <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
   <script>
 /*
+ * P | getstarted reveal scrub v1
+ * build: 29.05.24 @20:58
+ */
+document.addEventListener("DOMContentLoaded",()=>{const options={svg:`#getstarted-svg`};if(!document.querySelector(options.svg)){return}initGetStartedIcons()});function initGetStartedIcons(){gsap.registerPlugin(ScrollTrigger);function setupAnimation(elementId,direction){const tl=gsap.timeline({scrollTrigger:{trigger:elementId,start:"top bottom",end:"bottom top",scrub:true}});tl.to(elementId,{y:`${ direction }=50`,duration:1})}setupAnimation("#getstarted-1","+");setupAnimation("#getstarted-2","+");setupAnimation("#getstarted-3","-");setupAnimation("#getstarted-4","-")}
+</script>
+  <script>
+/*
  * P | particles.js animated v3
  * dependency: particles.js
  * build:: 10.05.24 @23:21

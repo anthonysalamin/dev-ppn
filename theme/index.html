@@ -66,8 +66,35 @@ a,a:focus,button:focus,input:focus,textarea:focus{outline:0 !important;outline-s
 <body>
   <div id="smooth-wrapper" class="page-wrapper">
     <div class="global-styles">
-      <div class="css-card-gooey w-embed">
+      <div class="css__global w-embed">
         <style>
+/* cta dual light hover */
+[data-id="cta-dual-light"]:hover .cta__text,
+[data-id="cta-dual-light"]:hover .cta__circle {
+    font-size: 1.1rem;
+    background-color: var(--accent);
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Added comma */
+}
+[data-id="cta-dual-light"] .cta__text,
+[data-id="cta-dual-light"] .cta__circle {
+    font-size: 1rem;
+    background-color: var(--light);
+    transition: background-color 0.6s ease, font-size 0.3s ease; /* Added comma */
+}
+/* cta dual dark hover */
+[data-id="cta-dual-dark"]:hover .cta__text,
+[data-id="cta-dual-dark"]:hover .cta__circle {
+    font-size: 1.1rem;
+    background-color: var(--light);
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Added comma */
+}
+[data-id="cta-dual-dark"] .cta__text,
+[data-id="cta-dual-dark"] .cta__circle {
+    font-size: 1rem;
+    background-color: var(--accent);
+    transition: background-color 0.6s ease, font-size 0.3s ease; /* Added comma */
+}
+/* typography styling */
  a {
    color: inherit;
  }
@@ -303,12 +330,14 @@ build 13.04.24
                       </div>
                       <div data-cta="text" class="cta-text">{{ texts.1284e3b3 }}<br></div>
                     </a>
-                    <a href="{{ links.-77fd2a2e }}" target="_blank" class="cta__wrap w-inline-block">
-                      <div class="pill cta accent">{{ texts.7cccd2bf }}</div>
-                      <div class="cta__circle accent">
-                        <div class="lottie-arrow-right" data-w-id="43c077cd-9f75-8c89-3e3f-feab7f11c023" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
-                      </div>
-                    </a>
+                    <div class="magnet">
+                      <a data-id="cta-dual-dark" href="{{ links.-77fd2a2e }}" target="_blank" class="cta__btn w-inline-block">
+                        <div class="cta__text dark">{{ texts.7cccd2bf }}</div>
+                        <div class="cta__circle dark">
+                          <div class="lottie-arrow-right" data-w-id="370abce5-e960-7626-c4cd-33815528ac5d" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1202,12 +1231,14 @@ build 13.04.24
             </div>
           </div>
           <div class="cta__dual-center">
-            <a href="{{ links.-77fd2a2e }}" target="_blank" class="cta__wrap w-inline-block">
-              <div class="pill cta accent">{{ texts.7cccd2bf }}</div>
-              <div class="cta__circle accent">
-                <div class="lottie-arrow-right" data-w-id="201905d5-f451-7581-c738-500223300133" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
-              </div>
-            </a>
+            <div class="magnet">
+              <a data-id="cta-dual-dark" href="{{ links.-77fd2a2e }}" target="_blank" class="cta__btn w-inline-block">
+                <div class="cta__text dark">{{ texts.7cccd2bf }}</div>
+                <div class="cta__circle dark">
+                  <div class="lottie-arrow-right" data-w-id="370abce5-e960-7626-c4cd-33815528ac5d" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -1290,12 +1321,14 @@ build 13.04.24
           </div>
         </div>
         <div class="cta__dual-center">
-          <a href="{{ links.68e15f9f }}" class="cta__wrap w-inline-block">
-            <div class="pill cta">{{ texts.-5230a9d2 }}</div>
-            <div class="cta__circle">
-              <div class="lottie-arrow-right" data-w-id="e887ab22-4563-b879-de24-fe93823e21ed" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
-            </div>
-          </a>
+          <div class="magnet">
+            <a data-id="cta-dual-light" href="{{ links.68e15f9f }}" class="cta__btn w-inline-block">
+              <div class="cta__text">{{ texts.-5230a9d2 }}</div>
+              <div class="cta__circle">
+                <div class="lottie-arrow-right" data-w-id="3f4057dd-6ad4-a48d-18de-9cf571c8b6fb" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
       <section id="distribution" class="section smooth-gradient">
@@ -1325,84 +1358,86 @@ build 13.04.24
           </div>
           <div class="w-layout-grid cta__prominent-grid">
             <div id="w-node-_1caa3141-65ae-c7d5-3afa-dcd142c737d7-42c737cf" data-w-id="1caa3141-65ae-c7d5-3afa-dcd142c737d7" class="getstarted">
-              <a data-w-id="1caa3141-65ae-c7d5-3afa-dcd142c737d8" href="{{ links.23 }}" class="cta__wrap w-inline-block">
-                <div class="pill cta">{{ texts.a176cf3 }}</div>
-                <div class="cta__circle">
-                  <div class="lottie-arrow-right" data-w-id="1caa3141-65ae-c7d5-3afa-dcd142c737dc" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
-                </div>
-              </a>
-              <p class="subline half">{{ texts.534ea25e }}</p>
-              <div class="getstarted__embed-lliquidity w-embed"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 150 200">
+              <div data-w-id="2ec64f28-0485-01b3-d1df-407e88731e18" class="magnet">
+                <a data-id="cta-dual-light" href="{{ links.68e15f9f }}" class="cta__btn w-inline-block">
+                  <div class="cta__text">{{ texts.-40b97d50 }}</div>
+                  <div class="cta__circle">
+                    <div class="lottie-arrow-right" data-w-id="5ef3f65c-9dda-55aa-82cd-09af2fafb410" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
+                  </div>
+                </a>
+              </div>
+              <p class="subline half">{{ texts.2625cb5d }}</p>
+              <div class="getstarted__embed-icons w-embed"><svg id="getstarted-svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 150 200">
                   <defs>
-                    <linearGradient id="getstarted__linear-gradient" x1="51.17" y1="99.73" x2="51.17" y2="163.87" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="getstarted-linear-gradient" x1="51.17" y1="12.3" x2="51.17" y2="76.43" gradientUnits="userSpaceOnUse">
                       <stop offset="0" stop-color="#dceef6" stop-opacity="0"></stop>
                       <stop offset=".37" stop-color="#dceef6" stop-opacity=".41"></stop>
                       <stop offset=".68" stop-color="#dceef6" stop-opacity=".73"></stop>
                       <stop offset=".89" stop-color="#dceef6" stop-opacity=".92"></stop>
                       <stop offset="1" stop-color="#dceef6"></stop>
                     </linearGradient>
-                    <linearGradient id="getstarted__linear-gradient-2" y1="12.3" y2="76.43" xlink:href="#getstarted__linear-gradient">
-                    <linearGradient id="getstarted__linear-gradient-3" x1="110.33" y1="60.6" x2="110.33" y2="124.73" xlink:href="#getstarted__linear-gradient">
-                    <linearGradient id="getstarted__linear-gradient-4" x1="110.33" y1="-25.57" x2="110.33" y2="38.57" xlink:href="#getstarted__linear-gradient">
-                    <linearGradient id="getstarted__linear-gradient-5" x1="121.21" y1="1077.68" x2="106.46" y2="1105.94" gradientTransform="translate(0 -966)" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="getstarted-linear-gradient-2" y1="99.73" y2="163.87" xlink:href="#getstarted-linear-gradient">
+                    <linearGradient id="getstarted-linear-gradient-3" x1="864.02" y1="-205.27" x2="864.02" y2="-141.14" gradientTransform="translate(-753.69 243.78)" xlink:href="#getstarted-linear-gradient">
+                    <linearGradient id="getstarted-linear-gradient-4" x1="864.02" y1="-119.04" x2="864.02" y2="-54.91" gradientTransform="translate(-753.69 243.65)" xlink:href="#getstarted-linear-gradient">
+                    <linearGradient id="getstarted-linear-gradient-5" x1="121.21" y1="1077.68" x2="106.46" y2="1105.94" gradientTransform="translate(0 -966)" gradientUnits="userSpaceOnUse">
                       <stop offset="0" stop-color="#00ffa3"></stop>
                       <stop offset="1" stop-color="#dc1fff"></stop>
                     </linearGradient>
-                    <linearGradient id="getstarted__linear-gradient-6" x1="114.76" y1="1074.31" x2="100.01" y2="1102.57" xlink:href="#getstarted__linear-gradient-5">
-                    <linearGradient id="getstarted__linear-gradient-7" x1="117.97" y1="1075.98" x2="103.21" y2="1104.24" xlink:href="#getstarted__linear-gradient-5">
+                    <linearGradient id="getstarted-linear-gradient-6" x1="114.76" y1="1074.31" x2="100.01" y2="1102.57" xlink:href="#getstarted-linear-gradient-5">
+                    <linearGradient id="getstarted-linear-gradient-7" x1="117.97" y1="1075.98" x2="103.21" y2="1104.24" xlink:href="#getstarted-linear-gradient-5">
                     <clipPath id="clippath">
-                      <path d="M0 0h138c6.62 0 12 5.38 12 12v176c0 6.62-5.38 12-12 12H0V0Z" style="fill:none"></path>
+                      <path id="getstarted-frame" d="M0 0h138c6.62 0 12 5.38 12 12v176c0 6.62-5.38 12-12 12H0V0Z" style="fill:none"></path>
                     </clipPath>
-                    <style>
-      .getstarted-cls-3 {
-        fill: #fff
-      }
-      .getstarted-cls-5 {
-        fill: #8c8c8c
-      }
-      .getstarted-cls-17 {
-        fill: #dceef6
-      }
-    </style>
+                    <style>.getstarted-cls-3{fill:#fff}.getstarted-cls-5{fill:#8c8c8c}.getstarted-cls-17{fill:#dceef6}</style>
                   </linearGradient></linearGradient></linearGradient></linearGradient></linearGradient></defs>
-                  <g style="clip-path:url(#clippath);fill:none" id="design">
-                    <path style="fill:url(#getstarted__linear-gradient)" d="M28.17 99.73h46v64.13h-46z"></path>
-                    <path style="fill:url(#getstarted__linear-gradient-2)" d="M28.17 12.3h46v64.13h-46z"></path>
-                    <path style="fill:url(#getstarted__linear-gradient-3)" d="M87.33 60.6h46v64.13h-46z"></path>
-                    <path style="fill:url(#getstarted__linear-gradient-4)" d="M87.33-25.57h46v64.13h-46z"></path>
-                    <g id="step1-asset-2-end">
-                      <circle class="getstarted-cls-17" cx="51.17" cy="161.01" r="23"></circle>
-                      <g id="Layer_1-2" data-name="Layer_1">
-                        <g id="_1421344023328" data-name="1421344023328">
-                          <path d="M64.13 164.24c-1.78 7.16-9.03 11.51-16.19 9.73-7.15-1.78-11.51-9.03-9.72-16.19 1.78-7.16 9.03-11.51 16.19-9.73 7.16 1.78 11.51 9.03 9.73 16.19Z" style="fill:#f7931a"></path>
-                          <path class="getstarted-cls-3" d="M57.06 159.11c.27-1.78-1.09-2.73-2.94-3.37l.6-2.41-1.47-.37-.58 2.34c-.39-.1-.78-.19-1.17-.28l.59-2.36-1.46-.37-.6 2.41c-.32-.07-.63-.14-.94-.22s-2.02-.51-2.02-.51l-.39 1.57s1.09.25 1.06.26c.59.15.7.54.68.85l-.68 2.74.15.05c-.05-.01-.1-.03-.15-.04l-.96 3.84c-.07.18-.26.45-.67.35.01.02-1.07-.27-1.07-.27l-.73 1.68 1.91.48 1.05.27-.61 2.44 1.46.37.6-2.41c.4.11.79.21 1.17.3l-.6 2.4 1.47.37.61-2.43c2.5.47 4.38.28 5.17-1.98.64-1.82-.03-2.87-1.35-3.55.96-.22 1.68-.85 1.87-2.15Zm-3.35 4.7c-.45 1.82-3.52.84-4.51.59l.8-3.23c.99.25 4.18.74 3.71 2.64Zm.45-4.72c-.41 1.66-2.96.81-3.79.61l.73-2.93c.83.21 3.49.59 3.06 2.32Z"></path>
+                  <g id="design">
+                    <g style="clip-path:url(#clippath);fill:none" id="getstarted-frame-clip">
+                      <g id="getstarted-1">
+                        <path style="fill:url(#getstarted-linear-gradient)" d="M28.17 12.3h46v64.13h-46z"></path>
+                        <g id="step1-asset-4-end">
+                          <circle class="getstarted-cls-17" cx="51.17" cy="76.43" r="23"></circle>
+                          <path d="M51.17 63.08c7.38 0 13.36 5.98 13.36 13.36 0 7.38-5.98 13.36-13.36 13.36-7.38 0-13.36-5.98-13.36-13.36 0-7.38 5.98-13.36 13.36-13.36Z" style="fill:#f0b90b;fill-rule:evenodd"></path>
+                          <path class="getstarted-cls-3" d="M45.16 76.43v3.53l3.01 1.77v2.07l-4.76-2.79V75.4l1.75 1.03Zm0-3.53v2.06l-1.75-1.03v-2.06l1.75-1.03 1.76 1.03-1.76 1.03Zm4.26-1.03 1.75-1.03 1.76 1.03-1.76 1.03-1.75-1.03Z"></path>
+                          <path class="getstarted-cls-3" d="M46.42 79.23v-2.07l1.75 1.03v2.06l-1.75-1.02Zm3 3.24 1.75 1.03 1.76-1.03v2.06l-1.76 1.03-1.75-1.03v-2.06Zm6.01-10.6 1.75-1.03 1.76 1.03v2.06l-1.76 1.03V72.9l-1.75-1.03Zm1.75 8.1v-3.53l1.76-1.03v5.61l-4.76 2.79v-2.07l3-1.76Z"></path>
+                          <path class="getstarted-cls-3" d="m55.93 79.23-1.75 1.03V78.2l1.75-1.03v2.06z"></path>
+                          <path class="getstarted-cls-3" d="M55.93 73.63v2.07l-3 1.77v3.54l-1.75 1.02-1.75-1.02v-3.54l-3.01-1.77v-2.07l1.76-1.03 2.99 1.77 3.01-1.77 1.76 1.03Zm-9.51-3.53 4.75-2.8 4.76 2.8-1.75 1.03-3.01-1.77-3 1.77-1.75-1.03Z"></path>
                         </g>
                       </g>
-                    </g>
-                    <g id="step1-asset-4-end">
-                      <circle class="getstarted-cls-17" cx="51.17" cy="76.43" r="23"></circle>
-                      <path d="M51.17 63.08c7.38 0 13.36 5.98 13.36 13.36 0 7.38-5.98 13.36-13.36 13.36-7.38 0-13.36-5.98-13.36-13.36 0-7.38 5.98-13.36 13.36-13.36Z" style="fill:#f0b90b;fill-rule:evenodd"></path>
-                      <path class="getstarted-cls-3" d="M45.16 76.43v3.53l3.01 1.77v2.07l-4.76-2.79V75.4l1.75 1.03Zm0-3.53v2.06l-1.75-1.03v-2.06l1.75-1.03 1.76 1.03-1.76 1.03Zm4.26-1.03 1.75-1.03 1.76 1.03-1.76 1.03-1.75-1.03Z"></path>
-                      <path class="getstarted-cls-3" d="M46.42 79.23v-2.07l1.75 1.03v2.06l-1.75-1.02Zm3 3.24 1.75 1.03 1.76-1.03v2.06l-1.76 1.03-1.75-1.03v-2.06Zm6.01-10.6 1.75-1.03 1.76 1.03v2.06l-1.76 1.03V72.9l-1.75-1.03Zm1.75 8.1v-3.53l1.76-1.03v5.61l-4.76 2.79v-2.07l3-1.76Z"></path>
-                      <path class="getstarted-cls-3" d="m55.93 79.23-1.75 1.03V78.2l1.75-1.03v2.06z"></path>
-                      <path class="getstarted-cls-3" d="M55.93 73.63v2.07l-3 1.77v3.54l-1.75 1.02-1.75-1.02v-3.54l-3.01-1.77v-2.07l1.76-1.03 2.99 1.77 3.01-1.77 1.76 1.03Zm-9.51-3.53 4.75-2.8 4.76 2.8-1.75 1.03-3.01-1.77-3 1.77-1.75-1.03Z"></path>
-                    </g>
-                    <g id="step1-asset-3-end">
-                      <circle class="getstarted-cls-17" cx="110.33" cy="124.66" r="23"></circle>
-                      <path d="M101.31 130.17c.16-.16.38-.26.62-.26h21.32c.39 0 .58.47.31.75l-4.21 4.21c-.16.16-.38.26-.62.26H97.41c-.39 0-.58-.47-.31-.75l4.21-4.21Z" style="fill:url(#getstarted__linear-gradient-5)"></path>
-                      <path d="M101.31 114.45c.17-.16.39-.26.62-.26h21.32c.39 0 .58.47.31.75l-4.21 4.21c-.16.16-.38.26-.62.26H97.41c-.39 0-.58-.47-.31-.75l4.21-4.21Z" style="fill:url(#getstarted__linear-gradient-6)"></path>
-                      <path d="M119.35 122.26a.877.877 0 0 0-.62-.26H97.41c-.39 0-.58.47-.31.75l4.21 4.21c.16.16.38.26.62.26h21.32c.39 0 .58-.47.31-.75l-4.21-4.21Z" style="fill:url(#getstarted__linear-gradient-7)"></path>
-                    </g>
-                    <g id="step1-asset-1-end">
-                      <circle class="getstarted-cls-17" cx="110.33" cy="38.51" r="23"></circle>
-                      <g id="Layer_1-3" data-name="Layer_1">
-                        <g id="_1421394342400" data-name="1421394342400">
-                          <path style="fill:#343434" d="m110.33 25.15-.18.61v17.67l.18.17 8.2-4.84-8.2-13.61z"></path>
-                          <path class="getstarted-cls-5" d="m110.33 25.15-8.2 13.61 8.2 4.84V25.15z"></path>
-                          <path style="fill:#3c3c3b" d="m110.33 45.16-.1.12v6.29l.1.3 8.2-11.56-8.2 4.85z"></path>
-                          <path class="getstarted-cls-5" d="M110.33 51.87v-6.71l-8.2-4.85 8.2 11.56z"></path>
-                          <path style="fill:#141414" d="m110.33 43.6 8.2-4.84-8.2-3.73v8.57z"></path>
-                          <path style="fill:#393939" d="m102.13 38.76 8.2 4.84v-8.57l-8.2 3.73z"></path>
+                      <g id="getstarted-2">
+                        <path style="fill:url(#getstarted-linear-gradient-2)" d="M28.17 99.73h46v64.13h-46z"></path>
+                        <g id="step1-asset-2-end">
+                          <circle class="getstarted-cls-17" cx="51.17" cy="161.01" r="23"></circle>
+                          <g id="Layer_1-2" data-name="Layer_1">
+                            <g id="_1421344023328" data-name="1421344023328">
+                              <path d="M64.13 164.24c-1.78 7.16-9.03 11.51-16.19 9.73-7.15-1.78-11.51-9.03-9.72-16.19 1.78-7.16 9.03-11.51 16.19-9.73 7.16 1.78 11.51 9.03 9.73 16.19Z" style="fill:#f7931a"></path>
+                              <path class="getstarted-cls-3" d="M57.06 159.11c.27-1.78-1.09-2.73-2.94-3.37l.6-2.41-1.47-.37-.58 2.34c-.39-.1-.78-.19-1.17-.28l.59-2.36-1.46-.37-.6 2.41c-.32-.07-.63-.14-.94-.22s-2.02-.51-2.02-.51l-.39 1.57s1.09.25 1.06.26c.59.15.7.54.68.85l-.68 2.74.15.05c-.05-.01-.1-.03-.15-.04l-.96 3.84c-.07.18-.26.45-.67.35.01.02-1.07-.27-1.07-.27l-.73 1.68 1.91.48 1.05.27-.61 2.44 1.46.37.6-2.41c.4.11.79.21 1.17.3l-.6 2.4 1.47.37.61-2.43c2.5.47 4.38.28 5.17-1.98.64-1.82-.03-2.87-1.35-3.55.96-.22 1.68-.85 1.87-2.15Zm-3.35 4.7c-.45 1.82-3.52.84-4.51.59l.8-3.23c.99.25 4.18.74 3.71 2.64Zm.45-4.72c-.41 1.66-2.96.81-3.79.61l.73-2.93c.83.21 3.49.59 3.06 2.32Z"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                      <g id="getstarted-3">
+                        <path transform="translate(220.66 141.15) rotate(180)" style="fill:url(#getstarted-linear-gradient-3)" d="M87.33 38.51h46v64.13h-46z"></path>
+                        <g id="step1-asset-1-end">
+                          <circle class="getstarted-cls-17" cx="110.33" cy="38.51" r="23"></circle>
+                          <g id="Layer_1-3" data-name="Layer_1">
+                            <g id="_1421394342400" data-name="1421394342400">
+                              <path style="fill:#343434" d="m110.33 25.15-.18.61v17.67l.18.17 8.2-4.84-8.2-13.61z"></path>
+                              <path class="getstarted-cls-5" d="m110.33 25.15-8.2 13.61 8.2 4.84V25.15z"></path>
+                              <path style="fill:#3c3c3b" d="m110.33 45.16-.1.12v6.29l.1.3 8.2-11.56-8.2 4.85z"></path>
+                              <path class="getstarted-cls-5" d="M110.33 51.87v-6.71l-8.2-4.85 8.2 11.56z"></path>
+                              <path style="fill:#141414" d="m110.33 43.6 8.2-4.84-8.2-3.73v8.57z"></path>
+                              <path style="fill:#393939" d="m102.13 38.76 8.2 4.84v-8.57l-8.2 3.73z"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                      <g id="getstarted-4">
+                        <path transform="translate(220.66 313.35) rotate(180)" style="fill:url(#getstarted-linear-gradient-4)" d="M87.33 124.61h46v64.13h-46z"></path>
+                        <g id="step1-asset-3-end">
+                          <circle class="getstarted-cls-17" cx="110.33" cy="124.66" r="23"></circle>
+                          <path d="M101.31 130.17c.16-.16.38-.26.62-.26h21.32c.39 0 .58.47.31.75l-4.21 4.21c-.16.16-.38.26-.62.26H97.41c-.39 0-.58-.47-.31-.75l4.21-4.21Z" style="fill:url(#getstarted-linear-gradient-5)"></path>
+                          <path d="M101.31 114.45c.17-.16.39-.26.62-.26h21.32c.39 0 .58.47.31.75l-4.21 4.21c-.16.16-.38.26-.62.26H97.41c-.39 0-.58-.47-.31-.75l4.21-4.21Z" style="fill:url(#getstarted-linear-gradient-6)"></path>
+                          <path d="M119.35 122.26a.877.877 0 0 0-.62-.26H97.41c-.39 0-.58.47-.31.75l4.21 4.21c.16.16.38.26.62.26h21.32c.39 0 .58-.47.31-.75l-4.21-4.21Z" style="fill:url(#getstarted-linear-gradient-7)"></path>
                         </g>
                       </g>
                     </g>
@@ -1410,12 +1445,14 @@ build 13.04.24
                 </svg></div>
             </div>
             <div id="w-node-_1caa3141-65ae-c7d5-3afa-dcd142c737df-42c737cf" data-w-id="1caa3141-65ae-c7d5-3afa-dcd142c737df" class="getstarted dark">
-              <a data-w-id="1caa3141-65ae-c7d5-3afa-dcd142c737e0" href="{{ links.23 }}" class="cta__wrap w-inline-block">
-                <div class="pill cta accent">{{ texts.-3b90023 }}</div>
-                <div class="cta__circle accent">
-                  <div class="lottie-arrow-right" data-w-id="1caa3141-65ae-c7d5-3afa-dcd142c737e4" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
-                </div>
-              </a>
+              <div data-w-id="ce4a3f33-e9f0-b6c4-c4f9-7a889122ecc7" class="magnet">
+                <a data-id="cta-dual-dark" href="{{ links.23 }}" target="_blank" class="cta__btn w-inline-block">
+                  <div class="cta__text dark">{{ texts.-3b90023 }}</div>
+                  <div class="cta__circle dark">
+                    <div class="lottie-arrow-right" data-w-id="00b98d56-4094-4243-0ab0-da606af11152" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
+                  </div>
+                </a>
+              </div>
               <div class="getstarted__infos">
                 <div class="getstarted__wrap">
                   <div class="getstarted__stats-wrap">
@@ -1720,7 +1757,7 @@ build 13.04.24
               </div>
               <h1 data-id="reveal">{{ texts.3ee58ace }}</h1>
             </div>
-            <div class="legend__wrap">
+            <div data-w-id="04d9153c-5a8d-7bf2-41c8-050a96a6c0d7" class="legend__wrap">
               <div class="lottie-animation" data-w-id="af870eb5-884c-89b9-ebdb-631dec6d5d56" data-animation-type="lottie" data-src="/assets/documents/lottie-clickndrag.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.466666666666667" data-duration="0"></div>
               <div class="icon-info w-embed"><!-- 
 <svg width="100%" height="100%" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M512 64a448 448 0 1 1 0 896.064A448 448 0 0 1 512 64zm67.2 275.072c33.28 0 60.288-23.104 60.288-57.344s-27.072-57.344-60.288-57.344c-33.28 0-60.16 23.104-60.16 57.344s26.88 57.344 60.16 57.344zM590.912 699.2c0-6.848 2.368-24.64 1.024-34.752l-52.608 60.544c-10.88 11.456-24.512 19.392-30.912 17.28a12.992 12.992 0 0 1-8.256-14.72l87.68-276.992c7.168-35.136-12.544-67.2-54.336-71.296-44.096 0-108.992 44.736-148.48 101.504 0 6.784-1.28 23.68.064 33.792l52.544-60.608c10.88-11.328 23.552-19.328 29.952-17.152a12.8 12.8 0 0 1 7.808 16.128L388.48 728.576c-10.048 32.256 8.96 63.872 55.04 71.04 67.84 0 107.904-43.648 147.456-100.416z"/></svg>
@@ -1729,7 +1766,7 @@ build 13.04.24
                   <path fill="currentColor" fill-rule="evenodd" d="M10 3a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm-9 7a9 9 0 1 1 18 0 9 9 0 0 1-18 0zm8-4a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H10a1 1 0 0 1-1-1zm.01 8a1 1 0 1 0 2 0V9a1 1 0 1 0-2 0v5z"></path>
                 </svg>
               </div>
-              <p data-id="reveal-itself" class="legend"><span class="legend-underline">{{ texts.3e2d568 }}</span>{{ texts.7d75 }}<span class="legend-underline">{{ texts.6168a353 }}</span></p>
+              <p class="legend"><span class="legend-underline">{{ texts.3e2d568 }}</span>{{ texts.7d75 }}<span class="legend-underline">{{ texts.6168a353 }}</span></p>
             </div>
           </div>
           {%- assign collection = collections.team | sort: "f_sorting-order" -%}<div class="swiper is-team w-dyn-list">
@@ -1755,12 +1792,14 @@ build 13.04.24
             </div>{%- endif -%}
           </div>
           <div class="cta__dual-center">
-            <a href="{{ links.68e15f9f }}" class="cta__wrap w-inline-block">
-              <div class="pill cta">{{ texts.-5230a9d2 }}</div>
-              <div class="cta__circle">
-                <div class="lottie-arrow-right" data-w-id="e887ab22-4563-b879-de24-fe93823e21ed" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
-              </div>
-            </a>
+            <div class="magnet">
+              <a data-id="cta-dual-light" href="{{ links.68e15f9f }}" class="cta__btn w-inline-block">
+                <div class="cta__text">{{ texts.-5230a9d2 }}</div>
+                <div class="cta__circle">
+                  <div class="lottie-arrow-right" data-w-id="3f4057dd-6ad4-a48d-18de-9cf571c8b6fb" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
         <div class="popup">
@@ -1839,7 +1878,7 @@ build 13.04.24
             <div id="w-node-_4b55ce3a-217f-6cfd-b19e-9183ae9cdc12-304eb7b4" class="social__grid-item">
               <div class="social__embed-medium contact">
                 <div class="card">
-                  <div class="css-card-gooey w-embed">
+                  <div class="css__global w-embed">
                     <style>.card_background{filter: url(#goo)}</style>
                     <svg class="goo-filter" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg">
                       <filter id="goo">
@@ -2035,6 +2074,13 @@ build 13.04.24
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!--  vivus.js  -->
   <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+  <script>
+/*
+ * P | getstarted reveal scrub v1
+ * build: 29.05.24 @20:58
+ */
+document.addEventListener("DOMContentLoaded",()=>{const options={svg:`#getstarted-svg`};if(!document.querySelector(options.svg)){return}initGetStartedIcons()});function initGetStartedIcons(){gsap.registerPlugin(ScrollTrigger);function setupAnimation(elementId,direction){const tl=gsap.timeline({scrollTrigger:{trigger:elementId,start:"top bottom",end:"bottom top",scrub:true}});tl.to(elementId,{y:`${ direction }=50`,duration:1})}setupAnimation("#getstarted-1","+");setupAnimation("#getstarted-2","+");setupAnimation("#getstarted-3","-");setupAnimation("#getstarted-4","-")}
+</script>
   <script>
 /*
  * P | particles.js animated v3

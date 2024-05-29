@@ -59,8 +59,35 @@ a,a:focus,button:focus,input:focus,textarea:focus{outline:0 !important;outline-s
 <body>
   <div id="smooth-wrapper" class="page-wrapper">
     <div class="global-styles">
-      <div class="css-card-gooey w-embed">
+      <div class="css__global w-embed">
         <style>
+/* cta dual light hover */
+[data-id="cta-dual-light"]:hover .cta__text,
+[data-id="cta-dual-light"]:hover .cta__circle {
+    font-size: 1.1rem;
+    background-color: var(--accent);
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Added comma */
+}
+[data-id="cta-dual-light"] .cta__text,
+[data-id="cta-dual-light"] .cta__circle {
+    font-size: 1rem;
+    background-color: var(--light);
+    transition: background-color 0.6s ease, font-size 0.3s ease; /* Added comma */
+}
+/* cta dual dark hover */
+[data-id="cta-dual-dark"]:hover .cta__text,
+[data-id="cta-dual-dark"]:hover .cta__circle {
+    font-size: 1.1rem;
+    background-color: var(--light);
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Added comma */
+}
+[data-id="cta-dual-dark"] .cta__text,
+[data-id="cta-dual-dark"] .cta__circle {
+    font-size: 1rem;
+    background-color: var(--accent);
+    transition: background-color 0.6s ease, font-size 0.3s ease; /* Added comma */
+}
+/* typography styling */
  a {
    color: inherit;
  }
@@ -287,12 +314,14 @@ build 13.04.24
                       </div>
                       <div data-cta="text" class="cta-text">{{ texts.1284e3b3 }}<br></div>
                     </a>
-                    <a href="{{ links.-77fd2a2e }}" target="_blank" class="cta__wrap w-inline-block">
-                      <div class="pill cta accent">{{ texts.7cccd2bf }}</div>
-                      <div class="cta__circle accent">
-                        <div class="lottie-arrow-right" data-w-id="43c077cd-9f75-8c89-3e3f-feab7f11c023" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
-                      </div>
-                    </a>
+                    <div class="magnet">
+                      <a data-id="cta-dual-dark" href="{{ links.-77fd2a2e }}" target="_blank" class="cta__btn w-inline-block">
+                        <div class="cta__text dark">{{ texts.7cccd2bf }}</div>
+                        <div class="cta__circle dark">
+                          <div class="lottie-arrow-right" data-w-id="370abce5-e960-7626-c4cd-33815528ac5d" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1143,6 +1172,13 @@ build 13.04.24
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!--  vivus.js  -->
   <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+  <script>
+/*
+ * P | getstarted reveal scrub v1
+ * build: 29.05.24 @20:58
+ */
+document.addEventListener("DOMContentLoaded",()=>{const options={svg:`#getstarted-svg`};if(!document.querySelector(options.svg)){return}initGetStartedIcons()});function initGetStartedIcons(){gsap.registerPlugin(ScrollTrigger);function setupAnimation(elementId,direction){const tl=gsap.timeline({scrollTrigger:{trigger:elementId,start:"top bottom",end:"bottom top",scrub:true}});tl.to(elementId,{y:`${ direction }=50`,duration:1})}setupAnimation("#getstarted-1","+");setupAnimation("#getstarted-2","+");setupAnimation("#getstarted-3","-");setupAnimation("#getstarted-4","-")}
+</script>
   <script>
 /*
  * P | particles.js animated v3

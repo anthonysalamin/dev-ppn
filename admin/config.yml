@@ -754,10 +754,6 @@ collections:
             label: Text
             name: 66c3ddfe
             widget: string
-          - hint: 'Original text: Pill, key: 25f559'
-            label: Text
-            name: 25f559
-            widget: string
           - hint: 'Original text: Pill / mini, key: 866464f'
             label: Text
             name: 866464f
@@ -774,9 +770,21 @@ collections:
             label: Text
             name: '-78ddacdd'
             widget: string
-          - hint: 'Original text: CTA / solo / light, key: -be1bdb'
+          - hint: 'Original text: CTA / magnet / dual / light, key: 19e6c6a7'
             label: Text
-            name: '-be1bdb'
+            name: 19e6c6a7
+            widget: string
+          - hint: 'Original text: CTA light, key: -7100e51a'
+            label: Text
+            name: '-7100e51a'
+            widget: string
+          - hint: 'Original text: CTA / magnet / dual / dark, key: 21da67c5'
+            label: Text
+            name: 21da67c5
+            widget: string
+          - hint: 'Original text: CTA dark, key: -3a8f05a'
+            label: Text
+            name: '-3a8f05a'
             widget: string
           - hint: 'Original text: CTA / solo / light / outline, key: 5236e316'
             label: Text
@@ -786,21 +794,13 @@ collections:
             label: Text
             name: 667a5d97
             widget: string
+          - hint: 'Original text: CTA / solo / light, key: -be1bdb'
+            label: Text
+            name: '-be1bdb'
+            widget: string
           - hint: 'Original text: CTA / solo / transparent, key: 3fb94521'
             label: Text
             name: 3fb94521
-            widget: string
-          - hint: 'Original text: CTA dual light, key: ae370a2'
-            label: Text
-            name: ae370a2
-            widget: string
-          - hint: 'Original text: Extended CTA, key: cf70ea9'
-            label: Text
-            name: cf70ea9
-            widget: string
-          - hint: 'Original text: CTA dual accent, key: 3e6eeabe'
-            label: Text
-            name: 3e6eeabe
             widget: string
           - hint: 'Original text: pre heading, key: -68b0867b'
             label: Text
@@ -1493,15 +1493,11 @@ collections:
             label: Text
             name: '-33b7fc59'
             widget: string
-          - hint: 'Original text: Add Liquidity, key: a176cf3'
-            label: Text
-            name: a176cf3
-            widget: string
           - hint: >-
               Original text: Proceed to deposit your assets into the index of
-              your choosing., key: 534ea25e
+              your choice, key: 2625cb5d
             label: Text
-            name: 534ea25e
+            name: 2625cb5d
             widget: string
           - hint: 'Original text: Buy $PPN Token, key: -3b90023'
             label: Text

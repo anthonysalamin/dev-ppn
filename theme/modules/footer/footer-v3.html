@@ -59,8 +59,35 @@ a,a:focus,button:focus,input:focus,textarea:focus{outline:0 !important;outline-s
 <body>
   <div id="smooth-wrapper" class="page-wrapper">
     <div class="global-styles">
-      <div class="css-card-gooey w-embed">
+      <div class="css__global w-embed">
         <style>
+/* cta dual light hover */
+[data-id="cta-dual-light"]:hover .cta__text,
+[data-id="cta-dual-light"]:hover .cta__circle {
+    font-size: 1.1rem;
+    background-color: var(--accent);
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Added comma */
+}
+[data-id="cta-dual-light"] .cta__text,
+[data-id="cta-dual-light"] .cta__circle {
+    font-size: 1rem;
+    background-color: var(--light);
+    transition: background-color 0.6s ease, font-size 0.3s ease; /* Added comma */
+}
+/* cta dual dark hover */
+[data-id="cta-dual-dark"]:hover .cta__text,
+[data-id="cta-dual-dark"]:hover .cta__circle {
+    font-size: 1.1rem;
+    background-color: var(--light);
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Added comma */
+}
+[data-id="cta-dual-dark"] .cta__text,
+[data-id="cta-dual-dark"] .cta__circle {
+    font-size: 1rem;
+    background-color: var(--accent);
+    transition: background-color 0.6s ease, font-size 0.3s ease; /* Added comma */
+}
+/* typography styling */
  a {
    color: inherit;
  }
@@ -251,7 +278,7 @@ build 13.04.24
             <div id="w-node-_4b55ce3a-217f-6cfd-b19e-9183ae9cdc12-304eb7b4" class="social__grid-item">
               <div class="social__embed-medium contact">
                 <div class="card">
-                  <div class="css-card-gooey w-embed">
+                  <div class="css__global w-embed">
                     <style>.card_background{filter: url(#goo)}</style>
                     <svg class="goo-filter" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg">
                       <filter id="goo">
@@ -417,6 +444,13 @@ build 13.04.24
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!--  vivus.js  -->
   <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+  <script>
+/*
+ * P | getstarted reveal scrub v1
+ * build: 29.05.24 @20:58
+ */
+document.addEventListener("DOMContentLoaded",()=>{const options={svg:`#getstarted-svg`};if(!document.querySelector(options.svg)){return}initGetStartedIcons()});function initGetStartedIcons(){gsap.registerPlugin(ScrollTrigger);function setupAnimation(elementId,direction){const tl=gsap.timeline({scrollTrigger:{trigger:elementId,start:"top bottom",end:"bottom top",scrub:true}});tl.to(elementId,{y:`${ direction }=50`,duration:1})}setupAnimation("#getstarted-1","+");setupAnimation("#getstarted-2","+");setupAnimation("#getstarted-3","-");setupAnimation("#getstarted-4","-")}
+</script>
   <script>
 /*
  * P | particles.js animated v3

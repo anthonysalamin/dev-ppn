@@ -79,8 +79,35 @@ a,a:focus,button:focus,input:focus,textarea:focus{outline:0 !important;outline-s
 <body>
   <div id="smooth-wrapper" class="page-wrapper">
     <div class="global-styles">
-      <div class="css-card-gooey w-embed">
+      <div class="css__global w-embed">
         <style>
+/* cta dual light hover */
+[data-id="cta-dual-light"]:hover .cta__text,
+[data-id="cta-dual-light"]:hover .cta__circle {
+    font-size: 1.1rem;
+    background-color: var(--accent);
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Added comma */
+}
+[data-id="cta-dual-light"] .cta__text,
+[data-id="cta-dual-light"] .cta__circle {
+    font-size: 1rem;
+    background-color: var(--light);
+    transition: background-color 0.6s ease, font-size 0.3s ease; /* Added comma */
+}
+/* cta dual dark hover */
+[data-id="cta-dual-dark"]:hover .cta__text,
+[data-id="cta-dual-dark"]:hover .cta__circle {
+    font-size: 1.1rem;
+    background-color: var(--light);
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Added comma */
+}
+[data-id="cta-dual-dark"] .cta__text,
+[data-id="cta-dual-dark"] .cta__circle {
+    font-size: 1rem;
+    background-color: var(--accent);
+    transition: background-color 0.6s ease, font-size 0.3s ease; /* Added comma */
+}
+/* typography styling */
  a {
    color: inherit;
  }
@@ -1081,12 +1108,14 @@ build 13.04.24
             </div>
           </div>
           <div class="cta__dual-center">
-            <a href="{{ links.-77fd2a2e }}" target="_blank" class="cta__wrap w-inline-block">
-              <div class="pill cta accent">{{ texts.7cccd2bf }}</div>
-              <div class="cta__circle accent">
-                <div class="lottie-arrow-right" data-w-id="201905d5-f451-7581-c738-500223300133" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
-              </div>
-            </a>
+            <div class="magnet">
+              <a data-id="cta-dual-dark" href="{{ links.-77fd2a2e }}" target="_blank" class="cta__btn w-inline-block">
+                <div class="cta__text dark">{{ texts.7cccd2bf }}</div>
+                <div class="cta__circle dark">
+                  <div class="lottie-arrow-right" data-w-id="370abce5-e960-7626-c4cd-33815528ac5d" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -1169,12 +1198,14 @@ build 13.04.24
           </div>
         </div>
         <div class="cta__dual-center">
-          <a href="{{ links.68e15f9f }}" class="cta__wrap w-inline-block">
-            <div class="pill cta">{{ texts.-5230a9d2 }}</div>
-            <div class="cta__circle">
-              <div class="lottie-arrow-right" data-w-id="e887ab22-4563-b879-de24-fe93823e21ed" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
-            </div>
-          </a>
+          <div class="magnet">
+            <a data-id="cta-dual-light" href="{{ links.68e15f9f }}" class="cta__btn w-inline-block">
+              <div class="cta__text">{{ texts.-5230a9d2 }}</div>
+              <div class="cta__circle">
+                <div class="lottie-arrow-right" data-w-id="3f4057dd-6ad4-a48d-18de-9cf571c8b6fb" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
       <section id="distribution" class="section smooth-gradient">
@@ -1559,7 +1590,7 @@ build 13.04.24
               </div>
               <h1 data-id="reveal">{{ texts.3ee58ace }}</h1>
             </div>
-            <div class="legend__wrap">
+            <div data-w-id="04d9153c-5a8d-7bf2-41c8-050a96a6c0d7" class="legend__wrap">
               <div class="lottie-animation" data-w-id="af870eb5-884c-89b9-ebdb-631dec6d5d56" data-animation-type="lottie" data-src="/assets/documents/lottie-clickndrag.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.466666666666667" data-duration="0"></div>
               <div class="icon-info w-embed"><!-- 
 <svg width="100%" height="100%" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M512 64a448 448 0 1 1 0 896.064A448 448 0 0 1 512 64zm67.2 275.072c33.28 0 60.288-23.104 60.288-57.344s-27.072-57.344-60.288-57.344c-33.28 0-60.16 23.104-60.16 57.344s26.88 57.344 60.16 57.344zM590.912 699.2c0-6.848 2.368-24.64 1.024-34.752l-52.608 60.544c-10.88 11.456-24.512 19.392-30.912 17.28a12.992 12.992 0 0 1-8.256-14.72l87.68-276.992c7.168-35.136-12.544-67.2-54.336-71.296-44.096 0-108.992 44.736-148.48 101.504 0 6.784-1.28 23.68.064 33.792l52.544-60.608c10.88-11.328 23.552-19.328 29.952-17.152a12.8 12.8 0 0 1 7.808 16.128L388.48 728.576c-10.048 32.256 8.96 63.872 55.04 71.04 67.84 0 107.904-43.648 147.456-100.416z"/></svg>
@@ -1568,7 +1599,7 @@ build 13.04.24
                   <path fill="currentColor" fill-rule="evenodd" d="M10 3a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm-9 7a9 9 0 1 1 18 0 9 9 0 0 1-18 0zm8-4a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H10a1 1 0 0 1-1-1zm.01 8a1 1 0 1 0 2 0V9a1 1 0 1 0-2 0v5z"></path>
                 </svg>
               </div>
-              <p data-id="reveal-itself" class="legend"><span class="legend-underline">{{ texts.3e2d568 }}</span>{{ texts.7d75 }}<span class="legend-underline">{{ texts.6168a353 }}</span></p>
+              <p class="legend"><span class="legend-underline">{{ texts.3e2d568 }}</span>{{ texts.7d75 }}<span class="legend-underline">{{ texts.6168a353 }}</span></p>
             </div>
           </div>
           {%- assign collection = collections.team | sort: "f_sorting-order" -%}<div class="swiper is-team w-dyn-list">
@@ -1594,12 +1625,14 @@ build 13.04.24
             </div>{%- endif -%}
           </div>
           <div class="cta__dual-center">
-            <a href="{{ links.68e15f9f }}" class="cta__wrap w-inline-block">
-              <div class="pill cta">{{ texts.-5230a9d2 }}</div>
-              <div class="cta__circle">
-                <div class="lottie-arrow-right" data-w-id="e887ab22-4563-b879-de24-fe93823e21ed" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
-              </div>
-            </a>
+            <div class="magnet">
+              <a data-id="cta-dual-light" href="{{ links.68e15f9f }}" class="cta__btn w-inline-block">
+                <div class="cta__text">{{ texts.-5230a9d2 }}</div>
+                <div class="cta__circle">
+                  <div class="lottie-arrow-right" data-w-id="3f4057dd-6ad4-a48d-18de-9cf571c8b6fb" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
         <div class="popup">
@@ -1678,7 +1711,7 @@ build 13.04.24
             <div id="w-node-_4b55ce3a-217f-6cfd-b19e-9183ae9cdc12-304eb7b4" class="social__grid-item">
               <div class="social__embed-medium contact">
                 <div class="card">
-                  <div class="css-card-gooey w-embed">
+                  <div class="css__global w-embed">
                     <style>.card_background{filter: url(#goo)}</style>
                     <svg class="goo-filter" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg">
                       <filter id="goo">
@@ -1918,6 +1951,13 @@ build 13.04.24
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!--  vivus.js  -->
   <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+  <script>
+/*
+ * P | getstarted reveal scrub v1
+ * build: 29.05.24 @20:58
+ */
+document.addEventListener("DOMContentLoaded",()=>{const options={svg:`#getstarted-svg`};if(!document.querySelector(options.svg)){return}initGetStartedIcons()});function initGetStartedIcons(){gsap.registerPlugin(ScrollTrigger);function setupAnimation(elementId,direction){const tl=gsap.timeline({scrollTrigger:{trigger:elementId,start:"top bottom",end:"bottom top",scrub:true}});tl.to(elementId,{y:`${ direction }=50`,duration:1})}setupAnimation("#getstarted-1","+");setupAnimation("#getstarted-2","+");setupAnimation("#getstarted-3","-");setupAnimation("#getstarted-4","-")}
+</script>
   <script>
 /*
  * P | particles.js animated v3

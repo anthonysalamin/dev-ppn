@@ -59,8 +59,35 @@ a,a:focus,button:focus,input:focus,textarea:focus{outline:0 !important;outline-s
 <body>
   <div class="page-wrapper">
     <div class="global-styles">
-      <div class="css-card-gooey w-embed">
+      <div class="css__global w-embed">
         <style>
+/* cta dual light hover */
+[data-id="cta-dual-light"]:hover .cta__text,
+[data-id="cta-dual-light"]:hover .cta__circle {
+    font-size: 1.1rem;
+    background-color: var(--accent);
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Added comma */
+}
+[data-id="cta-dual-light"] .cta__text,
+[data-id="cta-dual-light"] .cta__circle {
+    font-size: 1rem;
+    background-color: var(--light);
+    transition: background-color 0.6s ease, font-size 0.3s ease; /* Added comma */
+}
+/* cta dual dark hover */
+[data-id="cta-dual-dark"]:hover .cta__text,
+[data-id="cta-dual-dark"]:hover .cta__circle {
+    font-size: 1.1rem;
+    background-color: var(--light);
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Added comma */
+}
+[data-id="cta-dual-dark"] .cta__text,
+[data-id="cta-dual-dark"] .cta__circle {
+    font-size: 1rem;
+    background-color: var(--accent);
+    transition: background-color 0.6s ease, font-size 0.3s ease; /* Added comma */
+}
+/* typography styling */
  a {
    color: inherit;
  }
@@ -243,8 +270,6 @@ build 13.04.24
         <div data-id="blinky-accent" class="blinky accent w-embed">
           <style>[data-id="blinky-accent"]:before{content:"";position:absolute;z-index:0;width:inherit;height:inherit;border:5px solid var(--accent);border-radius:inherit;opacity:0;animation:2s cubic-bezier(.29,0,0,1) infinite expand;animation-delay:1s;}@keyframes expand{0%{transform:scale(0);opacity:1;}100%{transform:scale(2.5);opacity:0;border-color:var(--accent);background-color:transparent;border-width:2px;}}</style>
         </div>
-        <div class="legend info">{{ texts.25f559 }}</div>
-        <div class="pill">{{ texts.27b67d }}<br></div>
         <div class="legend info">{{ texts.866464f }}</div>
         <p class="small mini-pil">{{ texts.36617d }}</p>
         <div class="legend info">{{ texts.4be8700a }}</div>
@@ -253,10 +278,24 @@ build 13.04.24
             <div class="magnet__cta-text">{{ texts.-78ddacdd }}</div>
           </a>
         </div>
-        <div class="legend info">{{ texts.-be1bdb }}</div>
-        <a href="{{ links.23 }}" class="cta__wrap w-inline-block">
-          <div class="pill cta">{{ texts.-78ddacdd }}<br></div>
-        </a>
+        <div class="legend info">{{ texts.19e6c6a7 }}</div>
+        <div class="magnet">
+          <a data-id="cta-dual-light" href="{{ links.23 }}" class="cta__btn w-inline-block">
+            <div class="cta__text">{{ texts.-7100e51a }}</div>
+            <div class="cta__circle">
+              <div class="lottie-arrow-right" data-w-id="3f4057dd-6ad4-a48d-18de-9cf571c8b6fb" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
+            </div>
+          </a>
+        </div>
+        <div class="legend info">{{ texts.21da67c5 }}</div>
+        <div class="magnet">
+          <a data-id="cta-dual-dark" href="{{ links.23 }}" class="cta__btn w-inline-block">
+            <div class="cta__text dark">{{ texts.-3a8f05a }}</div>
+            <div class="cta__circle dark">
+              <div class="lottie-arrow-right" data-w-id="370abce5-e960-7626-c4cd-33815528ac5d" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
+            </div>
+          </a>
+        </div>
         <div class="legend info">{{ texts.5236e316 }}</div>
         <a href="{{ links.23 }}" class="cta__wrap w-inline-block">
           <div class="pill cta outline">{{ texts.667a5d97 }}<br></div>
@@ -277,27 +316,13 @@ build 13.04.24
         </a>
         <div class="legend info">{{ texts.3fb94521 }}</div>
         <a href="{{ links.23 }}" class="cta__wrap w-inline-block">
-          <div class="pill cta transparent">{{ texts.-78ddacdd }}<br></div>
+          <div class="pill cta transparent">{{ texts.4ab0bd7e }}</div>
         </a>
         <a data-cta="fixed" href="{{ links.61525348 }}" target="_blank" class="cta__wrap is-fixed w-inline-block">
           <div data-id="blinky-accent" data-cta="blinky" class="blinky white w-embed">
             <style>[data-id="blinky-accent"]:before{content:"";position:absolute;z-index:0;width:inherit;height:inherit;border:5px solid var(--accent);border-radius:inherit;opacity:0;animation:2s cubic-bezier(.29,0,0,1) infinite expand;animation-delay:1s;}@keyframes expand{0%{transform:scale(0);opacity:1;}100%{transform:scale(2.5);opacity:0;border-color:white;background-color:transparent;border-width:2px;}}</style>
           </div>
           <div data-cta="text" class="cta-text">{{ texts.90caa1b }}<br></div>
-        </a>
-        <div class="legend info">{{ texts.ae370a2 }}</div>
-        <a href="{{ links.23 }}" class="cta__wrap w-inline-block">
-          <div class="pill cta">{{ texts.cf70ea9 }}</div>
-          <div class="cta__circle">
-            <div class="lottie-arrow-right" data-w-id="e887ab22-4563-b879-de24-fe93823e21ed" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
-          </div>
-        </a>
-        <div class="legend info">{{ texts.3e6eeabe }}</div>
-        <a href="{{ links.23 }}" class="cta__wrap w-inline-block">
-          <div class="pill cta accent">{{ texts.3e6eeabe }}</div>
-          <div class="cta__circle accent">
-            <div class="lottie-arrow-right" data-w-id="201905d5-f451-7581-c738-500223300133" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/6565594186e587567235d089/6581c7e2eb8e6bafe68e692f_Animation%20-%201703003839505%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
-          </div>
         </a>
         <div class="legend info">{{ texts.-68b0867b }}</div>
         <p class="small title">{{ texts.29137f }}</p>
@@ -370,6 +395,13 @@ build 13.04.24
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!--  vivus.js  -->
   <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+  <script>
+/*
+ * P | getstarted reveal scrub v1
+ * build: 29.05.24 @20:58
+ */
+document.addEventListener("DOMContentLoaded",()=>{const options={svg:`#getstarted-svg`};if(!document.querySelector(options.svg)){return}initGetStartedIcons()});function initGetStartedIcons(){gsap.registerPlugin(ScrollTrigger);function setupAnimation(elementId,direction){const tl=gsap.timeline({scrollTrigger:{trigger:elementId,start:"top bottom",end:"bottom top",scrub:true}});tl.to(elementId,{y:`${ direction }=50`,duration:1})}setupAnimation("#getstarted-1","+");setupAnimation("#getstarted-2","+");setupAnimation("#getstarted-3","-");setupAnimation("#getstarted-4","-")}
+</script>
   <script>
 /*
  * P | particles.js animated v3
