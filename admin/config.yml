@@ -97,16 +97,6 @@ collections:
     editor: *ref_0
     folder: cms/pages/playground
     fields: *ref_1
-  - name: pages-modules
-    label: Pages modules
-    identifier_field: title
-    extension: md
-    create: false
-    delete: false
-    slug: '{{slug}}'
-    editor: *ref_0
-    folder: cms/pages/modules
-    fields: *ref_1
   - name: steps
     label: Steps
     folder: cms/steps
@@ -708,6 +698,18 @@ collections:
             label: Text
             name: 3ee58ace
             widget: string
+          - hint: 'Original text: Click, key: 3e2d568'
+            label: Text
+            name: 3e2d568
+            widget: string
+          - hint: 'Original text:  + , key: 7d75'
+            label: Text
+            name: 7d75
+            widget: string
+          - hint: 'Original text: Drag left, key: 6168a353'
+            label: Text
+            name: 6168a353
+            widget: string
           - hint: >-
               Original text: A new ecosystem, purpose built to generate yield
               from arbitrage opportunities., key: -59d6ee48
@@ -1021,18 +1023,6 @@ collections:
             label: Text
             name: '-fc803f8'
             widget: text
-          - hint: 'Original text: Smarter Liquidity Provision, key: -991bb23'
-            label: Text
-            name: '-991bb23'
-            widget: string
-          - hint: 'Original text: Arbitrage or be arbitraged, key: -3127cbae'
-            label: Text
-            name: '-3127cbae'
-            widget: string
-          - hint: "Original text: Select, deposit, deploy &\_profit, key: 1cc12fd5"
-            label: Text
-            name: 1cc12fd5
-            widget: string
           - hint: >-
               Original text: offers a new DeFi ecosystem for users, key:
               2054d57d
@@ -1080,6 +1070,48 @@ collections:
             label: Text
             name: '-6bd48d63'
             widget: string
+          - hint: 'Original text: Social, key: -6c12fc73'
+            label: Text
+            name: '-6c12fc73'
+            widget: string
+          - hint: 'Original text: Follow us, key: -5ae7feb3'
+            label: Text
+            name: '-5ae7feb3'
+            widget: string
+          - hint: 'Original text: We are on X, key: 1c692195'
+            label: Text
+            name: 1c692195
+            widget: string
+          - hint: 'Original text: Contact, key: -64104400'
+            label: Text
+            name: '-64104400'
+            widget: string
+          - hint: 'Original text: email us, key: 2d5d45a2'
+            label: Text
+            name: 2d5d45a2
+            widget: string
+          - hint: 'Original text: team@privatepools.network, key: -1bf19f89'
+            label: Text
+            name: '-1bf19f89'
+            widget: string
+          - hint: 'Original text: about 4 hours ago , key: -187f9439'
+            label: Text
+            name: '-187f9439'
+            widget: string
+          - hint: 'Original text: via Medium, key: -13d77019'
+            label: Text
+            name: '-13d77019'
+            widget: string
+          - hint: >-
+              Original text: The Rise Of Points Farming in Crypto, key:
+              -21adcdb4
+            label: Text
+            name: '-21adcdb4'
+            widget: string
+          - hint: "Original text: In this weeks thought leadership article, we take a deep dive into the \_emergence of the points farming system. We assess its origins, review \_its pros & cons, and dissect its effectiveness over predecessors., key: -5c8e68c2"
+            label: Text
+            name: '-5c8e68c2'
+            widget: text
           - hint: 'Original text: v.1.2, key: 6947c3d'
             label: Text
             name: 6947c3d
@@ -1105,6 +1137,10 @@ collections:
           - hint: 'Original text: Back, key: 1f7907'
             label: Text
             name: 1f7907
+            widget: string
+          - hint: 'Original text: Smarter Liquidity Provision, key: -991bb23'
+            label: Text
+            name: '-991bb23'
             widget: string
           - hint: 'Original text: 01, key: 601'
             label: Text
@@ -1251,18 +1287,6 @@ collections:
             label: Text
             name: '749803e3'
             widget: text
-          - hint: 'Original text: Social, key: -6c12fc73'
-            label: Text
-            name: '-6c12fc73'
-            widget: string
-          - hint: 'Original text: We are on X, key: 1c692195'
-            label: Text
-            name: 1c692195
-            widget: string
-          - hint: 'Original text: Follow us, key: -5ae7feb3'
-            label: Text
-            name: '-5ae7feb3'
-            widget: string
           - hint: >-
               Original text: With over a decade of experience, we have a proven
               track record of creating innovative and sustainable spaces that
@@ -1278,18 +1302,6 @@ collections:
             label: Text
             name: 4c26455d
             widget: text
-          - hint: 'Original text:  or be arbitraged, key: -fec6665'
-            label: Text
-            name: '-fec6665'
-            widget: string
-          - hint: 'Original text: Select , deposit, deploy & , key: 3241cf39'
-            label: Text
-            name: 3241cf39
-            widget: string
-          - hint: 'Original text: profit, key: -3a66c1bc'
-            label: Text
-            name: '-3a66c1bc'
-            widget: string
           - hint: 'Original text: A new paradigm of DeFi innovation, key: 95aa54e'
             label: Text
             name: 95aa54e
@@ -1316,18 +1328,6 @@ collections:
             label: Text
             name: 10b7a1df
             widget: text
-          - hint: 'Original text: Contact us, key: 7f274abe'
-            label: Text
-            name: 7f274abe
-            widget: string
-          - hint: 'Original text: email, key: 5c24b9c'
-            label: Text
-            name: 5c24b9c
-            widget: string
-          - hint: 'Original text: team@privatepools.network, key: -1bf19f89'
-            label: Text
-            name: '-1bf19f89'
-            widget: string
           - hint: 'Original text: Invest, key: -7d28f3eb'
             label: Text
             name: '-7d28f3eb'
@@ -1493,29 +1493,55 @@ collections:
             label: Text
             name: '-33b7fc59'
             widget: string
-          - hint: >-
-              Original text: Price deviation detection & profitability checks,
-              key: 4fb29630
+          - hint: 'Original text: Add Liquidity, key: a176cf3'
             label: Text
-            name: 4fb29630
+            name: a176cf3
             widget: string
           - hint: >-
-              Original text: Private order flow optimized, competition
-              circumvented, key: -3e8cc9a4
+              Original text: Proceed to deposit your assets into the index of
+              your choosing., key: 534ea25e
             label: Text
-            name: '-3e8cc9a4'
+            name: 534ea25e
             widget: string
-          - hint: >-
-              Original text: Rebalancing between PPN trading engine & external
-              liquidity venue, key: -5e8595df
+          - hint: 'Original text: Buy $PPN Token, key: -3b90023'
             label: Text
-            name: '-5e8595df'
+            name: '-3b90023'
             widget: string
-          - hint: >-
-              Original text: Rebalancing with index pool completed, residual
-              yield compounded back into index, key: 5fb92b3a
+          - hint: 'Original text: $4.21, key: 213a45d'
             label: Text
-            name: 5fb92b3a
+            name: 213a45d
+            widget: string
+          - hint: 'Original text: 3.74%, key: 2e46cad'
+            label: Text
+            name: 2e46cad
+            widget: string
+          - hint: 'Original text: PPN Price, key: 251e98d7'
+            label: Text
+            name: 251e98d7
+            widget: string
+          - hint: 'Original text: $210M, key: 212c6c0'
+            label: Text
+            name: 212c6c0
+            widget: string
+          - hint: 'Original text: mkt.cap, key: 4316d47a'
+            label: Text
+            name: 4316d47a
+            widget: string
+          - hint: 'Original text: $12M, key: 111ba8'
+            label: Text
+            name: 111ba8
+            widget: string
+          - hint: 'Original text: 24h volume, key: 742b2e14'
+            label: Text
+            name: 742b2e14
+            widget: string
+          - hint: 'Original text: $7.99K, key: 408b4950'
+            label: Text
+            name: 408b4950
+            widget: string
+          - hint: 'Original text: Holders, key: -5bb47fd9'
+            label: Text
+            name: '-5bb47fd9'
             widget: string
       - label: Links
         name: links
@@ -1539,9 +1565,9 @@ collections:
             label: Link
             name: '-46429829'
             widget: string
-          - hint: 'Original link: /, key: 2f'
+          - hint: 'Original link: /playground/home-v2/, key: -355f8b76'
             label: Link
-            name: 2f
+            name: '-355f8b76'
             widget: string
           - hint: >-
               Original link:
@@ -1708,6 +1734,32 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: 3bb2025
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-2947be66'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: 5ff97d1a
             widget: object
             fields:
@@ -1748,19 +1800,6 @@ collections:
                 required: false
           - label: Image
             name: '-1fe8882e'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 3bb2025
             widget: object
             fields:
               - name: url

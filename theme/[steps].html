@@ -76,19 +76,17 @@ a,a:focus,button:focus,input:focus,textarea:focus{outline:0 !important;outline-s
   <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <!--  swiper.js  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!--  particlesjs 2.2.3 FOR STATIC PARTICLE BACKGROUND  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!--  particles.js FOR INTERRACTIVE PARTICLE BACKGROUND  -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!--  vivus.js  -->
   <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
   <script>
 /*
- * PP | particles
- * dependency: particlesjs.js
- * build 15.04.24
+ * P | particles.js animated v3
+ * dependency: particles.js
+ * build:: 10.05.24 @23:21
  */
-document.addEventListener("DOMContentLoaded",()=>{if(!document.querySelector(".background-particles")){return}initParticles()});function initParticles(){const color=["#02031c","#00e0ff","#02031c"];const particlesAmount=140;Particles.init({selector:".background-particles",color:color,connectParticles:true,maxParticles:particlesAmount,responsive:[{breakpoint:768,options:{color:color,maxParticles:particlesAmount/3.5,connectParticles:true}}]})}
+document.addEventListener("DOMContentLoaded",()=>{const options={color:"#00e0ff",trigger:"window",target:"particles-interactive"};if(!document.querySelector(`#${options.target }`)){return}initParticles(options)});function initParticles(options){particlesJS(options.target,{particles:{number:{value:80,density:{enable:true,value_area:1000}},color:{value:options.color },shape:{type:"circle",stroke:{width:0,color:"#000000"},polygon:{nb_sides:5},image:{src:"img/github.svg",width:100,height:100}},opacity:{value:0.3,random:false,anim:{enable:false,speed:1,opacity_min:0.1,sync:false}},size:{value:3,random:true,anim:{enable:false,speed:40,size_min:0.1,sync:false}},line_linked:{enable:true,distance:150,color:options.color,opacity:0.4,width:1},move:{enable:true,speed:1,direction:"none",random:false,straight:false,out_mode:"out",bounce:false,attract:{enable:false,rotateX:600,rotateY:1200}}},interactivity:{detect_on:options.trigger,events:{onhover:{enable:true,mode:"grab"},onclick:{enable:false,mode:"push"},resize:true},modes:{grab:{distance:140,line_linked:{opacity:1}},bubble:{distance:400,size:40,duration:2,opacity:8,speed:3},repulse:{distance:200,duration:0.4},push:{particles_nb:4},remove:{particles_nb:2}}},retina_detect:true})}
 </script>
   <script>
 /*
@@ -100,10 +98,10 @@ document.addEventListener("DOMContentLoaded",()=>{const options={delay:1000,colo
 </script>
   <script>
 /*
- * P | schemas v.2
- * build: 27.04.24 @13:29
- */
-document.addEventListener("DOMContentLoaded",animateShapes);function animateShapes(){gsap.registerPlugin(ScrollTrigger);const svgs=document.querySelectorAll("#social .schema");svgs.forEach((svg)=>{const shapes=svg.querySelectorAll("rect, circle");shapes.forEach((shape,index)=>{animateShape(shape,index*0.1)})})}function animateShape(shape,stagger){const svg=shape.closest(".schema");if(window.getComputedStyle(svg).getPropertyValue("visibility")==="hidden"){return;}shape.style.strokeDashoffset=0;const length=shape.getTotalLength();shape.style.strokeDasharray=length;shape.style.strokeDashoffset=length;gsap.to(shape,{strokeDashoffset:0,duration:2,ease:"back.inOut",scrollTrigger:{trigger:svg,start:"top center",once:true},delay:stagger})}
+ * P | gooey opening v1
+ * build: 29.05.24 @13:07
+*/
+document.addEventListener("DOMContentLoaded",()=>{initGooeyOpening()});function initGooeyOpening(){gsap.registerPlugin(ScrollTrigger);const gooeyButton=document.querySelector('[data-id="btn-gooey"]');if(!gooeyButton){return}ScrollTrigger.create({trigger:gooeyButton,start:"top 75%",onEnter:()=>gooeyButton.click(),once:true})}
 </script>
   <script>
 /*

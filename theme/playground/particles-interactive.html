@@ -224,7 +224,7 @@ build 13.04.24
     <nav data-id="target" class="nav">
       <div class="container">
         <div class="nav__container">
-          <a href="{{ links.2f }}" aria-label="logo" id="w-node-_13833c84-10dc-6811-2b34-e9820945d48d-0945d48a" class="nav__logomark-link w-nav-brand">
+          <a href="{{ links.-355f8b76 }}" aria-label="logo" id="w-node-_13833c84-10dc-6811-2b34-e9820945d48d-0945d48a" class="nav__logomark-link w-nav-brand">
             <div class="embed__logo w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 982.76 131.43">
                 <defs>
                   <linearGradient id="a" x1="78.56" y1="84.24" x2="78.56" y2="0" gradientTransform="rotate(90 78.56 42.12)" gradientUnits="userSpaceOnUse">
@@ -324,19 +324,17 @@ build 13.04.24
   <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <!--  swiper.js  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!--  particlesjs 2.2.3 FOR STATIC PARTICLE BACKGROUND  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!--  particles.js FOR INTERRACTIVE PARTICLE BACKGROUND  -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!--  vivus.js  -->
   <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
   <script>
 /*
- * PP | particles
- * dependency: particlesjs.js
- * build 15.04.24
+ * P | particles.js animated v3
+ * dependency: particles.js
+ * build:: 10.05.24 @23:21
  */
-document.addEventListener("DOMContentLoaded",()=>{if(!document.querySelector(".background-particles")){return}initParticles()});function initParticles(){const color=["#02031c","#00e0ff","#02031c"];const particlesAmount=140;Particles.init({selector:".background-particles",color:color,connectParticles:true,maxParticles:particlesAmount,responsive:[{breakpoint:768,options:{color:color,maxParticles:particlesAmount/3.5,connectParticles:true}}]})}
+document.addEventListener("DOMContentLoaded",()=>{const options={color:"#00e0ff",trigger:"window",target:"particles-interactive"};if(!document.querySelector(`#${options.target }`)){return}initParticles(options)});function initParticles(options){particlesJS(options.target,{particles:{number:{value:80,density:{enable:true,value_area:1000}},color:{value:options.color },shape:{type:"circle",stroke:{width:0,color:"#000000"},polygon:{nb_sides:5},image:{src:"img/github.svg",width:100,height:100}},opacity:{value:0.3,random:false,anim:{enable:false,speed:1,opacity_min:0.1,sync:false}},size:{value:3,random:true,anim:{enable:false,speed:40,size_min:0.1,sync:false}},line_linked:{enable:true,distance:150,color:options.color,opacity:0.4,width:1},move:{enable:true,speed:1,direction:"none",random:false,straight:false,out_mode:"out",bounce:false,attract:{enable:false,rotateX:600,rotateY:1200}}},interactivity:{detect_on:options.trigger,events:{onhover:{enable:true,mode:"grab"},onclick:{enable:false,mode:"push"},resize:true},modes:{grab:{distance:140,line_linked:{opacity:1}},bubble:{distance:400,size:40,duration:2,opacity:8,speed:3},repulse:{distance:200,duration:0.4},push:{particles_nb:4},remove:{particles_nb:2}}},retina_detect:true})}
 </script>
   <script>
 /*
@@ -348,10 +346,10 @@ document.addEventListener("DOMContentLoaded",()=>{const options={delay:1000,colo
 </script>
   <script>
 /*
- * P | schemas v.2
- * build: 27.04.24 @13:29
- */
-document.addEventListener("DOMContentLoaded",animateShapes);function animateShapes(){gsap.registerPlugin(ScrollTrigger);const svgs=document.querySelectorAll("#social .schema");svgs.forEach((svg)=>{const shapes=svg.querySelectorAll("rect, circle");shapes.forEach((shape,index)=>{animateShape(shape,index*0.1)})})}function animateShape(shape,stagger){const svg=shape.closest(".schema");if(window.getComputedStyle(svg).getPropertyValue("visibility")==="hidden"){return;}shape.style.strokeDashoffset=0;const length=shape.getTotalLength();shape.style.strokeDasharray=length;shape.style.strokeDashoffset=length;gsap.to(shape,{strokeDashoffset:0,duration:2,ease:"back.inOut",scrollTrigger:{trigger:svg,start:"top center",once:true},delay:stagger})}
+ * P | gooey opening v1
+ * build: 29.05.24 @13:07
+*/
+document.addEventListener("DOMContentLoaded",()=>{initGooeyOpening()});function initGooeyOpening(){gsap.registerPlugin(ScrollTrigger);const gooeyButton=document.querySelector('[data-id="btn-gooey"]');if(!gooeyButton){return}ScrollTrigger.create({trigger:gooeyButton,start:"top 75%",onEnter:()=>gooeyButton.click(),once:true})}
 </script>
   <script>
 /*
@@ -437,135 +435,6 @@ document.addEventListener("DOMContentLoaded",()=>{const footerLinks=document.que
  * build 04.04.24 @11:21
 */ 
 document.addEventListener("DOMContentLoaded",()=>{const position="left";const distance="1.5rem";const rgb="220, 236, 248";progressInjectCSS(position,distance,rgb);progressInjectHTML();showScrollProgress()});function progressInjectCSS(position,distance,rgb){const css=`.progress-wrap{--indicator-progress-color:rgba(${ rgb },1);--indicator-slide-color:rgba(${ rgb },0.1);--indicator-font:"Unicons";--indicator-content:"\\e84b";--indicator-hover:white --indicator-position:1.25rem}@font-face{font-family:"Unicons";src:url("https://assets-global.website-files.com/61a0f086f2b1f289503a4957/6329d8e0a1790e3283ae2504_unicons.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}.progress-wrap{position:fixed;mix-blend-mode:difference;${ position }:${ distance };bottom:${ distance };height:46px;width:46px;cursor:pointer;display:none;border-radius:50px;box-shadow:inset 0 0 0 2px var(--indicator-slide-color);z-index:10000;opacity:0;visibility:hidden;transform:translateY(15px);transition:all 200ms linear}.progress-wrap.active-progress{display:block;opacity:1;visibility:visible;transform:translateY(0)}.progress-wrap::after,.progress-wrap::before{position:absolute;font-family:var(--indicator-font);content:var(--indicator-content);text-align:center;line-height:46px;font-size:24px;left:0;top:0;height:46px;width:46px;cursor:pointer;display:block;transition:all 200ms linear}.progress-wrap::after{color:var(--indicator-progress-color);z-index:1}.progress-wrap:hover::before{color:var(--indicator-hover);transform:scale(1.0);transform-origin:center}.progress-wrap:hover::after{transform:scale(1.15);transform-origin:center}.progress-wrap svg path{fill:none}.progress-wrap svg.progress-circle path{stroke:var(--indicator-progress-color);stroke-width:4;box-sizing:border-box;transition:all 200ms linear}`;const style=document.createElement("style");style.innerHTML=css;document.head.appendChild(style)}function progressInjectHTML(){const scrollProgressHTML=`<div class="progress-wrap"><svg class="progress-circle svg-content"height="100%"viewBox="-1 -1 102 102"width="100%"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/></svg></div>`;const div=document.createElement("div");div.innerHTML=scrollProgressHTML;document.body.prepend(div)}function showScrollProgress(){if(!document.querySelector(".progress-wrap")){return}const progressPath=document.querySelector(".progress-wrap path");const pathLength=progressPath.getTotalLength();progressPath.style.transition="none";progressPath.style.strokeDasharray=`${ pathLength } ${ pathLength }`;progressPath.style.strokeDashoffset=pathLength;progressPath.getBoundingClientRect();progressPath.style.transition="stroke-dashoffset 10ms linear";const updateProgress=()=>{const scroll=window.pageYOffset||document.documentElement.scrollTop;const height=document.documentElement.scrollHeight-document.documentElement.clientHeight;const progress=pathLength-(scroll*pathLength)/height;progressPath.style.strokeDashoffset=progress};updateProgress();window.addEventListener("scroll",updateProgress,{passive:true});const offset=50;const duration=550;window.addEventListener("scroll",()=>{if(window.pageYOffset>offset){document.querySelector(".progress-wrap").classList.add("active-progress")}else{document.querySelector(".progress-wrap").classList.remove("active-progress")}},{passive:true});document.querySelector(".progress-wrap").addEventListener("click",(event)=>{event.preventDefault();scrollToTop(duration);return false});function scrollToTop(duration){const start=window.pageYOffset||document.documentElement.scrollTop;const startTime=performance.now();function scrollStep(timestamp){const currentTime=timestamp||performance.now();const elapsedTime=currentTime-startTime;const scrollTo=Math.max(start-(start*elapsedTime)/duration,0);window.scrollTo(0,scrollTo);if(elapsedTime<duration){window.requestAnimationFrame(scrollStep)}}window.requestAnimationFrame(scrollStep)}}
-</script><!--  particles.js  -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script>
-/*
- * P | particles.js animated v3
- * dependency: particles.js
- * build:: 10.05.24 @23:21
- */
-document.addEventListener("DOMContentLoaded", () => {
-  const options = {
-    color: "#00e0ff", // #02031c dark or #00e0ff accent
-    trigger: "window", // to detect on entire screen
-    target: "particles-interactive"
-  };
-  if (!options.target) return;
-  initParticles(options);
-});
-function initParticles(options) {
-  particlesJS(options.target, {
-    particles: {
-      number: {
-        value: 80,
-        density: {
-          enable: true,
-          value_area: 1000
-        }
-      },
-      color: {
-        value: options.color // point color
-      },
-      shape: {
-        type: "circle",
-        stroke: {
-          width: 0,
-          color: "#000000"
-        },
-        polygon: {
-          nb_sides: 5
-        },
-        image: {
-          src: "img/github.svg",
-          width: 100,
-          height: 100
-        }
-      },
-      opacity: {
-        value: 0.3,
-        random: false,
-        anim: {
-          enable: false,
-          speed: 1,
-          opacity_min: 0.1,
-          sync: false
-        }
-      },
-      size: {
-        value: 3,
-        random: true,
-        anim: {
-          enable: false,
-          speed: 40,
-          size_min: 0.1,
-          sync: false
-        }
-      },
-      line_linked: {
-        enable: true,
-        distance: 150,
-        color: options.color, // color lines
-        opacity: 0.4,
-        width: 1
-      },
-      move: {
-        enable: true,
-        speed: 1,
-        direction: "none",
-        random: false,
-        straight: false,
-        out_mode: "out",
-        bounce: false,
-        attract: {
-          enable: false,
-          rotateX: 600,
-          rotateY: 1200
-        }
-      }
-    },
-    interactivity: {
-      detect_on: options.trigger,
-      events: {
-        onhover: {
-          enable: true,
-          mode: "grab"
-        },
-        onclick: {
-          enable: false,
-          mode: "push"
-        },
-        resize: true
-      },
-      modes: {
-        grab: {
-          distance: 140,
-          line_linked: {
-            opacity: 1
-          }
-        },
-        bubble: {
-          distance: 400,
-          size: 40,
-          duration: 2,
-          opacity: 8,
-          speed: 3
-        },
-        repulse: {
-          distance: 200,
-          duration: 0.4
-        },
-        push: {
-          particles_nb: 4
-        },
-        remove: {
-          particles_nb: 2
-        }
-      }
-    },
-    retina_detect: true
-  });
-}
 </script>
 
 <script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}</body></html>
