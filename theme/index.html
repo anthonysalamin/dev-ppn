@@ -16,23 +16,15 @@
 <body>
   <section class="section">
     <div class="card">
-      <div class="css-card-gooey w-embed"><svg class="goo-filter" viewBox="0 0 1 1">
+      <div class="css-card-gooey w-embed"><svg class="goo-filter" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg">
           <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur">
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 90 -20" result="goo">
-            <feBlend in="SourceGraphic" in2="goo">
-          </feBlend></feColorMatrix></feGaussianBlur></filter>
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 90 -20" result="goo"></feColorMatrix>
+            <feBlend in="SourceGraphic" in2="goo" mode="normal"></feBlend>
+          </filter>
         </svg>
         <style>
-  .card_background {
-    filter: url(#goo);
-  }
-  .is--content {
-    pointer-events: none;
-  }
-  .is--content * {
-    pointer-events: auto;
-  }
+.card_background{filter: url(#goo)}
 </style>
       </div>
       <div class="card_background">
