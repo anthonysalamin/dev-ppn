@@ -1333,9 +1333,9 @@ collections:
             widget: string
           - hint: >-
               Original text: Arbitrage opportunity executed, value extracted and
-              sent back to Index Pool, key: -2eb4fae1
+              sent back to Index Pool., key: 58159eef
             label: Text
-            name: '-2eb4fae1'
+            name: 58159eef
             widget: string
           - hint: 'Original text: Rebalancing, key: 2da327a6'
             label: Text
@@ -1349,10 +1349,10 @@ collections:
             widget: text
           - hint: >-
               Original text: 70% of the yield is redistributed back to the
-              Liquidity Providers according to our Yield Distribution Model,
-              key: 6e5a2c05
+              Liquidity Providers according to our Yield Distribution Model.,
+              key: 5ceb54c9
             label: Text
-            name: 6e5a2c05
+            name: 5ceb54c9
             widget: text
           - hint: 'Original text: Arbitrage, key: -1e725b97'
             label: Text
@@ -1424,6 +1424,19 @@ collections:
             label: Text
             name: '-5bb47fd9'
             widget: string
+          - hint: >-
+              Original text: Our PPN trading engine runsprice deviation
+              detection &profitability checks every 0.5seconds on DEXs & CEXs,
+              key: -6dd47dfa
+            label: Text
+            name: '-6dd47dfa'
+            widget: text
+          - hint: >-
+              Original text: Rebalancing within the PPNIndex Pool is complete,
+              andyield is compounded backinto the index, key: 3c67db83
+            label: Text
+            name: 3c67db83
+            widget: text
       - label: Links
         name: links
         file: cms/_data/links.json
