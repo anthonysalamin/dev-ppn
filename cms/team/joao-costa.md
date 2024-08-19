@@ -4,11 +4,11 @@ title: Joao Costa
 slug: joao-costa
 f_photo:
   url: >-
-    https://uploads-ssl.webflow.com/66162235ccb46588aa690894/66162235ccb46588aa690899_joao-v2.jpg
+    https://uploads-ssl.webflow.com/66c35fbf05bdfda23314ce84/66c35fbf05bdfda23314ce88_joao-v2.jpg
   alt: null
 updated-on: '2024-04-10T03:52:23.319Z'
 created-on: '2022-06-19T22:22:44.401Z'
-published-on: '2024-04-10T05:42:27.242Z'
+published-on: '2024-08-19T15:18:59.181Z'
 f_sorting-order: 3
 f_linkedin: https://www.linkedin.com/in/jo%C3%A3o-costa-940101180/
 f_x-twitter: https://twitter.com/chimpytuts
