@@ -7,11 +7,11 @@ title: Provide → Liquidity
 slug: provide-liquidity
 f_step-image:
   url: >-
-    https://uploads-ssl.webflow.com/66c35fbf05bdfda23314ce84/66c35fbf05bdfda23314cf30_thumb-deposit-v2.svg
+    https://uploads-ssl.webflow.com/66162235ccb46588aa690894/662dfba6298eb74aa0385f51_thumb-deposit-v2.svg
   alt: null
 updated-on: '2024-05-31T09:06:15.168Z'
 created-on: '2024-04-24T06:22:30.680Z'
-published-on: '2024-08-19T15:18:59.181Z'
+published-on: '2024-05-31T09:11:19.401Z'
 f_to-display: true
 layout: '[steps].html'
 tags: steps
