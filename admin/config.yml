@@ -751,9 +751,9 @@ collections:
             label: Text
             name: '-687da9da'
             widget: text
-          - hint: 'Original text: Investor Collateral, key: 7cccd2bf'
+          - hint: 'Original text: Protocol documents, key: -d559cb0'
             label: Text
-            name: 7cccd2bf
+            name: '-d559cb0'
             widget: string
           - hint: 'Original text: Team, key: 27b67d'
             label: Text
@@ -798,21 +798,14 @@ collections:
             name: 3e3e9722
             widget: string
           - hint: >-
-              Original text: Thank you — Please join our Discord to stay updated
-              on your beta application., key: -420bc290
+              Original text: Private Pools Network Private Beta Application,
+              key: 44f322b5
             label: Text
-            name: '-420bc290'
+            name: 44f322b5
             widget: string
-          - hint: >-
-              Original text: To onboard beta testers in group batches, please
-              join our Discord so we can reach out to you about your
-              application., key: 5ac38995
+          - hint: 'Original text: Fill in the form, key: 37b460b1'
             label: Text
-            name: 5ac38995
-            widget: text
-          - hint: 'Original text: Join now, key: -4fca2d00'
-            label: Text
-            name: '-4fca2d00'
+            name: 37b460b1
             widget: string
           - hint: 'Original text: Scroll down, key: -24f8f20b'
             label: Text
@@ -934,6 +927,17 @@ collections:
               your beta application., key: -162ac9e0
             label: Text
             name: '-162ac9e0'
+            widget: string
+          - hint: >-
+              Original text: To onboard beta testers in group batches, please
+              join our Discord so we can reach out to you about your
+              application., key: 5ac38995
+            label: Text
+            name: 5ac38995
+            widget: text
+          - hint: 'Original text: Join now, key: -4fca2d00'
+            label: Text
+            name: '-4fca2d00'
             widget: string
           - hint: 'Original text: Roadmap, key: -4b5115e4'
             label: Text
@@ -1212,6 +1216,10 @@ collections:
               2054d57d
             label: Text
             name: 2054d57d
+            widget: string
+          - hint: 'Original text: Investor Collateral, key: 7cccd2bf'
+            label: Text
+            name: 7cccd2bf
             widget: string
           - hint: 'Original text: ETH USDT, key: -27fbb60b'
             label: Text
@@ -1541,10 +1549,6 @@ collections:
             label: Link
             name: '48312801'
             widget: string
-          - hint: 'Original link: https://discord.gg/EZJh3a5vDP, key: 2a11e92c'
-            label: Link
-            name: 2a11e92c
-            widget: string
           - hint: 'Original link: #formular, key: 61a608ef'
             label: Link
             name: 61a608ef
@@ -1565,6 +1569,10 @@ collections:
               2bf6eab2
             label: Link
             name: 2bf6eab2
+            widget: string
+          - hint: 'Original link: https://discord.gg/EZJh3a5vDP, key: 2a11e92c'
+            label: Link
+            name: 2a11e92c
             widget: string
           - hint: 'Original link: https://t.me/+qPJyj3PhQrM0ZTY0, key: -7a253bff'
             label: Link
