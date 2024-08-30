@@ -15,7 +15,7 @@
         }</style></head>
 <body>
   <div class="w-form">
-    <form method="post" data-basin-spam-protection="recaptcha" name="wf-form-investor" data-name="investor" action="https://usebasin.com/f/2e19a115305d" data-basin-success-action="redirect" id="wf-form-investor" data-basin-form="true" data-wf-page-id="66d20eb680240145e8fa8edb" data-wf-element-id="4639655d-38da-7308-700c-2bc5e69d4b1b" data-ajax="true"><label for="name">{{ texts.24eeab }}</label><input class="w-input" maxlength="256" name="name" data-name="Name" placeholder="" type="text" id="name"><label for="email">{{ texts.-2b7010d0 }}</label><input class="w-input" maxlength="256" name="email" data-name="Email" placeholder="" type="email" id="email" required="">
+    <form method="post" data-basin-spam-protection="recaptcha" name="wf-form-investor" data-name="investor" action="https://usebasin.com/f/697fa050bfb4" data-basin-success-action="redirect" id="wf-form-investor" data-basin-form="true" data-wf-page-id="66d20eb680240145e8fa8edb" data-wf-element-id="4639655d-38da-7308-700c-2bc5e69d4b1b" data-ajax="true"><label for="name">{{ texts.24eeab }}</label><input class="w-input" maxlength="256" name="name" data-name="Name" placeholder="" type="text" id="name"><label for="email">{{ texts.-2b7010d0 }}</label><input class="w-input" maxlength="256" name="email" data-name="Email" placeholder="" type="email" id="email" required="">
       <div class="w-embed"><!--  user age   -->
         <input type="text" name="age" style="display:none;">
       </div><input type="submit" data-wait="Please wait..." class="w-button" value="Submit">
@@ -32,50 +32,15 @@
   <script src="https://js.usebasin.com/v2.3.0.min.js" async=""></script>
   <script>
 /*
- * PORTFOLIO | udesly redirect v1
- * built 30.08.24 @20:42
- */
- /*
- document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector('[data-basin-form="true"]');
-  if (!form) return;
-  const successURL = `${targetURL()}/success`;
-  console.log(successURL);
-  observeFormDisplay(form, successURL);
-});
-function targetURL() {
-  const currentURL = window.location.href;
-  function removeTrailingSlash(url) {
-    return url.endsWith("/") ? url.slice(0, -1) : url;
-  }
-  const cleanedURL = removeTrailingSlash(currentURL);
-  return cleanedURL;
-}
-function observeFormDisplay(form, successURL) {
-  const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-      if (mutation.attributeName === "style" && form.style.display === "none") {
-        window.open(successURL, "_self");
-      }
-    });
-  });
-  observer.observe(form, { attributes: true });
-}
-*/
-</script>
-  <script>
-/*
- * reCAPTCHA v1
- * build 30.08.24 @17:47
+ * usebasin logs
 */
 document.addEventListener("basinjsFormSubmitted", function (event) {
-  // console.log("Form submitted:", event.detail.form);
+  console.log("Form submitted:", event.detail.form);
 });
 document.addEventListener("basinjsFormSuccess", function (event) {
   console.log("Form submission succeeded:", event.detail.form);
 });
 document.addEventListener("basinjsFormError", function (event) {
-  console.error("Form submission error:", event.detail.error);
   console.alert("Form submission error:", event.detail.error);
 });
 </script>
