@@ -1337,13 +1337,13 @@ blockquote {
   cursor: progress;
 }
 
-.success-message {
+._w-form-done {
   background-color: var(--accent);
   color: var(--dark);
   border-radius: 8px;
 }
 
-.error-message {
+._w-form-fail {
   background-color: var(--warning);
   color: var(--grey);
   border-radius: 8px;
@@ -3233,17 +3233,13 @@ blockquote {
   line-height: 1.5;
 }
 
-.recaptcha__wrap {
+.submit__wrap {
   flex-flow: column;
   width: 100%;
   display: flex;
 }
 
-.recaptcha__age {
-  display: none;
-}
-
-.recaptcha__widget {
+.age {
   height: 100%;
 }
 

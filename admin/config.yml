@@ -848,9 +848,11 @@ collections:
             label: Text
             name: '-36b8c0b6'
             widget: string
-          - hint: 'Original text: Oops, error., key: -6bd48d63'
+          - hint: >-
+              Original text: Oops, something went wrong - try again., key:
+              -3d77f4b8
             label: Text
-            name: '-6bd48d63'
+            name: '-3d77f4b8'
             widget: string
           - hint: 'Original text: Social, key: -6c12fc73'
             label: Text
